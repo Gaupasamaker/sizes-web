@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const translations = {
         es: {
             placeholder: "Tu correo electrónico",
+            validationEmail: "Por favor, introduce un correo electrónico válido.",
+            validationCheckbox: "Por favor, marca esta casilla si quieres continuar.",
             privacy: "Política de Privacidad",
             terms: "Términos y Condiciones",
             privacyContent: `
@@ -39,6 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         en: {
             placeholder: "Your email address",
+            validationEmail: "Please enter a valid email address.",
+            validationCheckbox: "Please check this box if you want to proceed.",
             privacy: "Privacy Policy",
             terms: "Terms and Conditions",
             privacyContent: `
@@ -149,6 +153,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
+        // Update browser validation messages
+        document.querySelectorAll('input[required]').forEach(input => {
+            if (input.type === 'checkbox') {
+                input.setCustomValidity(translations[lang].validationCheckbox);
+            } else if (input.type === 'email') {
+                input.setCustomValidity(''); // Reset to let browser handle format or set custom
+            }
+        });
+
         // Toggle buttons
         if (langEsBtn && langEnBtn) {
             langEsBtn.className = lang === 'es' ? 'text-navy-deep font-semibold border-b border-navy-deep pb-0.5' : 'text-gray-400 hover:text-navy-deep transition-all';
@@ -169,6 +182,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (langEsBtn) langEsBtn.addEventListener('click', () => switchLanguage('es'));
     if (langEnBtn) langEnBtn.addEventListener('click', () => switchLanguage('en'));
+
+    // Handle dynamic validation reset on input
+    document.querySelectorAll('input[required]').forEach(input => {
+        input.addEventListener('input', (e) => {
+            e.target.setCustomValidity('');
+        });
+        input.addEventListener('invalid', (e) => {
+            const lang = window.currentLang;
+            if (e.target.type === 'checkbox') {
+                e.target.setCustomValidity(translations[lang].validationCheckbox);
+            } else if (e.target.type === 'email') {
+                if (e.target.value === '') {
+                    e.target.setCustomValidity(lang === 'en' ? 'Please fill in this field.' : 'Por favor, rellena este campo.');
+                } else {
+                    e.target.setCustomValidity(translations[lang].validationEmail);
+                }
+            }
+        });
+    });
 
     // 6. Modal Logic
     window.openLegalModal = function(type) {
