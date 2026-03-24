@@ -85,15 +85,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const mockup3 = document.getElementById('mockup-3');
         
         if (lang === 'es') {
-            if (promoImg) promoImg.src = 'assets/promo/testers es.png';
-            if (mockup1) mockup1.src = 'assets/screenshots/espanol/clear/perfil niño nuevo.jpeg';
-            if (mockup2) mockup2.src = 'assets/screenshots/espanol/clear/brand sizes woman.jpeg';
-            if (mockup3) mockup3.src = 'assets/screenshots/espanol/clear/home 3 usuarios.jpeg';
+            if (promoImg) promoImg.src = 'assets/promo/testers-es.png';
+            if (mockup1) mockup1.src = 'assets/screenshots/espanol/clear/guia-tallas-nino.jpeg';
+            if (mockup2) mockup2.src = 'assets/screenshots/espanol/clear/tallas-mujer.jpeg';
+            if (mockup3) mockup3.src = 'assets/screenshots/espanol/clear/home-3-usuarios.jpeg';
         } else {
-            if (promoImg) promoImg.src = 'assets/promo/testers en.png';
-            if (mockup1) mockup1.src = 'assets/screenshots/ingles/clear/new profile child.jpeg';
-            if (mockup2) mockup2.src = 'assets/screenshots/ingles/clear/brand sizes woman.jpeg';
-            if (mockup3) mockup3.src = 'assets/screenshots/ingles/clear/home 3 users.jpeg';
+            if (promoImg) promoImg.src = 'assets/promo/testers-en.png';
+            if (mockup1) mockup1.src = 'assets/screenshots/ingles/clear/new-profile-child.jpeg';
+            if (mockup2) mockup2.src = 'assets/screenshots/ingles/clear/brand-sizes-woman.jpeg';
+            if (mockup3) mockup3.src = 'assets/screenshots/ingles/clear/home-3-users.jpeg';
         }
 
         // Update all translatable text elements
