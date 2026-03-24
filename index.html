@@ -198,9 +198,12 @@
                             </button>
                         </div>
                         <p id="formFeedback" class="form-feedback-message mt-3 text-sm font-medium text-green-700 font-bold drop-shadow-sm hidden" data-en="Thanks for registering! We'll send you an email to grant you access to Sizes." data-es="¡Gracias por registrarte! Te mandaremos un correo para darte acceso a Sizes.">¡Gracias por registrarte! Te mandaremos un correo para darte acceso a Sizes.</p>
-                        <div class="mt-4 flex items-start gap-2">
-                            <input type="checkbox" id="privacyConsent" class="mt-1 accent-gold-accent" required />
-                            <label for="privacyConsent" class="text-[10px] text-gray-500 leading-tight" data-en="I accept the <a href='politica-privacidad.html' class='underline'>Privacy Policy</a>." data-es="Acepto la <a href='politica-privacidad.html' class='underline'>Política de Privacidad</a>.">Acepto la <a href="politica-privacidad.html" class="underline">Política de Privacidad</a>.</label>
+                        <div class="mt-4 flex items-center justify-center lg:justify-start gap-2">
+                            <input type="checkbox" id="privacyConsent" class="w-4 h-4 rounded border-gray-300 text-navy-deep focus:ring-navy-deep" required />
+                            <label for="privacyConsent" class="text-[11px] text-gray-500 leading-none select-none">
+                                <span data-en="I accept the" data-es="Acepto la">Acepto la</span> 
+                                <button type="button" class="legal-trigger underline hover:text-navy-deep transition-colors" data-modal="privacy" data-en="Privacy Policy" data-es="Política de Privacidad">Política de Privacidad</button>
+                            </label>
                         </div>
                     </form>
                 </div>
@@ -388,8 +391,11 @@
                     </div>
                     <p id="footerFormFeedback" class="form-feedback-message mt-4 text-sm font-medium text-green-700 hidden" data-en="Thanks for registering! We'll send you an email to grant you access to Sizes." data-es="¡Gracias por registrarte! Te mandaremos un correo para darte acceso a Sizes.">¡Gracias por registrarte! Te mandaremos un correo para darte acceso a Sizes.</p>
                     <div class="mt-4 flex items-center justify-center gap-2">
-                        <input type="checkbox" id="footerPrivacyConsent" class="accent-gold-accent" required />
-                        <label for="footerPrivacyConsent" class="text-[10px] text-gray-500" data-en="I accept the <a href='politica-privacidad.html' class='underline'>Privacy Policy</a>." data-es="Acepto la <a href='politica-privacidad.html' class='underline'>Política de Privacidad</a>.">Acepto la <a href="politica-privacidad.html" class="underline">Política de Privacidad</a>.</label>
+                        <input type="checkbox" id="footerPrivacyConsent" class="w-4 h-4 rounded border-gray-300 text-navy-deep focus:ring-navy-deep" required />
+                        <label for="footerPrivacyConsent" class="text-[11px] text-gray-400 leading-none select-none">
+                            <span data-en="I accept the" data-es="Acepto la">Acepto la</span> 
+                            <button type="button" class="legal-trigger underline hover:text-white transition-colors" data-modal="privacy" data-en="Privacy Policy" data-es="Política de Privacidad">Política de Privacidad</button>
+                        </label>
                     </div>
                 </form>
             </div>
@@ -407,14 +413,30 @@
             
             <!-- Footer Links -->
             <div class="flex gap-8">
-                <a href="#" class="text-gray-500 text-sm hover:text-navy-deep transition-colors" data-en="Privacy" data-es="Privacidad">Privacidad</a>
-                <a href="#" class="text-gray-500 text-sm hover:text-navy-deep transition-colors" data-en="Terms" data-es="Términos">Términos</a>
-                <a href="mailto:hello@sizes.es" class="text-gray-500 text-sm hover:text-navy-deep transition-colors" data-en="Contact" data-es="Contacto">Contacto</a>
+                <ul class="flex gap-8">
+                    <li><button type="button" class="legal-trigger text-gray-500 text-sm hover:text-navy-deep transition-colors" data-modal="privacy" data-en="Privacy" data-es="Privacidad">Privacidad</button></li>
+                    <li><button type="button" class="legal-trigger text-gray-500 text-sm hover:text-navy-deep transition-colors" data-modal="terms" data-en="Terms" data-es="Términos">Términos</button></li>
+                    <li><a href="mailto:info@sizes.es" class="text-gray-500 text-sm hover:text-navy-deep transition-colors" data-en="Contact" data-es="Contacto">Contacto</a></li>
+                </ul>
             </div>
         </div>
     </footer>
 
+    <!-- Legal Modal -->
+    <div id="legalModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4">
+        <div class="absolute inset-0 bg-navy-deep/60 backdrop-blur-sm" onclick="closeLegalModal()"></div>
+        <div class="relative w-full max-w-2xl bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[80vh]">
+            <div class="p-6 border-b flex justify-between items-center bg-cream-bg">
+                <h3 id="modalTitle" class="font-editorial text-2xl text-navy-deep"></h3>
+                <button onclick="closeLegalModal()" class="text-navy-muted hover:text-navy-deep transition-colors text-3xl leading-none">&times;</button>
+            </div>
+            <div id="modalContent" class="p-8 overflow-y-auto text-navy-muted leading-relaxed prose prose-sm max-w-none">
+                <!-- Content will be injected by JS -->
+            </div>
+        </div>
+    </div>
+
     <!-- Script Logic -->
-    <script src="script.js?v=3.0"></script>
+    <script src="script.js?v=4.0"></script>
 </body>
 </html>

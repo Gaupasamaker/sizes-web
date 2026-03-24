@@ -8,7 +8,65 @@ document.addEventListener('DOMContentLoaded', () => {
     const yearSpan = document.getElementById('year');
     if (yearSpan) yearSpan.textContent = new Date().getFullYear();
 
-    // 2. Early Access Form Logic
+    // 2. Language Data & Translations
+    const translations = {
+        es: {
+            placeholder: "Tu correo electrónico",
+            privacy: "Política de Privacidad",
+            terms: "Términos y Condiciones",
+            privacyContent: `
+                <p class="mb-4">En <strong>SIZES</strong>, nos tomamos muy en serio tu privacidad. Esta política describe cómo manejamos tus datos.</p>
+                <h4 class="font-bold text-navy-deep mt-6 mb-2">1. Datos que recogemos</h4>
+                <p class="mb-4">Solo recogemos tu dirección de correo electrónico cuando te suscribes voluntariamente a nuestra lista de acceso anticipado.</p>
+                <h4 class="font-bold text-navy-deep mt-6 mb-2">2. Uso de los datos</h4>
+                <p class="mb-4">Utilizamos tu email exclusivamente para informarte sobre el lanzamiento de SIZES y darte acceso a la aplicación.</p>
+                <h4 class="font-bold text-navy-deep mt-6 mb-2">3. Almacenamiento</h4>
+                <p class="mb-4">Tus datos se guardan de forma segura en nuestros servidores y no se comparten con terceros ni se venden.</p>
+                <h4 class="font-bold text-navy-deep mt-6 mb-2">4. Tus derechos</h4>
+                <p class="mb-4">Puedes solicitar la baja de nuestra lista o la eliminación de tus datos en cualquier momento escribiendo a <a href="mailto:info@sizes.es" class="text-gold-accent underline">info@sizes.es</a>.</p>
+            `,
+            termsContent: `
+                <p class="mb-4">Bienvenido a <strong>SIZES</strong>. Al utilizar esta landing page, aceptas los siguientes términos:</p>
+                <h4 class="font-bold text-navy-deep mt-6 mb-2">1. Uso del sitio</h4>
+                <p class="mb-4">Este sitio web tiene carácter puramente informativo para el lanzamiento de la aplicación SIZES.</p>
+                <h4 class="font-bold text-navy-deep mt-6 mb-2">2. Registro</h4>
+                <p class="mb-4">Al registrarte, confirmas que tienes interés en recibir información sobre SIZES. Nos comprometemos a no enviarte SPAM.</p>
+                <h4 class="font-bold text-navy-deep mt-6 mb-2">3. Propiedad Intelectual</h4>
+                <p class="mb-4">Todo el contenido, diseño y mockups mostrados son propiedad de SIZES o se utilizan con permiso.</p>
+                <h4 class="font-bold text-navy-deep mt-6 mb-2">4. Contacto</h4>
+                <p class="mb-4">Para cualquier duda legal, puedes contactarnos en <a href="mailto:info@sizes.es" class="text-gold-accent underline">info@sizes.es</a>.</p>
+            `
+        },
+        en: {
+            placeholder: "Your email address",
+            privacy: "Privacy Policy",
+            terms: "Terms and Conditions",
+            privacyContent: `
+                <p class="mb-4">At <strong>SIZES</strong>, we take your privacy seriously. This policy describes how we handle your data.</p>
+                <h4 class="font-bold text-navy-deep mt-6 mb-2">1. Data we collect</h4>
+                <p class="mb-4">We only collect your email address when you voluntarily subscribe to our early access list.</p>
+                <h4 class="font-bold text-navy-deep mt-6 mb-2">2. Use of data</h4>
+                <p class="mb-4">We use your email exclusively to inform you about the launch of SIZES and to grant you access to the application.</p>
+                <h4 class="font-bold text-navy-deep mt-6 mb-2">3. Storage</h4>
+                <p class="mb-4">Your data is stored securely on our servers and is not shared with third parties or sold.</p>
+                <h4 class="font-bold text-navy-deep mt-6 mb-2">4. Your rights</h4>
+                <p class="mb-4">You can request to be removed from our list or have your data deleted at any time by writing to <a href="mailto:info@sizes.es" class="text-gold-accent underline">info@sizes.es</a>.</p>
+            `,
+            termsContent: `
+                <p class="mb-4">Welcome to <strong>SIZES</strong>. By using this landing page, you agree to the following terms:</p>
+                <h4 class="font-bold text-navy-deep mt-6 mb-2">1. Site use</h4>
+                <p class="mb-4">This website is purely informational for the upcoming launch of the SIZES application.</p>
+                <h4 class="font-bold text-navy-deep mt-6 mb-2">2. Registration</h4>
+                <p class="mb-4">By registering, you confirm your interest in receiving information about SIZES. We commit to not sending you SPAM.</p>
+                <h4 class="font-bold text-navy-deep mt-6 mb-2">3. Intellectual Property</h4>
+                <p class="mb-4">All content, design, and mockups shown are property of SIZES or used with permission.</p>
+                <h4 class="font-bold text-navy-deep mt-6 mb-2">4. Contact</h4>
+                <p class="mb-4">For any legal inquiries, you can contact us at <a href="mailto:info@sizes.es" class="text-gold-accent underline">info@sizes.es</a>.</p>
+            `
+        }
+    };
+
+    // 3. Early Access Form Logic
     const handleForm = async (e) => {
         e.preventDefault();
         const form = e.target;
@@ -35,10 +93,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const result = await response.json();
             
             if (result.status === 'success') {
-                // UI Success state
                 if (formFeedback) {
                     formFeedback.classList.remove('hidden');
-                    formFeedback.style.color = '#4E8D7C'; // Success Green
+                    formFeedback.style.color = '#4E8D7C'; 
                 }
                 form.reset();
             } else {
@@ -61,83 +118,95 @@ document.addEventListener('DOMContentLoaded', () => {
     if (mainForm) mainForm.addEventListener('submit', handleForm);
     if (footerForm) footerForm.addEventListener('submit', handleForm);
 
-    // 3. Smooth Scrolling
+    // 4. Smooth Scrolling
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            e.preventDefault();
             const targetId = this.getAttribute('href');
-            if (targetId === '#') return;
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                targetElement.scrollIntoView({ behavior: 'smooth' });
+            if (targetId.startsWith('#') && targetId.length > 1) {
+                e.preventDefault();
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
             }
         });
     });
 
-    // 4. Translation Toggle Logic
-    const langToggle = document.getElementById('langToggle');
+    // 5. Translation Logic
     const langEsBtn = document.getElementById('lang-es');
     const langEnBtn = document.getElementById('lang-en');
-    const promoImg = document.getElementById('promoImg');
-    
-    // Check initial language (Default: ES)
     window.currentLang = 'es';
 
-    function setLanguage(lang) {
+    function switchLanguage(lang) {
         window.currentLang = lang;
-        
-        // Update styling of the toggle (Editorial Cream Classes)
-        if (lang === 'es') {
-            langEsBtn.className = 'text-navy-deep font-semibold border-b border-navy-deep pb-0.5 transition-all';
-            langEnBtn.className = 'text-gray-400 group-hover:text-navy-deep transition-all';
-            document.documentElement.lang = 'es';
-        } else {
-            langEnBtn.className = 'text-navy-deep font-semibold border-b border-navy-deep pb-0.5 transition-all';
-            langEsBtn.className = 'text-gray-400 group-hover:text-navy-deep transition-all';
-            document.documentElement.lang = 'en';
-        }
+        document.documentElement.lang = lang;
 
-        // Update promotional and mockup images
-        const promoImg = document.getElementById('promo-img');
-        const mockup1 = document.getElementById('mockup-1');
-        const mockup2 = document.getElementById('mockup-2');
-        const mockup3 = document.getElementById('mockup-3');
-        
-        if (lang === 'es') {
-            if (promoImg) promoImg.src = 'assets/promo/testers-es.png';
-            if (mockup1) mockup1.src = 'assets/screenshots/espanol/clear/guia-tallas-nino.jpeg';
-            if (mockup2) mockup2.src = 'assets/screenshots/espanol/clear/tallas-mujer.jpeg';
-            if (mockup3) mockup3.src = 'assets/screenshots/espanol/clear/home-3-usuarios.jpeg';
-        } else {
-            if (promoImg) promoImg.src = 'assets/promo/testers-en.png';
-            if (mockup1) mockup1.src = 'assets/screenshots/ingles/clear/new-profile-child.jpeg';
-            if (mockup2) mockup2.src = 'assets/screenshots/ingles/clear/brand-sizes-woman.jpeg';
-            if (mockup3) mockup3.src = 'assets/screenshots/ingles/clear/home-3-users.jpeg';
-        }
-
-        // Update all translatable text elements
-        const elements = document.querySelectorAll('[data-en][data-es]');
-        elements.forEach(el => {
-            // For placeholder inputs
-            if (el.tagName === 'INPUT' && el.hasAttribute('placeholder')) {
-                el.placeholder = el.getAttribute(`data-${lang}`);
-            } else if (el.tagName === 'IMG' && el.hasAttribute('alt')) {
-                // For image alternate text
-                el.alt = el.getAttribute(`data-${lang}`);
-            } else {
-                // Using innerHTML to preserve spans / br tags inside text
-                el.innerHTML = el.getAttribute(`data-${lang}`);
+        // Update with [data-en/data-es]
+        document.querySelectorAll('[data-en]').forEach(el => {
+            el.innerHTML = el.getAttribute(`data-${lang}`);
+            if (el.tagName === 'INPUT' && el.getAttribute('placeholder')) {
+                el.placeholder = translations[lang].placeholder;
             }
         });
+
+        // Toggle buttons
+        if (langEsBtn && langEnBtn) {
+            langEsBtn.className = lang === 'es' ? 'text-navy-deep font-semibold border-b border-navy-deep pb-0.5' : 'text-gray-400 hover:text-navy-deep transition-all';
+            langEnBtn.className = lang === 'en' ? 'text-navy-deep font-semibold border-b border-navy-deep pb-0.5' : 'text-gray-400 hover:text-navy-deep transition-all';
+        }
+
+        // Mockups
+        const mockupEs = document.querySelectorAll('.mockup-img-es');
+        const mockupEn = document.querySelectorAll('.mockup-img-en');
+        if (lang === 'es') {
+            mockupEs.forEach(img => img.classList.remove('hidden-mockup'));
+            mockupEn.forEach(img => img.classList.add('hidden-mockup'));
+        } else {
+            mockupEs.forEach(img => img.classList.add('hidden-mockup'));
+            mockupEn.forEach(img => img.classList.remove('hidden-mockup'));
+        }
     }
 
-    if (langToggle) {
-        langToggle.addEventListener('click', () => {
-            setLanguage(window.currentLang === 'es' ? 'en' : 'es');
-        });
-    }
-    // --- Premium Polish (Reversible) ---
-    // 3. CTA Pulse effect
-    const mainCtas = document.querySelectorAll('button[type="submit"]');
-    mainCtas.forEach(btn => btn.classList.add('pulse-hover'));
+    if (langEsBtn) langEsBtn.addEventListener('click', () => switchLanguage('es'));
+    if (langEnBtn) langEnBtn.addEventListener('click', () => switchLanguage('en'));
+
+    // 6. Modal Logic
+    window.openLegalModal = function(type) {
+        const modal = document.getElementById('legalModal');
+        const title = document.getElementById('modalTitle');
+        const content = document.getElementById('modalContent');
+        const lang = window.currentLang;
+
+        if (type === 'privacy') {
+            title.innerText = translations[lang].privacy;
+            content.innerHTML = translations[lang].privacyContent;
+        } else {
+            title.innerText = translations[lang].terms;
+            content.innerHTML = translations[lang].termsContent;
+        }
+
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+    };
+
+    window.closeLegalModal = function() {
+        const modal = document.getElementById('legalModal');
+        if (modal) {
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+    };
+
+    // Bind triggers
+    document.addEventListener('click', (e) => {
+        if (e.target.classList.contains('legal-trigger')) {
+            const type = e.target.getAttribute('data-modal');
+            window.openLegalModal(type);
+        }
+    });
+
+    // ESC to close
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') window.closeLegalModal();
+    });
 });
