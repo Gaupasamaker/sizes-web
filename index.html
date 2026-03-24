@@ -198,7 +198,10 @@
                             </button>
                         </div>
                         <p id="formFeedback" class="form-feedback-message mt-3 text-sm font-medium text-green-700 font-bold drop-shadow-sm hidden" data-en="Thanks for registering! We'll send you an email to grant you access to Sizes." data-es="¡Gracias por registrarte! Te mandaremos un correo para darte acceso a Sizes.">¡Gracias por registrarte! Te mandaremos un correo para darte acceso a Sizes.</p>
-                        <p class="mt-4 text-[10px] text-gray-400 leading-tight" data-en="By registering, you accept our Privacy Policy." data-es="Al registrarte, aceptas nuestra Política de Privacidad.">Al registrarte, aceptas nuestra Política de Privacidad.</p>
+                        <div class="mt-4 flex items-start gap-2">
+                            <input type="checkbox" id="privacyConsent" class="mt-1 accent-gold-accent" required />
+                            <label for="privacyConsent" class="text-[10px] text-gray-500 leading-tight" data-en="I accept the <a href='politica-privacidad.html' class='underline'>Privacy Policy</a>." data-es="Acepto la <a href='politica-privacidad.html' class='underline'>Política de Privacidad</a>.">Acepto la <a href="politica-privacidad.html" class="underline">Política de Privacidad</a>.</label>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -384,7 +387,10 @@
                         </button>
                     </div>
                     <p id="footerFormFeedback" class="form-feedback-message mt-4 text-sm font-medium text-green-700 hidden" data-en="Thanks for registering! We'll send you an email to grant you access to Sizes." data-es="¡Gracias por registrarte! Te mandaremos un correo para darte acceso a Sizes.">¡Gracias por registrarte! Te mandaremos un correo para darte acceso a Sizes.</p>
-                    <p class="mt-4 text-[10px] text-gray-400 text-center" data-en="By registering, you accept our Privacy Policy." data-es="Al registrarte, aceptas nuestra Política de Privacidad.">Al registrarte, aceptas nuestra Política de Privacidad.</p>
+                    <div class="mt-4 flex items-center justify-center gap-2">
+                        <input type="checkbox" id="footerPrivacyConsent" class="accent-gold-accent" required />
+                        <label for="footerPrivacyConsent" class="text-[10px] text-gray-500" data-en="I accept the <a href='politica-privacidad.html' class='underline'>Privacy Policy</a>." data-es="Acepto la <a href='politica-privacidad.html' class='underline'>Política de Privacidad</a>.">Acepto la <a href="politica-privacidad.html" class="underline">Política de Privacidad</a>.</label>
+                    </div>
                 </form>
             </div>
         </section>
