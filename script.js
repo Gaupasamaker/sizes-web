@@ -9,38 +9,57 @@ document.addEventListener('DOMContentLoaded', () => {
     if (yearSpan) yearSpan.textContent = new Date().getFullYear();
 
     // 2. Early Access Form Logic
-    const form = document.getElementById('earlyAccessForm');
-    const emailInput = document.getElementById('emailInput');
-    const submitBtn = document.getElementById('submitBtn');
-    const formFeedback = document.getElementById('formFeedback');
+    const handleForm = async (e) => {
+        e.preventDefault();
+        const form = e.target;
+        const emailInput = form.querySelector('input[type="email"]');
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const formFeedback = form.querySelector('[id$="FormFeedback"]');
 
-    if (form) {
-        form.addEventListener('submit', async (e) => {
-            e.preventDefault();
-            const email = emailInput.value.trim();
-            if (!email) return;
+        const email = emailInput.value.trim();
+        if (!email) return;
 
-            // UI Loading state
-            submitBtn.style.opacity = '0.7';
-            formFeedback.classList.add('hidden');
+        // UI Loading state
+        submitBtn.style.opacity = '0.7';
+        if (formFeedback) formFeedback.classList.add('hidden');
 
-            try {
-                // Mock API Delay
-                await new Promise(res => setTimeout(res, 1000));
-                
+        try {
+            const formData = new FormData();
+            formData.append('email', email);
+
+            const response = await fetch('form-handler.php', {
+                method: 'POST',
+                body: formData
+            });
+
+            const result = await response.json();
+            
+            if (result.status === 'success') {
                 // UI Success state
-                formFeedback.classList.remove('hidden');
-                formFeedback.style.color = '#4E8D7C'; // Success Green / Gold
+                if (formFeedback) {
+                    formFeedback.classList.remove('hidden');
+                    formFeedback.style.color = '#4E8D7C'; // Success Green
+                }
                 form.reset();
-            } catch (error) {
+            } else {
+                throw new Error(result.message);
+            }
+        } catch (error) {
+            if (formFeedback) {
                 formFeedback.classList.remove('hidden');
                 formFeedback.style.color = '#B85C5C';
-                formFeedback.textContent = window.currentLang === 'en' ? 'Error submitting. Try again.' : 'Error. Inténtalo de nuevo.';
-            } finally {
-                submitBtn.style.opacity = '1';
+                formFeedback.textContent = window.currentLang === 'en' ? 'Error. Try again.' : 'Error. Inténtalo de nuevo.';
             }
-        });
-    }
+        } finally {
+            submitBtn.style.opacity = '1';
+        }
+    };
+
+    const mainForm = document.getElementById('earlyAccessForm');
+    const footerForm = document.getElementById('footerEarlyAccessForm');
+
+    if (mainForm) mainForm.addEventListener('submit', handleForm);
+    if (footerForm) footerForm.addEventListener('submit', handleForm);
 
     // 3. Smooth Scrolling
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
