@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title data-en="SIZES | Your Exact Fit, In Any Brand" data-es="SIZES | Tu Talla Exacta, En Cualquier Marca">SIZES | Tu Talla Exacta, En Cualquier Marca</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "cream-bg": "#FDFBF7",
+              "cream-surface": "#FFFFFF",
+              "navy-deep": "#0A1128",
+              "navy-muted": "#1C2A4C",
+              "gold-accent": "#C5A065",
+              "gold-light": "#E8C082",
+              "outline": "#E2DFD8"
+            },
+            fontFamily: {
+              "editorial": ["Playfair Display", "serif"],
+              "sans": ["Inter", "sans-serif"]
+            },
+            boxShadow: {
+              'soft': '0 20px 40px -15px rgba(10, 17, 40, 0.05)',
+              'float': '0 30px 60px -20px rgba(10, 17, 40, 0.12)'
+            }
+          }
+        }
+      }
+    </script>
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body { 
+            background-color: #FDFBF7;
+            color: #0A1128;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        .elegant-border {
+            border: 1px solid #E2DFD8;
+        }
+        .hero-image-wrapper {
+            position: relative;
+            z-index: 10;
+        }
+        /* Subtle noise texture for the cream background */
+        .bg-noise {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+            background-repeat: repeat;
+        }
+        
+        /* 3D Isometric Styles */
+        .iso-scene {
+            perspective: 2500px;
+            transform-style: preserve-3d;
+            backface-visibility: hidden;
+            will-change: transform;
+        }
+        .iso-container {
+            transform: rotateX(55deg) rotateZ(-40deg) translateZ(0); /* Better hardware acceleration */
+            transform-style: preserve-3d;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0; left: 0;
+            will-change: transform;
+        }
+        .iso-phone {
+            width: 280px;  /* Larger base for sharper internal resolution */
+            height: 580px;
+            border-radius: 40px;
+            border: 10px solid #0A1128;
+            background: #0A1128;
+            overflow: hidden;
+            /* 16px multi-layered realistic casing physical thickness */
+            box-shadow: 
+                -1px 1px 0px #444, -2px 2px 0px #444, -3px 3px 0px #444, -4px 4px 0px #3A3A40,
+                -5px 5px 0px #3A3A40, -6px 6px 0px #3A3A40, -7px 7px 0px #2A2A30, -8px 8px 0px #2A2A30,
+                -9px 9px 0px #2A2A30, -10px 10px 0px #1A1A24, -11px 11px 0px #1A1A24, -12px 12px 0px #1A1A24,
+                -13px 13px 0px #0D0D12, -14px 14px 0px #0D0D12, -15px 15px 0px #0D0D12, -16px 16px 0px #000,
+                -40px 40px 60px rgba(10, 17, 40, 0.5); 
+            position: absolute;
+            transform-style: preserve-3d;
+            backface-visibility: hidden;
+            will-change: transform;
+        }
+        /* Optimize image rendering inside 3D transform */
+        .iso-phone img {
+            image-rendering: high-quality;
+            image-rendering: -webkit-optimize-contrast;
+            transform: translateZ(1px); /* Prevent sub-pixel z-fighting edge bleeding */
+        }
+        .iso-notch {
+            position: absolute;
+            top: 0; left: 50%;
+            transform: translateX(-50%) translateZ(2px);
+            width: 110px; height: 26px;
+            background: #0A1128;
+            border-bottom-left-radius: 14px;
+            border-bottom-right-radius: 14px;
+            z-index: 30;
+        }
+
+        /* Cinematic 60fps independent floating animations */
+        @keyframes float-bot {
+            0%, 100% { transform: translateZ(0px); }
+            50% { transform: translateZ(15px); }
+        }
+        @keyframes float-mid {
+            0%, 100% { transform: translateZ(90px); }
+            50% { transform: translateZ(110px); }
+        }
+        @keyframes float-top {
+            0%, 100% { transform: translateZ(180px); }
+            50% { transform: translateZ(205px); }
+        }
+
+        /* Infinite Marquee */
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            animation: marquee 120s linear infinite;
+        }
+        .animate-marquee:hover {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+
+<body class="font-sans antialiased bg-noise selection:bg-gold-light/30">
+    <!-- Navbar -->
+    <header class="fixed top-0 w-full z-50 bg-cream-bg/80 backdrop-blur-md border-b elegant-border transition-all h-20 md:h-24 shadow-sm">
+        <div class="flex justify-between items-center px-6 md:px-16 h-full max-w-[1400px] mx-auto">
+            <!-- Logo (Perfectly cropped and structurally integrated) -->
+            <a href="#" class="flex items-center h-full py-3 md:py-4">
+                <img src="assets/logo_cinta_cropped.png" alt="Sizes Logo" class="h-full w-auto object-contain drop-shadow-md hover:scale-105 transition-transform duration-500 origin-left" />
+            </a>
+            
+            <!-- Navbar Links (Pushed Right) -->
+            <div class="flex items-center gap-8 lg:gap-12 ml-auto">
+                <nav class="flex gap-8 lg:gap-12 items-center">
+                    <a href="#features" class="text-navy-muted text-sm font-medium tracking-wide uppercase hover:text-gold-accent transition-colors duration-300" data-en="Features" data-es="Características">Características</a>
+                    <a href="#early-access" class="text-navy-muted text-sm font-medium tracking-wide uppercase hover:text-gold-accent transition-colors duration-300" data-en="Early Access" data-es="Acceso Anticipado">Acceso Anticipado</a>
+                </nav>
+                
+                <!-- Language Toggle -->
+                <div id="langToggle" class="flex items-center gap-2 text-sm font-medium cursor-pointer group">
+                    <span id="lang-es" class="text-navy-deep font-semibold border-b border-navy-deep pb-0.5 transition-all">ES</span>
+                    <span class="text-gray-300 select-none">/</span>
+                    <span id="lang-en" class="text-gray-400 group-hover:text-navy-deep transition-all">EN</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Full Bleed Hero Section -->
+        <section class="relative min-h-[100dvh] flex items-center pt-24 overflow-hidden border-b elegant-border">
+            
+            <!-- True Full Width Background Image with Soft Fade -->
+            <div class="absolute inset-0 z-0 bg-cream-bg">
+                <!-- Display the user's full 1920x1080 composition -->
+                <img src="assets/hero_mother_final.png" alt="Sizes Lifestyle" data-en="Sizes Lifestyle" data-es="Estilo de vida Sizes" class="absolute inset-0 w-full h-full object-cover object-[right_top]" />
+                
+                <!-- Additional fade for text readability over entire section on all screen sizes -->
+                <div class="absolute inset-0 bg-gradient-to-r from-cream-bg via-cream-bg/80 to-transparent w-full lg:w-[45%] z-10 pointer-events-none"></div>
+            </div>
+
+            <div class="px-6 md:px-16 w-full max-w-[1400px] mx-auto relative z-20 flex flex-col lg:flex-row items-center gap-16">
+                <!-- Text Content -->
+                <div class="w-full lg:w-[55%] text-left mt-10 md:mt-20 lg:mt-0">
+                    
+                    <h1 class="font-editorial text-5xl md:text-7xl lg:text-[6rem] font-medium leading-[1.05] text-navy-deep mb-8 tracking-tight drop-shadow-sm" data-en="Your exact size<br><span class='italic text-gold-accent'>in any brand.</span>" data-es="Tu talla exacta<br><span class='italic text-gold-accent'>en cualquier marca.</span>">
+                        Tu talla exacta<br><span class="italic text-gold-accent">en cualquier marca.</span>
+                    </h1>
+                    
+                    <p class="text-gray-700 text-lg md:text-xl max-w-xl mb-12 font-medium leading-relaxed drop-shadow-sm" data-en="The easiest way to organize the whole family's sizes. Always get it right with the kids' clothes and forget about returns." data-es="La forma más fácil de organizar las tallas de toda la familia. Acierta siempre con la ropa de los peques y olvídate de las devoluciones.">
+                        La forma más fácil de organizar las tallas de toda la familia. Acierta siempre con la ropa de los peques y olvídate de las devoluciones.
+                    </p>
+                    
+                    <!-- Early Access -->
+                    <form id="earlyAccessForm" class="w-full max-w-lg relative backdrop-blur-sm bg-white/40 p-1 md:p-2 rounded-xl" action="#early-access">
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <input id="emailInput" class="bg-white/90 backdrop-blur-md border elegant-border focus:border-gold-accent focus:ring-1 focus:ring-gold-accent text-navy-deep px-6 py-4 rounded-lg flex-grow shadow-sm placeholder:text-gray-500 outline-none transition-all" placeholder="Tu correo electrónico" data-en="Your email address" data-es="Tu correo electrónico" type="email" required />
+                            <button type="submit" id="submitBtn" class="bg-navy-deep text-white font-medium px-8 py-4 rounded-lg hover:bg-navy-muted active:scale-[0.98] transition-all shadow-xl whitespace-nowrap" data-en="Get Access" data-es="Obtener Acceso">
+                                Obtener Acceso
+                            </button>
+                        </div>
+                        <p id="formFeedback" class="mt-3 text-sm font-medium text-green-700 font-bold drop-shadow-sm hidden" data-en="You're on the list. Keep an eye on your inbox." data-es="Estás en la lista. Revisa tu buzón pronto.">Estás en la lista. Revisa tu buzón pronto.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section (Split Isometric Layout) -->
+        <section id="features" class="py-24 md:py-32 bg-white border-y elegant-border overflow-hidden">
+            <div class="max-w-[1400px] mx-auto px-6 md:px-16 flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+                
+                <!-- Left Side: Copy & 2x2 Grid -->
+                <div class="w-full lg:w-[50%] xl:w-[45%] z-20">
+                    <div class="mb-16 text-center lg:text-left">
+                        <h2 class="font-editorial text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-medium text-navy-deep mb-6 leading-tight" data-en="Designed for <span class='italic text-gold-accent'>families.</span>" data-es="Pensado para las <span class='italic text-gold-accent'>familias.</span>">
+                            Pensado para las <span class="italic text-gold-accent">familias.</span>
+                        </h2>
+                        <p class="text-gray-500 md:text-lg font-light leading-relaxed max-w-xl mx-auto lg:mx-0" data-en="Forget the stress of buying kids' clothes. Keep everyone's measurements updated, 100% private and offline." data-es="Olvídate del estrés de comprar ropa para los niños. Pantalla de medidas de todos actualizadas de forma 100% privada y offline.">
+                            Olvídate del estrés de comprar ropa para los niños. Pantalla de medidas de todos actualizadas de forma 100% privada y offline.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12">
+                        
+                        <!-- Multi-Profile -->
+                        <div class="flex flex-col gap-4 text-center md:text-left items-center md:items-start group">
+                            <div class="relative h-14 w-14 mb-2">
+                                <div class="absolute inset-0 bg-orange-200 rounded-full blur-md opacity-40 group-hover:opacity-80 transition-opacity duration-500"></div>
+                                <div class="absolute inset-0 bg-white/70 backdrop-blur-sm rounded-2xl border border-white shadow-[0_8px_20px_-8px_rgba(234,88,12,0.3)] flex items-center justify-center transform transition-transform duration-500 group-hover:-translate-y-1">
+                                    <span class="material-symbols-outlined text-orange-600 !text-[26px]">group</span>
+                                </div>
+                            </div>
+                            <h3 class="font-editorial text-xl text-navy-deep font-medium" data-en="For Family & Friends" data-es="Familia y Amigos">Familia y Amigos</h3>
+                            <p class="text-gray-500 font-light text-sm leading-relaxed" data-en="Family and friends in one place. Note down your kids' sizes and share them with the grandparents in a second." data-es="Toda la familia y amigos en un solo lugar. Anota las tallas de tus hijos y compártelas con los abuelos en un segundo.">
+                                Toda la familia y amigos en un solo lugar. Anota las tallas de tus hijos y compártelas con los abuelos en un segundo.
+                            </p>
+                        </div>
+
+                        <!-- Offline First -->
+                        <div class="flex flex-col gap-4 text-center md:text-left items-center md:items-start group">
+                            <div class="relative h-14 w-14 mb-2">
+                                <div class="absolute inset-0 bg-sky-200 rounded-full blur-md opacity-40 group-hover:opacity-80 transition-opacity duration-500"></div>
+                                <div class="absolute inset-0 bg-white/70 backdrop-blur-sm rounded-2xl border border-white shadow-[0_8px_20px_-8px_rgba(2,132,199,0.3)] flex items-center justify-center transform transition-transform duration-500 group-hover:-translate-y-1">
+                                    <span class="material-symbols-outlined text-sky-600 !text-[26px]">wifi_off</span>
+                                </div>
+                            </div>
+                            <h3 class="font-editorial text-xl text-navy-deep font-medium" data-en="Always Offline" data-es="Siempre Offline">Siempre Offline</h3>
+                            <p class="text-gray-500 font-light text-sm leading-relaxed" data-en="No signal in the basement fitting room? No problem. Your data is on your phone, not the internet." data-es="¿Sin cobertura en el probador del sótano? Sin problemas. Tus datos están en tu móvil, no en internet.">
+                                ¿Sin cobertura en el probador del sótano? Sin problemas. Tus datos están en tu móvil, no en internet.
+                            </p>
+                        </div>
+
+                        <!-- Privacy -->
+                        <div class="flex flex-col gap-4 text-center md:text-left items-center md:items-start group">
+                            <div class="relative h-14 w-14 mb-2">
+                                <div class="absolute inset-0 bg-violet-200 rounded-full blur-md opacity-40 group-hover:opacity-80 transition-opacity duration-500"></div>
+                                <div class="absolute inset-0 bg-white/70 backdrop-blur-sm rounded-2xl border border-white shadow-[0_8px_20px_-8px_rgba(124,58,237,0.3)] flex items-center justify-center transform transition-transform duration-500 group-hover:-translate-y-1">
+                                    <span class="material-symbols-outlined text-violet-600 !text-[26px]">shield_lock</span>
+                                </div>
+                            </div>
+                            <h3 class="font-editorial text-xl text-navy-deep font-medium" data-en="Absolute Privacy" data-es="Privacidad Absoluta">Privacidad Absoluta</h3>
+                            <p class="text-gray-500 font-light text-sm leading-relaxed" data-en="We don't sell your data. We don't even see it. Everything stays securely on your device." data-es="No vendemos tus datos. Ni siquiera los vemos. Todo se queda de forma segura en tu dispositivo.">
+                                No vendemos tus datos. Ni siquiera los vemos. Todo se queda de forma segura en tu dispositivo.
+                            </p>
+                        </div>
+
+                        <!-- Exact Brands -->
+                        <div class="flex flex-col gap-4 text-center md:text-left items-center md:items-start group">
+                            <div class="relative h-14 w-14 mb-2">
+                                <div class="absolute inset-0 bg-rose-200 rounded-full blur-md opacity-40 group-hover:opacity-80 transition-opacity duration-500"></div>
+                                <div class="absolute inset-0 bg-white/70 backdrop-blur-sm rounded-2xl border border-white shadow-[0_8px_20px_-8px_rgba(225,29,72,0.3)] flex items-center justify-center transform transition-transform duration-500 group-hover:-translate-y-1">
+                                    <span class="material-symbols-outlined text-rose-600 !text-[26px]">sell</span>
+                                </div>
+                            </div>
+                            <h3 class="font-editorial text-xl text-navy-deep font-medium" data-en="Specific Brands" data-es="Marcas Específicas">Marcas Específicas</h3>
+                            <p class="text-gray-500 font-light text-sm leading-relaxed" data-en="Does that brand run small? Add custom notes and brands to guarantee the perfect fit every time." data-es="¿Esa marca talla pequeño? Añade notas y marcas personalizadas para garantizar el ajuste perfecto siempre.">
+                                ¿Esa marca talla pequeño? Añade notas y marcas personalizadas para garantizar el ajuste perfecto siempre.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Right Side: Native CSS Isometric Focus -->
+                <div class="w-full lg:w-[50%] xl:w-[55%] flex justify-center lg:justify-end relative z-10 mt-10 lg:mt-0 h-[600px] md:h-[700px] lg:h-[800px] iso-scene">
+                    <!-- Subtle glowing background drop behind the phones -->
+                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60%] h-[60%] bg-[#E8C082]/15 rounded-full blur-[100px] z-0 pointer-events-none"></div>
+                    
+                    <div class="iso-container">
+                        <!-- Bottom Left Phone (Settings/Profile) -->
+                        <div class="iso-phone" style="top: 45%; left: 0%; animation: float-bot 6s ease-in-out infinite;">
+                            <div class="iso-notch"></div>
+                            <img src="assets/screenshots/ingles/Clear/new profile child.jpeg" class="w-full h-full object-cover object-top" alt="App Profile Screen" data-en="App Profile Screen" data-es="Pantalla de Perfil de la App" />
+                        </div>
+
+                        <!-- Middle Center Phone (Sizes List) -->
+                        <div class="iso-phone" style="top: 20%; left: 25%; animation: float-mid 6s ease-in-out infinite 1s;">
+                            <div class="iso-notch"></div>
+                            <img src="assets/screenshots/ingles/Clear/brand sizes woman.jpeg" class="w-full h-full object-cover object-top" alt="App Sizes Screen" data-en="App Sizes Screen" data-es="Pantalla de Tallas de la App" />
+                        </div>
+
+                        <!-- Top Right Phone (Home/Wardrobe) -->
+                        <div class="iso-phone" style="top: -5%; left: 50%; animation: float-top 6s ease-in-out infinite 2s;">
+                            <div class="iso-notch"></div>
+                            <img src="assets/screenshots/ingles/Clear/home 3 users.jpeg" class="w-full h-full object-cover object-top" alt="App Home Screen" data-en="App Home Screen" data-es="Pantalla de Inicio de la App" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Brands Marquee Section -->
+        <section class="py-16 md:py-20 bg-[#FDFBF7] border-b border-t elegant-border overflow-hidden">
+            <div class="text-center mb-10 px-6">
+                <h3 class="font-editorial text-2xl md:text-3xl text-navy-muted" data-en="Take your favorite brands with you." data-es="Lleva tus marcas favoritas contigo.">
+                    Lleva tus marcas favoritas contigo.
+                </h3>
+            </div>
+            
+            <!-- Infinite Text Carousel -->
+            <div class="relative w-full flex items-center overflow-hidden h-16 md:h-20">
+                <!-- Soft Fade Edges (Using cream background to blend perfectly) -->
+                <div class="absolute left-0 top-0 w-20 md:w-56 h-full bg-gradient-to-r from-[#FDFBF7] to-transparent z-10 pointer-events-none"></div>
+                <div class="absolute right-0 top-0 w-20 md:w-56 h-full bg-gradient-to-l from-[#FDFBF7] to-transparent z-10 pointer-events-none"></div>
+                
+                <!-- Moving Track -->
+                <div class="flex animate-marquee gap-24 px-12 w-max items-center h-full text-gray-400 opacity-60">
+                    <!-- Set 1 (17 Brands) -->
+                    <span class="font-serif font-black text-3xl tracking-tighter" style="font-family: 'Playfair Display', serif; transform: scaleX(1.15);">ZARA</span>
+                    <span class="font-sans font-black text-3xl italic tracking-tighter">H&M</span>
+                    <span class="font-sans font-black text-2xl tracking-[0.2em] uppercase">Mango</span>
+                    <span class="font-sans font-black text-xl tracking-[0.1em] border-[3px] border-current px-2 py-[2px] uppercase">GAP</span>
+                    <span class="font-sans font-bold text-2xl tracking-normal uppercase">Sfera</span>
+                    <span class="font-sans font-medium text-2xl tracking-[0.1em] lowercase" style="font-family: 'Century Gothic', Arial, sans-serif;">mayoral</span>
+                    <span class="font-sans font-bold text-2xl tracking-tighter uppercase">Benetton</span>
+                    <span class="font-sans font-black text-2xl tracking-tighter uppercase" style="font-family: 'Arial Black', sans-serif;">Primark</span>
+                    <span class="font-serif font-black text-3xl tracking-widest uppercase" style="transform: scaleY(0.9);">C&A</span>
+                    <span class="font-sans font-black text-3xl tracking-tighter lowercase">kiabi</span>
+                    <span class="font-sans font-black text-3xl italic tracking-tight lowercase">lefties</span>
+                    <span class="font-sans font-bold text-2xl lowercase tracking-wider">boboli</span>
+                    <span class="font-sans font-light text-2xl tracking-[0.3em] uppercase">GOCCO</span>
+                    <span class="font-sans font-black text-2xl tracking-tight uppercase">CHICCO</span>
+                    <span class="font-serif font-bold text-2xl tracking-tight uppercase">PETIT BATEAU</span>
+                    <span class="font-sans font-black text-3xl tracking-tighter uppercase">Zippy</span>
+                    <span class="font-serif font-bold text-2xl tracking-tight uppercase">NECK&NECK</span>
+                    
+                    <!-- Set 2 (Duplicate to loop seamlessly) -->
+                    <span class="font-serif font-black text-3xl tracking-tighter" style="font-family: 'Playfair Display', serif; transform: scaleX(1.15);">ZARA</span>
+                    <span class="font-sans font-black text-3xl italic tracking-tighter">H&M</span>
+                    <span class="font-sans font-black text-2xl tracking-[0.2em] uppercase">Mango</span>
+                    <span class="font-sans font-black text-xl tracking-[0.1em] border-[3px] border-current px-2 py-[2px] uppercase">GAP</span>
+                    <span class="font-sans font-bold text-2xl tracking-normal uppercase">Sfera</span>
+                    <span class="font-sans font-medium text-2xl tracking-[0.1em] lowercase" style="font-family: 'Century Gothic', Arial, sans-serif;">mayoral</span>
+                    <span class="font-sans font-bold text-2xl tracking-tighter uppercase">Benetton</span>
+                    <span class="font-sans font-black text-2xl tracking-tighter uppercase" style="font-family: 'Arial Black', sans-serif;">Primark</span>
+                    <span class="font-serif font-black text-3xl tracking-widest uppercase" style="transform: scaleY(0.9);">C&A</span>
+                    <span class="font-sans font-black text-3xl tracking-tighter lowercase">kiabi</span>
+                    <span class="font-sans font-black text-3xl italic tracking-tight lowercase">lefties</span>
+                    <span class="font-sans font-bold text-2xl lowercase tracking-wider">boboli</span>
+                    <span class="font-sans font-light text-2xl tracking-[0.3em] uppercase">GOCCO</span>
+                    <span class="font-sans font-black text-2xl tracking-tight uppercase">CHICCO</span>
+                    <span class="font-serif font-bold text-2xl tracking-tight uppercase">PETIT BATEAU</span>
+                    <span class="font-sans font-black text-3xl tracking-tighter uppercase">Zippy</span>
+                    <span class="font-serif font-bold text-2xl tracking-tight uppercase">NECK&NECK</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA End -->
+        <section id="early-access" class="py-32 bg-white w-full relative z-20">
+            <div class="px-6 max-w-4xl mx-auto text-center">
+                <h2 class="font-editorial text-5xl md:text-6xl font-medium text-navy-deep mb-8 leading-tight" data-en="The peace of mind of <br><span class='italic text-gold-accent'>always</span> getting it right." data-es="La tranquilidad de <br><span class='italic text-gold-accent'>acertar</span> siempre.">
+                    La tranquilidad de <br><span class="italic text-gold-accent">acertar</span> siempre.
+                </h2>
+                <p class="text-gray-500 md:text-xl font-light mb-12 max-w-2xl mx-auto" data-en="Join now and be one of the first families to discover the app that will change your shopping." data-es="Únete ahora y sé una de las primeras familias en descubrir la app que cambiará vuestras compras.">
+                    Únete ahora y sé una de las primeras familias en descubrir la app que cambiará vuestras compras.
+                </p>
+                
+                <form id="footerEarlyAccessForm" class="w-full max-w-lg mx-auto relative bg-cream-bg p-2 rounded-xl border elegant-border shadow-sm">
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <input id="footerEmailInput" class="bg-white border elegant-border focus:border-gold-accent focus:ring-1 focus:ring-gold-accent text-navy-deep px-6 py-4 rounded-lg flex-grow shadow-sm placeholder:text-gray-400 outline-none transition-all" placeholder="Tu correo electrónico" data-en="Your email address" data-es="Tu correo electrónico" type="email" required />
+                        <button type="submit" id="footerSubmitBtn" class="bg-navy-deep text-white font-medium px-8 py-4 rounded-lg hover:bg-navy-muted active:scale-[0.98] transition-all shadow-md whitespace-nowrap" data-en="Get Access" data-es="Solicitar Acceso">
+                            Solicitar Acceso
+                        </button>
+                    </div>
+                    <p id="footerFormFeedback" class="mt-4 text-sm font-medium text-green-700 hidden" data-en="You're on the list. Keep an eye on your inbox." data-es="¡Estás en la lista! Revisa tu buzón pronto.">¡Estás en la lista! Revisa tu buzón pronto.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-cream-bg border-t elegant-border py-12 md:py-20">
+        <div class="max-w-[1400px] mx-auto px-6 md:px-16 flex flex-col md:flex-row justify-between items-center md:items-end gap-10">
+            <!-- Footer Branding -->
+            <div class="flex flex-col items-center md:items-start gap-5">
+                <img src="assets/logo_cinta_cropped.png" alt="Sizes Logo" data-en="Sizes Logo" data-es="Logo de Sizes" class="h-10 md:h-14 opacity-90 object-contain drop-shadow-sm" />
+                <p class="text-gray-400 text-xs tracking-[0.1em] uppercase">© <span id="year"></span> SIZES. <span data-en="ALL RIGHTS RESERVED." data-es="TODOS LOS DERECHOS RESERVADOS.">TODOS LOS DERECHOS RESERVADOS.</span></p>
+            </div>
+            
+            <!-- Footer Links -->
+            <div class="flex gap-8">
+                <a href="#" class="text-gray-500 text-sm hover:text-navy-deep transition-colors" data-en="Privacy" data-es="Privacidad">Privacidad</a>
+                <a href="#" class="text-gray-500 text-sm hover:text-navy-deep transition-colors" data-en="Terms" data-es="Términos">Términos</a>
+                <a href="mailto:hello@sizes.es" class="text-gray-500 text-sm hover:text-navy-deep transition-colors" data-en="Contact" data-es="Contacto">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script Logic -->
+    <script src="script.js"></script>
+</body>
+</html>
