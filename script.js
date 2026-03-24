@@ -86,9 +86,9 @@ document.addEventListener('DOMContentLoaded', () => {
         
         if (lang === 'es') {
             if (promoImg) promoImg.src = 'assets/promo/testers es.png';
-            if (mockup1) mockup1.src = 'assets/screenshots/espanol/clear/new profile child.jpeg';
+            if (mockup1) mockup1.src = 'assets/screenshots/espanol/clear/perfil niño nuevo.jpeg';
             if (mockup2) mockup2.src = 'assets/screenshots/espanol/clear/brand sizes woman.jpeg';
-            if (mockup3) mockup3.src = 'assets/screenshots/espanol/clear/home 3 users.jpeg';
+            if (mockup3) mockup3.src = 'assets/screenshots/espanol/clear/home 3 usuarios.jpeg';
         } else {
             if (promoImg) promoImg.src = 'assets/promo/testers en.png';
             if (mockup1) mockup1.src = 'assets/screenshots/ingles/clear/new profile child.jpeg';
