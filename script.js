@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const form = e.target;
         const emailInput = form.querySelector('input[type="email"]');
         const submitBtn = form.querySelector('button[type="submit"]');
-        const formFeedback = form.querySelector('[id$="FormFeedback"]');
+        const formFeedback = form.querySelector('.form-feedback-message');
 
         const email = emailInput.value.trim();
         if (!email) return;
