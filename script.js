@@ -154,13 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         // Update browser validation messages
-        document.querySelectorAll('input[required]').forEach(input => {
-            if (input.type === 'checkbox') {
-                input.setCustomValidity(translations[lang].validationCheckbox);
-            } else if (input.type === 'email') {
-                input.setCustomValidity(''); // Reset to let browser handle format or set custom
-            }
-        });
+        updateValidationMessages();
 
         // Toggle buttons
         if (langEsBtn && langEnBtn) {
@@ -183,24 +177,34 @@ document.addEventListener('DOMContentLoaded', () => {
     if (langEsBtn) langEsBtn.addEventListener('click', () => switchLanguage('es'));
     if (langEnBtn) langEnBtn.addEventListener('click', () => switchLanguage('en'));
 
-    // Handle dynamic validation reset on input
-    document.querySelectorAll('input[required]').forEach(input => {
-        input.addEventListener('input', (e) => {
-            e.target.setCustomValidity('');
-        });
-        input.addEventListener('invalid', (e) => {
-            const lang = window.currentLang;
-            if (e.target.type === 'checkbox') {
-                e.target.setCustomValidity(translations[lang].validationCheckbox);
-            } else if (e.target.type === 'email') {
-                if (e.target.value === '') {
-                    e.target.setCustomValidity(lang === 'en' ? 'Please fill in this field.' : 'Por favor, rellena este campo.');
-                } else {
-                    e.target.setCustomValidity(translations[lang].validationEmail);
+    function updateValidationMessages() {
+        const lang = window.currentLang;
+        document.querySelectorAll('input[required]').forEach(input => {
+            // Reset first to get clean validity state
+            input.setCustomValidity('');
+            
+            if (input.type === 'checkbox') {
+                if (!input.checked) {
+                    input.setCustomValidity(translations[lang].validationCheckbox);
+                }
+            } else if (input.type === 'email') {
+                if (input.value === '') {
+                    input.setCustomValidity(lang === 'en' ? 'Please fill in this field.' : 'Por favor, rellena este campo.');
+                } else if (!input.validity.valid) {
+                    input.setCustomValidity(translations[lang].validationEmail);
                 }
             }
         });
+    }
+
+    // Handle dynamic validation reset on input
+    document.querySelectorAll('input[required]').forEach(input => {
+        input.addEventListener('input', updateValidationMessages);
+        input.addEventListener('change', updateValidationMessages);
     });
+
+    // Initial run
+    updateValidationMessages();
 
     // 6. Modal Logic
     window.openLegalModal = function(type) {
