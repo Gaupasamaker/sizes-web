@@ -71,15 +71,29 @@ document.addEventListener('DOMContentLoaded', () => {
         if (lang === 'es') {
             langEsBtn.className = 'text-navy-deep font-semibold border-b border-navy-deep pb-0.5 transition-all';
             langEnBtn.className = 'text-gray-400 group-hover:text-navy-deep transition-all';
-            // Change promo image
-            if (promoImg) promoImg.src = 'assets/promo/testers ES.png';
             document.documentElement.lang = 'es';
         } else {
             langEnBtn.className = 'text-navy-deep font-semibold border-b border-navy-deep pb-0.5 transition-all';
             langEsBtn.className = 'text-gray-400 group-hover:text-navy-deep transition-all';
-            // Change promo image
-            if (promoImg) promoImg.src = 'assets/promo/testers EN.png';
             document.documentElement.lang = 'en';
+        }
+
+        // Update promotional and mockup images
+        const promoImg = document.getElementById('promo-img');
+        const mockup1 = document.getElementById('mockup-1');
+        const mockup2 = document.getElementById('mockup-2');
+        const mockup3 = document.getElementById('mockup-3');
+        
+        if (lang === 'es') {
+            if (promoImg) promoImg.src = 'assets/promo/testers es.png';
+            if (mockup1) mockup1.src = 'assets/screenshots/espanol/clear/new profile child.jpeg';
+            if (mockup2) mockup2.src = 'assets/screenshots/espanol/clear/brand sizes woman.jpeg';
+            if (mockup3) mockup3.src = 'assets/screenshots/espanol/clear/home 3 users.jpeg';
+        } else {
+            if (promoImg) promoImg.src = 'assets/promo/testers en.png';
+            if (mockup1) mockup1.src = 'assets/screenshots/ingles/clear/new profile child.jpeg';
+            if (mockup2) mockup2.src = 'assets/screenshots/ingles/clear/brand sizes woman.jpeg';
+            if (mockup3) mockup3.src = 'assets/screenshots/ingles/clear/home 3 users.jpeg';
         }
 
         // Update all translatable text elements
