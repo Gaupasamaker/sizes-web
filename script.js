@@ -88,6 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const formData = new FormData();
             formData.append('email', email);
+            formData.append('lang', window.currentLang || 'es');
 
             const response = await fetch('form-handler.php', {
                 method: 'POST',

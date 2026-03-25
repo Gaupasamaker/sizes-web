@@ -6,8 +6,9 @@
 
 header('Content-Type: application/json');
 
-// 1. Get the email from POST
+// 1. Get data from POST
 $email = isset($_POST['email']) ? filter_var($_POST['email'], FILTER_SANITIZE_EMAIL) : null;
+$lang = isset($_POST['lang']) ? htmlspecialchars($_POST['lang']) : 'es';
 
 if (!$email || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
     echo json_encode(['status' => 'error', 'message' => 'Invalid email address.']);
@@ -17,7 +18,7 @@ if (!$email || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
 // 2. Configuration
 $to = "info@sizes.es";
 $subject = "Nuevo Registro Early Access - Sizes.es";
-$message = "Has recibido una nueva solicitud de acceso temprano:\n\nEmail: " . $email . "\nFecha: " . date("Y-m-d H:i:s");
+$message = "Has recibido una nueva solicitud de acceso temprano:\n\nEmail: " . $email . "\nIdioma: " . strtoupper($lang) . "\nFecha: " . date("Y-m-d H:i:s");
 
 // IMPORTANT: Using info@sizes.es as sender to improve deliverability on Hostinger
 $headers = "From: info@sizes.es\r\n" .
@@ -28,7 +29,7 @@ $headers = "From: info@sizes.es\r\n" .
 $mailSent = mail($to, $subject, $message, $headers);
 
 // 4. Backup (Always saves to server)
-file_put_contents('leads.txt', date("Y-m-d H:i:s") . " - " . $email . PHP_EOL, FILE_APPEND);
+file_put_contents('leads.txt', date("Y-m-d H:i:s") . " - " . $email . " [" . strtoupper($lang) . "]" . PHP_EOL, FILE_APPEND);
 
 // 5. Response
 if ($mailSent) {
