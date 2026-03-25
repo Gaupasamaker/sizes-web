@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -186,25 +186,25 @@
 
 <body class="font-sans antialiased bg-noise selection:bg-gold-light/30">
     <!-- Navbar -->
-    <header class="fixed top-0 w-full z-50 bg-cream-bg/80 backdrop-blur-md border-b elegant-border transition-all h-20 md:h-24 shadow-sm">
+    <header class="fixed top-0 w-full z-50 bg-cream-bg/80 backdrop-blur-md border-b elegant-border transition-all h-16 md:h-24 shadow-sm">
         <div class="flex justify-between items-center px-6 md:px-16 h-full max-w-[1400px] mx-auto">
             <!-- Logo (Perfectly cropped and structurally integrated) -->
-            <a href="#" class="flex items-center h-full py-3 md:py-4">
+            <a href="#" class="flex items-center h-full py-3 md:py-4 min-w-[120px]">
                 <img src="assets/logo_cinta_cropped.png" alt="Sizes Logo" class="h-full w-auto object-contain drop-shadow-md hover:scale-105 transition-transform duration-500 origin-left" />
             </a>
             
             <!-- Navbar Links (Pushed Right) -->
             <div class="flex items-center gap-8 lg:gap-12 ml-auto">
-                <nav class="flex gap-8 lg:gap-12 items-center">
-                    <a href="#features" class="text-navy-muted text-sm font-medium tracking-wide uppercase hover:text-gold-accent transition-colors duration-300" data-en="Features" data-es="Características">Características</a>
-                    <a href="#early-access" class="text-navy-muted text-sm font-medium tracking-wide uppercase hover:text-gold-accent transition-colors duration-300" data-en="Early Access" data-es="Acceso Anticipado">Acceso Anticipado</a>
+                <nav class="hidden md:flex gap-8 lg:gap-12 items-center">
+                    <a href="#features" class="text-navy-muted text-sm font-medium tracking-wide uppercase hover:text-gold-accent transition-colors duration-300" data-en="Features" data-es="Características">Features</a>
+                    <a href="#early-access" class="text-navy-muted text-sm font-medium tracking-wide uppercase hover:text-gold-accent transition-colors duration-300" data-en="Early Access" data-es="Acceso Anticipado">Early Access</a>
                 </nav>
                 
                 <!-- Language Toggle -->
                 <div id="langToggle" class="flex items-center gap-2 text-sm font-medium cursor-pointer group">
-                    <span id="lang-es" class="text-navy-deep font-semibold border-b border-navy-deep pb-0.5 transition-all">ES</span>
+                    <span id="lang-es" class="text-gray-400 group-hover:text-navy-deep transition-all">ES</span>
                     <span class="text-gray-300 select-none">/</span>
-                    <span id="lang-en" class="text-gray-400 group-hover:text-navy-deep transition-all">EN</span>
+                    <span id="lang-en" class="text-navy-deep font-semibold border-b border-navy-deep pb-0.5 transition-all">EN</span>
                 </div>
             </div>
         </div>
@@ -228,19 +228,19 @@
                 <div class="w-full lg:w-[55%] text-left mt-10 md:mt-20 lg:mt-0">
                     
                     <h1 class="font-editorial text-5xl md:text-7xl lg:text-[6rem] font-medium leading-[1.05] text-navy-deep mb-8 tracking-tight drop-shadow-sm" data-en="Your exact size<br><span class='italic text-gold-accent'>in any brand.</span>" data-es="Tu talla exacta<br><span class='italic text-gold-accent'>en cualquier marca.</span>">
-                        Tu talla exacta<br><span class="italic text-gold-accent">en cualquier marca.</span>
+                        Your exact size<br><span class="italic text-gold-accent">in any brand.</span>
                     </h1>
                     
                     <p class="text-gray-700 text-lg md:text-xl max-w-xl mb-12 font-medium leading-relaxed drop-shadow-sm" data-en="The easiest way to organize the whole family's sizes. Always get it right with the kids' clothes and forget about returns." data-es="La forma más fácil de organizar las tallas de toda la familia. Acierta siempre con la ropa de los peques y olvídate de las devoluciones.">
-                        La forma más fácil de organizar las tallas de toda la familia. Acierta siempre con la ropa de los peques y olvídate de las devoluciones.
+                        The easiest way to organize the whole family's sizes. Always get it right with the kids' clothes and forget about returns.
                     </p>
                     
                     <!-- Early Access -->
                     <form id="earlyAccessForm" class="w-full max-w-lg relative backdrop-blur-sm bg-white/40 p-1 md:p-2 rounded-xl" action="#early-access">
                         <div class="flex flex-col sm:flex-row gap-3">
-                            <input id="emailInput" class="bg-white/90 backdrop-blur-md border elegant-border focus:border-gold-accent focus:ring-1 focus:ring-gold-accent text-navy-deep px-6 py-4 rounded-lg flex-grow shadow-sm placeholder:text-gray-500 outline-none transition-all" placeholder="Tu correo electrónico" data-en="Your email address" data-es="Tu correo electrónico" type="email" required />
+                            <input id="emailInput" class="bg-white/90 backdrop-blur-md border elegant-border focus:border-gold-accent focus:ring-1 focus:ring-gold-accent text-navy-deep px-6 py-4 rounded-lg flex-grow shadow-sm placeholder:text-gray-500 outline-none transition-all" placeholder="Your email address" data-en="Your email address" data-es="Tu correo electrónico" type="email" required />
                             <button type="submit" id="submitBtn" class="bg-navy-deep text-white font-medium px-8 py-4 rounded-lg hover:bg-navy-muted active:scale-[0.98] transition-all shadow-xl whitespace-nowrap" data-en="Get Access" data-es="Obtener Acceso">
-                                Obtener Acceso
+                                Get Access
                             </button>
                         </div>
                         <p id="formFeedback" class="form-feedback-message mt-3 text-sm font-medium text-green-700 font-bold drop-shadow-sm hidden" data-en="Thanks for registering! We'll send you an email to grant you access to Sizes." data-es="¡Gracias por registrarte! Te mandaremos un correo para darte acceso a Sizes.">¡Gracias por registrarte! Te mandaremos un correo para darte acceso a Sizes.</p>
@@ -248,7 +248,7 @@
                             <input type="checkbox" id="privacyConsent" class="w-4 h-4 rounded border-gray-300 text-navy-deep focus:ring-navy-deep cursor-pointer" required />
                             <label for="privacyConsent" class="text-[11px] text-gray-500 leading-none select-none cursor-pointer">
                                 <span data-en="I accept the" data-es="Acepto la">Acepto la</span> 
-                                <button type="button" class="legal-trigger underline hover:text-navy-deep transition-colors" data-modal="privacy" data-en="Privacy Policy" data-es="Política de Privacidad">Política de Privacidad</button>
+                                <button type="button" class="legal-trigger underline hover:text-navy-deep transition-colors" data-modal="privacy" data-en="Privacy Policy" data-es="Política de Privacidad">Privacy Policy</button>
                             </label>
                         </div>
                     </form>
@@ -264,10 +264,10 @@
                 <div class="w-full lg:w-[50%] xl:w-[45%] z-20">
                     <div class="mb-16 text-center lg:text-left">
                         <h2 class="font-editorial text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-medium text-navy-deep mb-6 leading-tight" data-en="Designed for <span class='italic text-gold-accent'>families.</span>" data-es="Pensado para las <span class='italic text-gold-accent'>familias.</span>">
-                            Pensado para las <span class="italic text-gold-accent">familias.</span>
+                            Designed for <span class="italic text-gold-accent">families.</span>
                         </h2>
                         <p class="text-gray-500 md:text-lg font-light leading-relaxed max-w-xl mx-auto lg:mx-0" data-en="Forget the stress of buying kids' clothes. Keep everyone's measurements updated, 100% private and offline." data-es="Olvídate del estrés de comprar ropa para los niños. Mantén las medidas de todos actualizadas de forma 100% privada y offline.">
-                            Olvídate del estrés de comprar ropa para los niños. Mantén las medidas de todos actualizadas de forma 100% privada y offline.
+                            Forget the stress of buying kids' clothes. Keep everyone's measurements updated, 100% private and offline.
                         </p>
                     </div>
 
@@ -281,9 +281,9 @@
                                     <span class="material-symbols-outlined text-orange-600 !text-[26px]">group</span>
                                 </div>
                             </div>
-                            <h3 class="font-editorial text-xl text-navy-deep font-medium" data-en="For Family & Friends" data-es="Familia y Amigos">Familia y Amigos</h3>
+                            <h3 class="font-editorial text-xl text-navy-deep font-medium" data-en="For Family & Friends" data-es="Familia y Amigos">For Family & Friends</h3>
                             <p class="text-gray-500 font-light text-sm leading-relaxed" data-en="Family and friends in one place. Note down your kids' sizes and share them with the grandparents in a second." data-es="Toda la familia y amigos en un solo lugar. Anota las tallas de tus hijos y compártelas con los abuelos en un segundo.">
-                                Toda la familia y amigos en un solo lugar. Anota las tallas de tus hijos y compártelas con los abuelos en un segundo.
+                                Family and friends in one place. Note down your kids' sizes and share them with the grandparents in a second.
                             </p>
                         </div>
 
@@ -309,9 +309,9 @@
                                     <span class="material-symbols-outlined text-violet-600 !text-[26px]">shield_lock</span>
                                 </div>
                             </div>
-                            <h3 class="font-editorial text-xl text-navy-deep font-medium" data-en="Absolute Privacy" data-es="Privacidad Absoluta">Privacidad Absoluta</h3>
+                            <h3 class="font-editorial text-xl text-navy-deep font-medium" data-en="Absolute Privacy" data-es="Privacidad Absoluta">Absolute Privacy</h3>
                             <p class="text-gray-500 font-light text-sm leading-relaxed" data-en="We don't sell your data. We don't even see it. Everything stays securely on your device." data-es="No vendemos tus datos. Ni siquiera los vemos. Todo se queda de forma segura en tu dispositivo.">
-                                No vendemos tus datos. Ni siquiera los vemos. Todo se queda de forma segura en tu dispositivo.
+                                We don't sell your data. We don't even see it. Everything stays securely on your device.
                             </p>
                         </div>
 
@@ -323,9 +323,9 @@
                                     <span class="material-symbols-outlined text-rose-600 !text-[26px]">sell</span>
                                 </div>
                             </div>
-                            <h3 class="font-editorial text-xl text-navy-deep font-medium" data-en="Specific Brands" data-es="Marcas Específicas">Marcas Específicas</h3>
+                            <h3 class="font-editorial text-xl text-navy-deep font-medium" data-en="Specific Brands" data-es="Marcas Específicas">Specific Brands</h3>
                             <p class="text-gray-500 font-light text-sm leading-relaxed" data-en="Does that brand run small? Add custom notes and brands to guarantee the perfect fit every time." data-es="¿Esa marca talla pequeño? Añade notas y marcas personalizadas para garantizar el ajuste perfecto siempre.">
-                                ¿Esa marca talla pequeño? Añade notas y marcas personalizadas para garantizar el ajuste perfecto siempre.
+                                Does that brand run small? Add custom notes and brands to guarantee the perfect fit every time.
                             </p>
                         </div>
 
@@ -365,7 +365,7 @@
         <section class="py-16 md:py-20 bg-[#FDFBF7] border-b border-t elegant-border overflow-hidden">
             <div class="text-center mb-10 px-6">
                 <h3 class="font-editorial text-2xl md:text-3xl text-navy-muted" data-en="Take your favorite brands with you." data-es="Lleva tus marcas favoritas contigo.">
-                    Lleva tus marcas favoritas contigo.
+                    Take your favorite brands with you.
                 </h3>
             </div>
             
@@ -425,22 +425,22 @@
                     La tranquilidad de <br><span class="italic text-gold-accent">acertar</span> siempre.
                 </h2>
                 <p class="text-gray-500 md:text-xl font-light mb-12 max-w-2xl mx-auto" data-en="Join now and be one of the first families to discover the app that will change your shopping." data-es="Únete ahora y sé una de las primeras familias en descubrir la app que cambiará vuestras compras.">
-                    Únete ahora y sé una de las primeras familias en descubrir la app que cambiará vuestras compras.
+                    Join now and be one of the first families to discover the app that will change your shopping.
                 </p>
                 
                 <form id="footerEarlyAccessForm" class="w-full max-w-lg mx-auto relative bg-cream-bg p-2 rounded-xl border elegant-border shadow-sm">
                     <div class="flex flex-col sm:flex-row gap-3">
-                        <input id="footerEmailInput" class="bg-white border elegant-border focus:border-gold-accent focus:ring-1 focus:ring-gold-accent text-navy-deep px-6 py-4 rounded-lg flex-grow shadow-sm placeholder:text-gray-400 outline-none transition-all" placeholder="Tu correo electrónico" data-en="Your email address" data-es="Tu correo electrónico" type="email" required />
+                        <input id="footerEmailInput" class="bg-white border elegant-border focus:border-gold-accent focus:ring-1 focus:ring-gold-accent text-navy-deep px-6 py-4 rounded-lg flex-grow shadow-sm placeholder:text-gray-400 outline-none transition-all" placeholder="Your email address" data-en="Your email address" data-es="Tu correo electrónico" type="email" required />
                         <button type="submit" id="footerSubmitBtn" class="bg-navy-deep text-white font-medium px-8 py-4 rounded-lg hover:bg-navy-muted active:scale-[0.98] transition-all shadow-md whitespace-nowrap" data-en="Get Access" data-es="Solicitar Acceso">
-                            Solicitar Acceso
+                            Get Access
                         </button>
                     </div>
-                    <p id="footerFormFeedback" class="form-feedback-message mt-4 text-sm font-medium text-green-700 hidden" data-en="Thanks for registering! We'll send you an email to grant you access to Sizes." data-es="¡Gracias por registrarte! Te mandaremos un correo para darte acceso a Sizes.">¡Gracias por registrarte! Te mandaremos un correo para darte acceso a Sizes.</p>
+                    <p id="footerFormFeedback" class="form-feedback-message mt-4 text-sm font-medium text-green-700 hidden" data-en="Thanks for registering! We'll send you an email to grant you access to Sizes." data-es="¡Gracias por registrarte! Te mandaremos un correo para darte acceso a Sizes.">Thanks for registering! We'll send you an email to grant you access to Sizes.</p>
                     <div class="mt-4 flex items-center justify-start gap-2">
                         <input type="checkbox" id="footerPrivacyConsent" class="w-4 h-4 rounded border-gray-300 text-navy-deep focus:ring-navy-deep cursor-pointer" required />
                         <label for="footerPrivacyConsent" class="text-[11px] text-gray-400 leading-none select-none cursor-pointer">
-                            <span data-en="I accept the" data-es="Acepto la">Acepto la</span> 
-                            <button type="button" class="legal-trigger underline hover:text-white transition-colors" data-modal="privacy" data-en="Privacy Policy" data-es="Política de Privacidad">Política de Privacidad</button>
+                            <span data-en="I accept the" data-es="Acepto la">I accept the</span> 
+                            <button type="button" class="legal-trigger underline hover:text-white transition-colors" data-modal="privacy" data-en="Privacy Policy" data-es="Política de Privacidad">Privacy Policy</button>
                         </label>
                     </div>
                 </form>
@@ -454,15 +454,15 @@
             <!-- Footer Branding -->
             <div class="flex flex-col items-center md:items-start gap-5">
                 <img src="assets/logo_cinta_cropped.png" alt="Sizes Logo" data-en="Sizes Logo" data-es="Logo de Sizes" class="h-10 md:h-14 opacity-90 object-contain drop-shadow-sm" />
-                <p class="text-gray-400 text-xs tracking-[0.1em] uppercase">© <span id="year"></span> SIZES. <span data-en="ALL RIGHTS RESERVED." data-es="TODOS LOS DERECHOS RESERVADOS.">TODOS LOS DERECHOS RESERVADOS.</span></p>
+                <p class="text-gray-400 text-xs tracking-[0.1em] uppercase">© <span id="year"></span> SIZES. <span data-en="ALL RIGHTS RESERVED." data-es="TODOS LOS DERECHOS RESERVADOS.">ALL RIGHTS RESERVED.</span></p>
             </div>
             
             <!-- Footer Links -->
             <div class="flex gap-8">
                 <ul class="flex gap-8">
-                    <li><button type="button" class="legal-trigger text-gray-500 text-sm hover:text-navy-deep transition-colors" data-modal="privacy" data-en="Privacy" data-es="Privacidad">Privacidad</button></li>
-                    <li><button type="button" class="legal-trigger text-gray-500 text-sm hover:text-navy-deep transition-colors" data-modal="terms" data-en="Terms" data-es="Términos">Términos</button></li>
-                    <li><a href="mailto:info@sizes.es" class="text-gray-500 text-sm hover:text-navy-deep transition-colors" data-en="Contact" data-es="Contacto">Contacto</a></li>
+                    <li><button type="button" class="legal-trigger text-gray-500 text-sm hover:text-navy-deep transition-colors" data-modal="privacy" data-en="Privacy" data-es="Privacidad">Privacy</button></li>
+                    <li><button type="button" class="legal-trigger text-gray-500 text-sm hover:text-navy-deep transition-colors" data-modal="terms" data-en="Terms" data-es="Términos">Terms</button></li>
+                    <li><a href="mailto:info@sizes.es" class="text-gray-500 text-sm hover:text-navy-deep transition-colors" data-en="Contact" data-es="Contacto">Contact</a></li>
                 </ul>
             </div>
         </div>

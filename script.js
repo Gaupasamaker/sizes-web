@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 5. Translation Logic
     const langEsBtn = document.getElementById('lang-es');
     const langEnBtn = document.getElementById('lang-en');
-    window.currentLang = 'es';
+    window.currentLang = 'en';
 
     function switchLanguage(lang) {
         window.currentLang = lang;

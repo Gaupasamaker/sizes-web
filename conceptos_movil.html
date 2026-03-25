@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Conceptos de Layout Adicionales</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+    <script>
+        tailwind.config = {
+          theme: {
+            fontFamily: {
+              serif: ["Playfair Display", "serif"],
+              sans: ["Inter", "sans-serif"]
+            }
+          }
+        }
+    </script>
+</head>
+<body class="bg-[#FDFBF7] text-[#0A1128] font-sans antialiased selection:bg-[#E8C082]/30">
+
+    <!-- Concepto 3: Arquitectónico (Peeking Phone) -->
+    <section class="min-h-[100dvh] flex flex-col items-center justify-end pt-32 overflow-hidden relative border-b border-gray-200">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#E8C082]/10 z-0 pointer-events-none"></div>
+        
+        <div class="text-center z-20 mb-16 px-6">
+            <span class="text-sm font-semibold tracking-widest text-[#1C2A4C] uppercase mb-4 block">Concepto 3</span>
+            <h2 class="text-5xl md:text-7xl font-serif mb-6 text-center text-[#0A1128]">Impacto Central.</h2>
+            <p class="text-lg md:text-xl text-gray-500 max-w-2xl text-center mx-auto">El dispositivo reina en el centro. Sube desde el pie de la pantalla anclando maravillosamente la sección, dándole a la UI un peso monumental.</p>
+        </div>
+        
+        <!-- CSS iPhone Frame -->
+        <div class="relative w-[340px] md:w-[400px] h-[700px] md:h-[800px] rounded-[50px] md:rounded-[60px] border-[14px] md:border-[16px] border-[#0A1128] bg-[#0A1128] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] overflow-hidden z-20 translate-y-24 group hover:translate-y-16 transition-transform duration-700 ease-out">
+            <!-- iPhone Notch -->
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[140px] h-[30px] bg-[#0A1128] rounded-b-2xl z-30"></div>
+            <!-- Dynamic Screenshot -->
+            <img src="../images/screenshots/ingles/Clear/home 4 users.jpeg" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-[2s]" />
+        </div>
+    </section>
+
+    <!-- Concepto 4: Integración Orgánica Side-by-Side -->
+    <section class="min-h-[100dvh] flex items-center justify-center py-32 bg-white relative overflow-hidden">
+        <div class="max-w-[1400px] mx-auto px-6 md:px-16 flex flex-col lg:flex-row items-center gap-16 lg:gap-32 w-full">
+            
+            <div class="flex-1 w-full relative z-20">
+                <span class="text-sm font-semibold tracking-widest text-[#1C2A4C] uppercase mb-4 block">Concepto 4</span>
+                <h2 class="text-5xl md:text-6xl font-serif mb-8 text-[#0A1128] leading-tight">Integración<br><span class="italic text-[#C5A065]">orgánica.</span></h2>
+                <p class="text-lg md:text-xl text-gray-500 mb-10 leading-relaxed font-light">El teléfono flota suavemente junto al texto con una ligera rotación. Rompe la cuadrícula rígida para dar un aspecto más editorial, lujoso y dinámico, como si el móvil estuviera suspendido en el aire.</p>
+                <div class="flex gap-4">
+                    <div class="h-12 w-12 rounded-full border border-gray-200 flex items-center justify-center">1</div>
+                    <div class="h-12 w-12 rounded-full border border-gray-200 flex items-center justify-center">2</div>
+                    <div class="h-12 w-12 rounded-full border border-gray-200 flex items-center justify-center">3</div>
+                </div>
+            </div>
+
+            <div class="flex-1 w-full relative flex justify-center lg:justify-end">
+                <!-- Glowing backdrop -->
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-[#E8C082]/15 rounded-full blur-[80px] -z-10 pointer-events-none"></div>
+                
+                <!-- CSS iPhone Floating -->
+                <div class="relative w-[300px] h-[620px] rounded-[45px] border-[12px] border-[#0A1128] bg-[#0A1128] shadow-[0_40px_80px_-20px_rgba(10,17,40,0.4)] overflow-hidden transform -rotate-6 hover:rotate-0 hover:-translate-y-4 transition-all duration-[1s] ease-out">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[120px] h-[25px] bg-[#0A1128] rounded-b-2xl z-30"></div>
+                    <!-- Dynamic Screenshot -->
+                    <img src="../images/screenshots/ingles/Clear/new size menu.jpeg" class="w-full h-full object-cover object-top" />
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+</body>
+</html>
