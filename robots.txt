@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sizes.es/sitemap.xml
