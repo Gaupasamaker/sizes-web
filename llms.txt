@@ -1,0 +1,22 @@
+# Sizes
+
+The easiest way to organize the whole family's sizes. Always get it right with the kids' clothes and forget about returns.
+
+## Description
+Sizes is a privacy-first mobile application designed for families to keep track of clothing and shoe sizes across different brands. It eliminates the guesswork and stress of shopping for children by providing a secure, offline-first database of personal measurements and brand-specific notes.
+
+## Key Features
+- **Family & Friends Management**: Store sizes for multiple people in one place and share them easily.
+- **Always Offline**: Data is stored locally on the device for maximum speed and availability (no internet required).
+- **Absolute Privacy**: No data is sold or stored on external servers. Everything stays on the user's device.
+- **Brand-Specific Customization**: Add notes for brands that run small or large to ensure a perfect fit.
+- **Intelligent Size Recommender**: Built-in logic to suggest the best size based on height and weight.
+
+## Technical Details
+- **Website**: https://sizes.es
+- **Tech Stack**: HTML5, Vanilla CSS3, Javascript (ES6+).
+- **Privacy Policy**: https://sizes.es/index.html#privacy
+- **Contact**: info@sizes.es
+
+## Status
+Currently in Early Access. Users can sign up on the landing page to be notified of the launch.
