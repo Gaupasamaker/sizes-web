@@ -18,12 +18,16 @@
       }
     </script>
     <style>
-        .article-body h2 { @apply font-editorial text-3xl md:text-4xl text-navy-deep mt-12 mb-6 border-b border-gray-200 pb-4; }
-        .article-body h3 { @apply font-sans font-semibold text-xl text-navy-deep mt-8 mb-4; }
-        .article-body p { @apply text-gray-700 text-lg leading-relaxed mb-6; }
-        .article-body ul { @apply list-disc list-inside mb-6 text-gray-700 space-y-2; }
-        .article-body .highlight-box { @apply bg-white p-8 rounded-2xl border border-gold-accent/20 shadow-sm my-8; }
-        .sidebar { position: sticky; top: 100px; }
+        .article-body h2 { @apply font-editorial text-3xl md:text-4xl text-navy-deep mt-16 mb-8 border-b border-gray-200 pb-4; }
+        .article-body h3 { @apply font-sans font-semibold text-2xl text-navy-deep mt-10 mb-5; }
+        .article-body p { @apply text-gray-700 text-lg md:text-xl leading-[1.8] mb-8 font-light; }
+        .article-body p:first-of-type { @apply text-navy-deep text-xl md:text-2xl leading-[1.7] mb-10 font-normal; }
+        .article-body p:first-of-type::first-letter { @apply font-editorial text-7xl float-left mr-4 mt-2 text-gold-accent leading-none; }
+        .article-body ul { @apply list-none mb-10 text-gray-700 space-y-4 pl-0; }
+        .article-body ul li { @apply relative pl-8 text-lg md:text-xl font-light leading-[1.8]; }
+        .article-body ul li::before { content: "•"; @apply absolute left-0 text-gold-accent text-3xl leading-none top-[-4px]; }
+        .article-body .highlight-box { @apply bg-white p-8 md:p-10 rounded-2xl border-l-[6px] border-gold-accent shadow-[0_4px_20px_-10px_rgba(0,0,0,0.1)] my-12; }
+        .sidebar { position: sticky; top: 120px; }
     </style>
 </head>
 <body class="bg-cream-bg font-sans antialiased text-navy-deep">
