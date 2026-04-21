@@ -70,58 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // 3. Early Access Form Logic
-    const handleForm = async (e) => {
-        e.preventDefault();
-        const form = e.target;
-        const emailInput = form.querySelector('input[type="email"]');
-        const submitBtn = form.querySelector('button[type="submit"]');
-        const formFeedback = form.querySelector('.form-feedback-message');
-
-        const email = emailInput.value.trim();
-        if (!email) return;
-
-        // UI Loading state
-        submitBtn.style.opacity = '0.7';
-        if (formFeedback) formFeedback.classList.add('hidden');
-
-        try {
-            const formData = new FormData();
-            formData.append('email', email);
-            formData.append('lang', window.currentLang || 'es');
-
-            const response = await fetch('form-handler.php', {
-                method: 'POST',
-                body: formData
-            });
-
-            const result = await response.json();
-            
-            if (result.status === 'success') {
-                if (formFeedback) {
-                    formFeedback.classList.remove('hidden');
-                    formFeedback.style.color = '#4E8D7C'; 
-                }
-                form.reset();
-            } else {
-                throw new Error(result.message);
-            }
-        } catch (error) {
-            if (formFeedback) {
-                formFeedback.classList.remove('hidden');
-                formFeedback.style.color = '#B85C5C';
-                formFeedback.textContent = window.currentLang === 'en' ? 'Error. Try again.' : 'Error. Inténtalo de nuevo.';
-            }
-        } finally {
-            submitBtn.style.opacity = '1';
-        }
-    };
-
-    const mainForm = document.getElementById('earlyAccessForm');
-    const footerForm = document.getElementById('footerEarlyAccessForm');
-
-    if (mainForm) mainForm.addEventListener('submit', handleForm);
-    if (footerForm) footerForm.addEventListener('submit', handleForm);
+    // 3. (Form Logic Removed - App is now Live on Play Store)
 
     // 4. Smooth Scrolling
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -154,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Update browser validation messages
+        // Update browser validation messages (though forms are mostly gone)
         updateValidationMessages();
 
         // Toggle buttons
@@ -162,6 +111,16 @@ document.addEventListener('DOMContentLoaded', () => {
             langEsBtn.className = lang === 'es' ? 'text-navy-deep font-semibold border-b border-navy-deep pb-0.5' : 'text-gray-400 hover:text-navy-deep transition-all';
             langEnBtn.className = lang === 'en' ? 'text-navy-deep font-semibold border-b border-navy-deep pb-0.5' : 'text-gray-400 hover:text-navy-deep transition-all';
         }
+
+        // Update Play Store Badges
+        const badges = ['play-store-badge-hero', 'play-store-badge-footer'];
+        badges.forEach(id => {
+            const el = document.getElementById(id);
+            if (el) {
+                el.src = `assets/google-play-badge-${lang}.png`;
+                el.alt = lang === 'en' ? 'Get it on Google Play' : 'Disponible en Google Play';
+            }
+        });
 
         // Mockups
         const mockupEs = document.querySelectorAll('.mockup-img-es');
@@ -206,6 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initial run
     updateValidationMessages();
+    switchLanguage(window.currentLang);
 
     // 6. Modal Logic
     window.openLegalModal = function(type) {

@@ -12,13 +12,7 @@
 
     <!-- Structured Data (Schema.org) -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "Sizes",
-      "operatingSystem": "iOS, Android",
-      "applicationCategory": "ShoppingApplication",
-      "description": "The easiest way to organize the whole family's sizes. Always get the perfect fit for your children and family.",
+      "description": "The easiest way to organize the whole family's sizes. Always get the perfect fit for your children and family with the Sizes app.",
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -215,7 +209,7 @@
             <div class="flex items-center gap-8 lg:gap-12 ml-auto">
                 <nav class="hidden md:flex gap-8 lg:gap-12 items-center">
                     <a href="#features" class="text-navy-muted text-sm font-medium tracking-wide uppercase hover:text-gold-accent transition-colors duration-300" data-en="Features" data-es="Características">Features</a>
-                    <a href="#early-access" class="text-navy-muted text-sm font-medium tracking-wide uppercase hover:text-gold-accent transition-colors duration-300" data-en="Early Access" data-es="Acceso Anticipado">Early Access</a>
+                    <a href="#download" class="text-navy-muted text-sm font-medium tracking-wide uppercase hover:text-gold-accent transition-colors duration-300" data-en="Download" data-es="Descargar">Download</a>
                 </nav>
                 
                 <!-- Language Toggle -->
@@ -253,23 +247,12 @@
                         The easiest way to organize the whole family's sizes. Always get it right with the kids' clothes and forget about returns.
                     </p>
                     
-                    <!-- Early Access -->
-                    <form id="earlyAccessForm" class="w-full max-w-lg relative backdrop-blur-sm bg-white/40 p-1 md:p-2 rounded-xl" action="#early-access">
-                        <div class="flex flex-col sm:flex-row gap-3">
-                            <input id="emailInput" class="bg-white/90 backdrop-blur-md border elegant-border focus:border-gold-accent focus:ring-1 focus:ring-gold-accent text-navy-deep px-6 py-4 rounded-lg flex-grow shadow-sm placeholder:text-gray-500 outline-none transition-all" placeholder="Your email address" data-en="Your email address" data-es="Tu correo electrónico" type="email" required />
-                            <button type="submit" id="submitBtn" class="bg-navy-deep text-white font-medium px-8 py-4 rounded-lg hover:bg-navy-muted active:scale-[0.98] transition-all shadow-xl whitespace-nowrap" data-en="Get Access" data-es="Obtener Acceso">
-                                Get Access
-                            </button>
-                        </div>
-                        <p id="formFeedback" class="form-feedback-message mt-3 text-sm font-medium text-green-700 font-bold drop-shadow-sm hidden" data-en="Thanks for registering! We'll send you an email to grant you access to Sizes." data-es="¡Gracias por registrarte! Te mandaremos un correo para darte acceso a Sizes.">Thanks for registering! We'll send you an email to grant you access to Sizes.</p>
-                        <div class="mt-4 flex items-center justify-start gap-2">
-                            <input type="checkbox" id="privacyConsent" class="w-4 h-4 rounded border-gray-300 text-navy-deep focus:ring-navy-deep cursor-pointer" required />
-                            <label for="privacyConsent" class="text-[11px] text-gray-500 leading-none select-none cursor-pointer">
-                                <span data-en="I accept the" data-es="Acepto la">I accept the</span> 
-                                <button type="button" class="legal-trigger underline hover:text-navy-deep transition-colors" data-modal="privacy" data-en="Privacy Policy" data-es="Política de Privacidad">Privacy Policy</button>
-                            </label>
-                        </div>
-                    </form>
+                    <!-- Download Button -->
+                    <div class="mt-8">
+                        <a href="https://play.google.com/store/apps/details?id=com.sizes.app" target="_blank" class="transition-transform hover:scale-105 active:scale-95 duration-300 inline-block">
+                            <img id="play-store-badge-hero" src="assets/google-play-badge-en.png" alt="Get it on Google Play" class="h-16 md:h-20 w-auto drop-shadow-lg" />
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -437,31 +420,20 @@
         </section>
 
         <!-- CTA End -->
-        <section id="early-access" class="py-32 bg-white w-full relative z-20">
+        <section id="download" class="py-32 bg-white w-full relative z-20">
             <div class="px-6 max-w-4xl mx-auto text-center">
                 <h2 class="font-editorial text-5xl md:text-6xl font-medium text-navy-deep mb-8 leading-tight" data-en="The peace of mind of <br><span class='italic text-gold-accent'>always</span> getting it right." data-es="La tranquilidad de <br><span class='italic text-gold-accent'>acertar</span> siempre.">
                     The peace of mind of <br><span class="italic text-gold-accent">always</span> getting it right.
                 </h2>
-                <p class="text-gray-500 md:text-xl font-light mb-12 max-w-2xl mx-auto" data-en="Join now and be one of the first families to discover the app that will change your shopping." data-es="Únete ahora y sé una de las primeras familias en descubrir la app que cambiará vuestras compras.">
-                    Join now and be one of the first families to discover the app that will change your shopping.
-                </p>
-                
-                <form id="footerEarlyAccessForm" class="w-full max-w-lg mx-auto relative bg-cream-bg p-2 rounded-xl border elegant-border shadow-sm">
-                    <div class="flex flex-col sm:flex-row gap-3">
-                        <input id="footerEmailInput" class="bg-white border elegant-border focus:border-gold-accent focus:ring-1 focus:ring-gold-accent text-navy-deep px-6 py-4 rounded-lg flex-grow shadow-sm placeholder:text-gray-400 outline-none transition-all" placeholder="Your email address" data-en="Your email address" data-es="Tu correo electrónico" type="email" required />
-                        <button type="submit" id="footerSubmitBtn" class="bg-navy-deep text-white font-medium px-8 py-4 rounded-lg hover:bg-navy-muted active:scale-[0.98] transition-all shadow-md whitespace-nowrap" data-en="Get Access" data-es="Solicitar Acceso">
-                            Get Access
-                        </button>
-                    </div>
-                    <p id="footerFormFeedback" class="form-feedback-message mt-4 text-sm font-medium text-green-700 hidden" data-en="Thanks for registering! We'll send you an email to grant you access to Sizes." data-es="¡Gracias por registrarte! Te mandaremos un correo para darte acceso a Sizes.">Thanks for registering! We'll send you an email to grant you access to Sizes.</p>
-                    <div class="mt-4 flex items-center justify-start gap-2">
-                        <input type="checkbox" id="footerPrivacyConsent" class="w-4 h-4 rounded border-gray-300 text-navy-deep focus:ring-navy-deep cursor-pointer" required />
-                        <label for="footerPrivacyConsent" class="text-[11px] text-gray-400 leading-none select-none cursor-pointer">
-                            <span data-en="I accept the" data-es="Acepto la">I accept the</span> 
-                            <button type="button" class="legal-trigger underline hover:text-white transition-colors" data-modal="privacy" data-en="Privacy Policy" data-es="Política de Privacidad">Privacy Policy</button>
-                        </label>
-                    </div>
-                </form>
+                <div class="flex flex-col items-center gap-8">
+                    <p class="text-gray-500 md:text-xl font-light max-w-2xl mx-auto" data-en="Download Sizes today and start managing your family's sizes with ease." data-es="Descarga Sizes hoy y empieza a gestionar las tallas de tu familia con facilidad.">
+                        Download Sizes today and start managing your family's sizes with ease.
+                    </p>
+                    
+                    <a href="https://play.google.com/store/apps/details?id=com.sizes.app" target="_blank" class="transition-transform hover:scale-105 active:scale-95 duration-300">
+                        <img id="play-store-badge-footer" src="assets/google-play-badge-en.png" alt="Get it on Google Play" class="h-20 md:h-24 w-auto drop-shadow-xl" />
+                    </a>
+                </div>
             </div>
         </section>
     </main>
