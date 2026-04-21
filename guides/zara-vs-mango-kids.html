@@ -26,30 +26,55 @@
         }
       }
     </script>
-    <style>
-        .sidebar-sticky { position: sticky; top: 100px; }
-        .article-content h2 { @apply font-editorial text-3xl text-navy-deep mt-12 mb-6; }
-        .article-content p { @apply text-gray-700 text-lg leading-relaxed mb-6; }
-        .article-content ul { @apply list-disc list-inside mb-6 text-gray-700; }
-        .article-content li { @apply mb-2; }
+    <style type="text/tailwindcss">
+        .article-body h2 { @apply font-editorial text-3xl md:text-4xl text-navy-deep mt-16 mb-8 border-b border-gray-200 pb-4; }
+        .article-body h3 { @apply font-sans font-semibold text-2xl text-navy-deep mt-10 mb-5; }
+        .article-body p { @apply text-gray-700 text-lg md:text-xl leading-[1.8] mb-8 font-light; }
+        .article-body p:first-of-type { @apply text-navy-deep text-xl md:text-2xl leading-[1.7] mb-10 font-normal; }
+        .article-body ul { @apply list-none mb-10 text-gray-700 space-y-4 pl-0; }
+        .article-body ul li { @apply relative pl-8 text-lg md:text-xl font-light leading-[1.8]; }
+        .article-body ul li::before { content: "•"; @apply absolute left-0 text-gold-accent text-3xl leading-none top-[-4px]; }
+        .article-body .highlight-box { @apply bg-white p-8 md:p-10 rounded-2xl border-l-[6px] border-gold-accent shadow-[0_4px_20px_-10px_rgba(0,0,0,0.1)] my-12; }
+        .sidebar { position: sticky; top: 120px; }
     </style>
 </head>
 <body class="bg-cream-bg font-sans antialiased text-navy-deep">
 
+    <!-- Header -->
     <header class="border-b border-gray-200 bg-white/80 backdrop-blur-md sticky top-0 z-50 h-16 md:h-20 flex items-center">
         <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
-            <a href="/"><img src="../assets/logo_cinta_cropped.png" alt="Sizes" class="h-8 md:h-10"></a>
-            <a href="https://play.google.com/store/apps/details?id=com.sizes.app" class="bg-navy-deep text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-gold-accent transition-colors">Descargar App</a>
+            <a href="/"><img src="../assets/logo_cinta_cropped.png" alt="Sizes Logo" class="h-8 md:h-10"></a>
+            
+            <div class="flex items-center gap-6 hidden md:flex">
+                <!-- Language Toggle -->
+                <div id="langToggle" class="flex items-center gap-2 text-sm font-medium cursor-pointer group">
+                    <span id="lang-es" class="text-gray-400 group-hover:text-navy-deep transition-all">ES</span>
+                    <span class="text-gray-300 select-none">/</span>
+                    <span id="lang-en" class="text-navy-deep font-semibold border-b border-navy-deep pb-0.5 transition-all">EN</span>
+                </div>
+                <a href="https://play.google.com/store/apps/details?id=com.sizes.app" class="bg-navy-deep text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-gold-accent transition-colors" data-en="Download App" data-es="Descargar App">Descargar App</a>
+            </div>
+            
+            <!-- Mobile Lang Toggle -->
+            <div class="flex items-center md:hidden gap-4">
+                <div class="flex items-center gap-2 text-sm font-medium cursor-pointer">
+                    <span id="lang-es" class="text-gray-400">ES</span>
+                    <span class="text-gray-300 select-none">/</span>
+                    <span id="lang-en" class="text-navy-deep font-semibold border-b border-navy-deep pb-0.5">EN</span>
+                </div>
+            </div>
         </div>
     </header>
 
     <main class="max-w-6xl mx-auto px-6 py-12 md:py-20 flex flex-col lg:flex-row gap-16">
-        <article class="w-full lg:w-[65%] article-content">
-            <nav class="text-sm text-gray-400 mb-8">
-                <a href="/" class="hover:text-gold-accent">Inicio</a> / <a href="#" class="hover:text-gold-accent">Guías de Tallas</a> / Zara vs Mango Kids
+        <article class="w-full lg:w-[65%] article-body">
+            
+            <nav class="text-xs uppercase tracking-widest text-gray-400 mb-8 font-semibold">
+                <a href="/" class="hover:text-gold-accent" data-en="Home" data-es="Inicio">Inicio</a> <span class="mx-2">/</span> 
+                <span class="text-gold-accent" data-en="Size Guides" data-es="Guías de Tallas">Guías de Tallas</span>
             </nav>
 
-            <h1 class="font-editorial text-5xl md:text-6xl leading-tight mb-8">
+            <h1 class="font-editorial text-5xl md:text-6xl leading-tight mb-8" data-en="Zara vs Mango Kids: <br><span class='italic text-gold-accent'>The definitive guide.</span>" data-es="Zara vs Mango Kids: <br><span class='italic text-gold-accent'>Guía definitiva para no fallar en la talla.</span>">
                 Zara vs Mango Kids: <br>
                 <span class="italic text-gold-accent">Guía definitiva para no fallar en la talla.</span>
             </h1>
@@ -59,48 +84,63 @@
             </div>
 
             <section id="introduction">
-                <p>Todos los padres hemos pasado por lo mismo: compras un pantalón en Zara de la talla 4-5 y le queda perfecto, pero vas a Mango y esa misma talla parece de un niño de primaria. ¿Por qué ocurre esto?</p>
-                <p>En **Sizes**, nos obsesionan las medidas. Por eso hemos analizado miles de prendas para traerte esta comparativa directa.</p>
+                <p data-en="Every parent has gone through the same thing: you buy size 4-5 pants at Zara and they fit perfectly, but you go to Mango and that same size looks like it's for an elementary school kid. Why does this happen?" data-es="Todos los padres hemos pasado por lo mismo: compras un pantalón en Zara de la talla 4-5 y le queda perfecto, pero vas a Mango y esa misma talla parece de un niño de primaria. ¿Por qué ocurre esto?">Todos los padres hemos pasado por lo mismo: compras un pantalón en Zara de la talla 4-5 y le queda perfecto, pero vas a Mango y esa misma talla parece de un niño de primaria. ¿Por qué ocurre esto?</p>
+                <p data-en="At **Sizes**, we are obsessed with measurements. That's why we've analyzed thousands of garments to bring you this direct comparison." data-es="En **Sizes**, nos obsesionan las medidas. Por eso hemos analizado miles de prendas para traerte esta comparativa directa.">En **Sizes**, nos obsesionan las medidas. Por eso hemos analizado miles de prendas para traerte esta comparativa directa.</p>
             </section>
 
             <section id="zara">
-                <h2>El tallaje de Zara Kids</h2>
-                <p>Zara suele seguir un patrón más "ajustado" o fit. Sus prendas están diseñadas para niños con una complexión media-delgada.</p>
+                <h2 data-en="Zara Kids Sizing" data-es="El tallaje de Zara Kids">El tallaje de Zara Kids</h2>
+                <p data-en="Zara usually follows a more 'fitted' pattern. Their clothes are designed for children with an average/slim build." data-es="Zara suele seguir un patrón más 'ajustado' o fit. Sus prendas están diseñadas para niños con una complexión media-delgada.">Zara suele seguir un patrón más "ajustado" o fit. Sus prendas están diseñadas para niños con una complexión media-delgada.</p>
                 <ul>
-                    <li><strong>Ancho:</strong> Frecuentemente más angosto en cintura.</li>
-                    <li><strong>Longitud:</strong> Coherente con la estatura media.</li>
+                    <li><strong data-en="Width:" data-es="Ancho:">Ancho:</strong> <span data-en="Frequently narrower at the waist." data-es="Frecuentemente más angosto en cintura.">Frecuentemente más angosto en cintura.</span></li>
+                    <li><strong data-en="Length:" data-es="Longitud:">Longitud:</strong> <span data-en="Consistent with average height." data-es="Coherente con la estatura media.">Coherente con la estatura media.</span></li>
                 </ul>
             </section>
 
             <section id="mango">
-                <h2>El tallaje de Mango Kids</h2>
-                <p>Mango suele ser más generoso. Sus cortes permiten más libertad de movimiento, ideal para niños que no soportan la ropa ajustada.</p>
+                <h2 data-en="Mango Kids Sizing" data-es="El tallaje de Mango Kids">El tallaje de Mango Kids</h2>
+                <p data-en="Mango tends to be more generous. Their cuts allow for more freedom of movement, ideal for children who can't stand tight clothing." data-es="Mango suele ser más generoso. Sus cortes permiten más libertad de movimiento, ideal para niños que no soportan la ropa ajustada.">Mango suele ser más generoso. Sus cortes permiten más libertad de movimiento, ideal para niños que no soportan la ropa ajustada.</p>
                 <ul>
-                    <li><strong>Comodidad:</strong> Mayor margen en hombros y perneras.</li>
+                    <li><strong data-en="Comfort:" data-es="Comodidad:">Comodidad:</strong> <span data-en="More room in shoulders and legs." data-es="Mayor margen en hombros y perneras.">Mayor margen en hombros y perneras.</span></li>
                 </ul>
             </section>
 
-            <section id="conclusion">
-                <h2>La solución inteligente</h2>
-                <p>Usa **Sizes** para digitalizar a tu familia. Mide a tus hijos una vez, guarda sus medidas en nuestra app, y compáralas con las guías de cada marca antes de pagar.</p>
-            </section>
+            <div class="highlight-box">
+                <h3 class="!mt-0 text-gold-accent" data-en="The intelligent solution" data-es="La solución inteligente">La solución inteligente</h3>
+                <p class="!mb-0 font-medium" data-en="Use **Sizes** to digitize your family. Measure your children once, save their measurements in our app, and compare them with each brand's guides before testing." data-es="Usa **Sizes** para digitalizar a tu familia. Mide a tus hijos una vez, guarda sus medidas en nuestra app, y compáralas con las guías de cada marca antes de pagar.">Usa **Sizes** para digitalizar a tu familia. Mide a tus hijos una vez, guarda sus medidas en nuestra app, y compáralas con las guías de cada marca antes de pagar.</p>
+            </div>
         </article>
 
+        </article>
+
+        <!-- Sidebar CTA -->
         <aside class="w-full lg:w-[35%]">
-            <div class="sidebar-sticky">
-                <div class="bg-navy-deep text-white p-8 rounded-3xl shadow-xl overflow-hidden relative">
-                    <h3 class="font-editorial text-3xl mb-4 relative z-10">Tu talla exacta, en cualquier marca.</h3>
-                    <p class="text-gray-300 mb-8 relative z-10 font-light">Crea tu perfil o el de tus hijos en Sizes App, entra online, y deja que nuestra tecnología cruce patrones para darte la talla final al instante.</p>
-                    <a href="https://play.google.com/store/apps/details?id=com.sizes.app" target="_blank" class="block transition-transform hover:scale-105">
-                        <img src="../assets/google-play-badge-es.png" alt="Google Play" class="h-16 w-auto">
+            <div class="sidebar">
+                <div class="bg-navy-deep text-white p-8 md:p-10 rounded-[2rem] shadow-2xl relative overflow-hidden">
+                    <div class="absolute -right-10 -top-10 w-40 h-40 bg-gold-accent/20 rounded-full blur-3xl"></div>
+                    
+                    <span class="bg-gold-accent text-navy-deep px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-6 inline-block">100% Offline App</span>
+                    <h3 class="font-editorial text-3xl mb-4 relative z-10" data-en="Your exact size, in any brand." data-es="Tu talla exacta, en cualquier marca.">Tu talla exacta, en cualquier marca.</h3>
+                    <p class="text-gray-300 mb-8 relative z-10 font-light text-lg" data-en="Compare your measurements with the official guides of Zara, Mango and dozens more brands." data-es="Compara tus medidas con las guías oficiales de Zara, Mango y docenas de marcas más, al instante.">Compara tus medidas con las guías oficiales de Zara, Mango y docenas de marcas más, al instante.</p>
+                    
+                    <ul class="text-sm text-gray-400 mb-8 space-y-3">
+                        <li class="flex items-center gap-2"><svg class="w-5 h-5 text-gold-accent" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> <span data-en="Avoid returns" data-es="Evita devoluciones">Evita devoluciones</span></li>
+                        <li class="flex items-center gap-2"><svg class="w-5 h-5 text-gold-accent" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> <span data-en="Total privacy" data-es="Privacidad total">Privacidad total</span></li>
+                        <li class="flex items-center gap-2"><svg class="w-5 h-5 text-gold-accent" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> <span data-en="App for Android" data-es="App para Android">App para Android</span></li>
+                    </ul>
+
+                    <a href="https://play.google.com/store/apps/details?id=com.sizes.app" target="_blank" class="block transition-transform hover:scale-105 active:scale-95 text-center">
+                        <img src="../assets/google-play-badge-es.png" id="play-store-badge-hero" alt="Descargar Sizes en Google Play" class="h-14 mx-auto w-auto">
                     </a>
                 </div>
             </div>
         </aside>
+
     </main>
 
     <footer class="bg-white border-t border-gray-200 py-12 text-center text-gray-400 text-sm">
-        <p>© 2026 SIZES. Tu asistente de tallas inteligente.</p>
+        <p data-en="© 2026 SIZES App." data-es="© 2026 SIZES App.">© 2026 SIZES App.</p>
     </footer>
+    <script src="../script.js?v=5.4"></script>
 </body>
 </html>

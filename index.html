@@ -388,7 +388,7 @@
                 </div>
 
                 <!-- Horizontal Scroll Carousel of Guides -->
-                <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-8 -mx-6 px-6 md:-mx-16 md:px-16 hide-scrollbar cursor-grab active:cursor-grabbing">
+                <div id="guides-carousel" class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-8 -mx-6 px-6 md:-mx-16 md:px-16 hide-scrollbar cursor-grab active:cursor-grabbing">
                     
                     <!-- Guide 1 -->
                     <a href="guides/zara-vs-mango-kids.html" class="flex-none w-[85vw] md:w-[400px] group block relative rounded-3xl overflow-hidden aspect-[4/5] shadow-md hover:shadow-xl transition-all duration-500 snap-center">
@@ -549,6 +549,43 @@
     </div>
 
     <!-- Script Logic -->
-    <script src="script.js?v=5.3"></script>
+    <script src="script.js?v=5.4"></script>
+    <script>
+        // Desktop horizontal drag scroll for the Guides carousel
+        document.addEventListener('DOMContentLoaded', () => {
+            const slider = document.getElementById('guides-carousel');
+            if (slider) {
+                let isDown = false;
+                let startX;
+                let scrollLeft;
+
+                slider.addEventListener('mousedown', (e) => {
+                    isDown = true;
+                    slider.classList.add('active');
+                    // Temporarily disable snap during drag for smoother experience
+                    slider.style.scrollSnapType = 'none';
+                    startX = e.pageX - slider.offsetLeft;
+                    scrollLeft = slider.scrollLeft;
+                });
+                slider.addEventListener('mouseleave', () => {
+                    isDown = false;
+                    slider.classList.remove('active');
+                    slider.style.scrollSnapType = 'x mandatory';
+                });
+                slider.addEventListener('mouseup', () => {
+                    isDown = false;
+                    slider.classList.remove('active');
+                    slider.style.scrollSnapType = 'x mandatory';
+                });
+                slider.addEventListener('mousemove', (e) => {
+                    if (!isDown) return;
+                    e.preventDefault();
+                    const x = e.pageX - slider.offsetLeft;
+                    const walk = (x - startX) * 2; // Scroll-fast multiplier
+                    slider.scrollLeft = scrollLeft - walk;
+                });
+            }
+        });
+    </script>
 </body>
 </html>
