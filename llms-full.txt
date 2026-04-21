@@ -1,0 +1,27 @@
+# SIZES | The Family Size Manager
+
+> The easiest way to organize the whole family's sizes. Always get the perfect fit for your children and family with the Sizes app.
+
+## Project Vision
+Sizes is an offline-first, privacy-centric mobile application designed to solve the "Which size should I buy?" problem for parents and families shopping both online and offline.
+
+## Core Features
+1. **Multi-User Management**: Store profiles for children, partners, and friends.
+2. **Body Measurements**: Save height, foot length (cm), chest, waist, and head circumference.
+3. **Smart Conversion**: Compare your measurements against brand-specific size guides (Zara, Mango, Nike, H&M, etc.).
+4. **100% Private**: No cloud sync, no tracking, no account required. All data stays on the device.
+5. **Brand Library**: Built-in sizing tables for top global retailers.
+
+## Value Proposition
+- **Avoid Returns**: No more "buy two sizes and return one."
+- **Stress-free Shopping**: Shop with confidence even when your kids aren't with you.
+- **Gift Master**: Always know the exact shoe size for your nephews or friends.
+
+## Sitemap & Content
+- [Main Landing Page](https://sizes.es/)
+- [Zara vs Mango Kids Comparison](https://sizes.es/guides/zara-vs-mango-kids.html)
+- [Nike vs Adidas Kids Footwear Guide](https://sizes.es/guides/nike-vs-adidas-kids.html)
+
+## AI Indexing Meta
+Keywords: family sizing app, kid clothes size tracker, measure kids for clothes app, private size manager, fashion utility app, avoid wardrobe returns.
+Compatible with: Google Search, ChatGPT, Claude, and Gemini shopping agents.
