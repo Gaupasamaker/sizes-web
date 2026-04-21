@@ -193,6 +193,15 @@
         .animate-marquee:hover {
             animation-play-state: paused;
         }
+        
+        /* Hide scrollbar for carousel but keep functionality */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+        }
     </style>
 </head>
 
@@ -378,39 +387,50 @@
                     </div>
                 </div>
 
-                <!-- Masonry / Grid of Guides -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Horizontal Scroll Carousel of Guides -->
+                <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-8 -mx-6 px-6 md:-mx-16 md:px-16 hide-scrollbar cursor-grab active:cursor-grabbing">
                     
                     <!-- Guide 1 -->
-                    <a href="guides/zara-vs-mango-kids.html" class="group block relative rounded-3xl overflow-hidden aspect-[4/5] shadow-md hover:shadow-xl transition-all duration-500">
+                    <a href="guides/zara-vs-mango-kids.html" class="flex-none w-[85vw] md:w-[400px] group block relative rounded-3xl overflow-hidden aspect-[4/5] shadow-md hover:shadow-xl transition-all duration-500 snap-center">
                         <img src="assets/img/hero_zarakids.png" alt="Zara vs Mango Kids" class="absolute w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                         <div class="absolute inset-0 bg-gradient-to-t from-navy-deep/90 via-navy-deep/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 w-full p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                            <span class="inline-block px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-white text-xs font-semibold mb-3 tracking-widest uppercase">Kids</span>
-                            <h3 class="font-editorial text-2xl text-white mb-2 leading-tight">Zara vs Mango Kids</h3>
+                            <span class="inline-block px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-white text-xs font-semibold mb-3 tracking-widest uppercase" data-en="Kids" data-es="Niños">Kids</span>
+                            <h3 class="font-editorial text-2xl text-white mb-2 leading-tight" data-en="Zara vs Mango Kids" data-es="Zara vs Mango Niños">Zara vs Mango Kids</h3>
                             <p class="text-white/80 font-light text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100" data-en="Discover which brand runs smaller." data-es="Descubre qué marca talla más pequeño realmente.">Discover which brand runs smaller.</p>
                         </div>
                     </a>
 
                     <!-- Guide 2 -->
-                    <a href="guides/shein-vs-zara.html" class="group block relative rounded-3xl overflow-hidden aspect-[4/5] shadow-md hover:shadow-xl transition-all duration-500">
+                    <a href="guides/shein-vs-zara.html" class="flex-none w-[85vw] md:w-[400px] group block relative rounded-3xl overflow-hidden aspect-[4/5] shadow-md hover:shadow-xl transition-all duration-500 snap-center">
                         <img src="assets/img/hero_shein.png" alt="Shein vs Zara" class="absolute w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                         <div class="absolute inset-0 bg-gradient-to-t from-navy-deep/90 via-navy-deep/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 w-full p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                            <span class="inline-block px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-white text-xs font-semibold mb-3 tracking-widest uppercase">Women</span>
-                            <h3 class="font-editorial text-2xl text-white mb-2 leading-tight">Shein vs Zara</h3>
+                            <span class="inline-block px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-white text-xs font-semibold mb-3 tracking-widest uppercase" data-en="Women" data-es="Mujer">Women</span>
+                            <h3 class="font-editorial text-2xl text-white mb-2 leading-tight" data-en="Shein vs Zara" data-es="Shein vs Zara">Shein vs Zara</h3>
                             <p class="text-white/80 font-light text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100" data-en="The definitive hack to avoid returns on Shein." data-es="El hack definitivo para no fallar en Shein.">The definitive hack to avoid returns on Shein.</p>
                         </div>
                     </a>
 
                     <!-- Guide 3 -->
-                    <a href="guides/nike-vs-adidas-kids.html" class="group block relative rounded-3xl overflow-hidden aspect-[4/5] shadow-md hover:shadow-xl transition-all duration-500">
+                    <a href="guides/nike-vs-adidas-kids.html" class="flex-none w-[85vw] md:w-[400px] group block relative rounded-3xl overflow-hidden aspect-[4/5] shadow-md hover:shadow-xl transition-all duration-500 snap-center">
                         <img src="assets/img/hero_nikekids.png" alt="Nike vs Adidas Niños" class="absolute w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                         <div class="absolute inset-0 bg-gradient-to-t from-navy-deep/90 via-navy-deep/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 w-full p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                            <span class="inline-block px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-white text-xs font-semibold mb-3 tracking-widest uppercase">Sneakers</span>
+                            <span class="inline-block px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-white text-xs font-semibold mb-3 tracking-widest uppercase" data-en="Sneakers" data-es="Zapatillas">Sneakers</span>
                             <h3 class="font-editorial text-2xl text-white mb-2 leading-tight" data-en="Nike vs Adidas Kids" data-es="Nike vs Adidas Niños">Nike vs Adidas Kids</h3>
                             <p class="text-white/80 font-light text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100" data-en="Centimeters never lie with sports shoes." data-es="Los centímetros no mienten en calzado deportivo.">Centimeters never lie with sports shoes.</p>
+                        </div>
+                    </a>
+
+                    <!-- Guide 4 - Vans vs Converse -->
+                    <a href="guides/vans-vs-converse.html" class="flex-none w-[85vw] md:w-[400px] group block relative rounded-3xl overflow-hidden aspect-[4/5] shadow-md hover:shadow-xl transition-all duration-500 snap-center">
+                        <img src="assets/img/hero_vans.png" alt="Vans vs Converse" class="absolute w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy-deep/90 via-navy-deep/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 w-full p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                            <span class="inline-block px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-white text-xs font-semibold mb-3 tracking-widest uppercase" data-en="Sneakers" data-es="Zapatillas">Sneakers</span>
+                            <h3 class="font-editorial text-2xl text-white mb-2 leading-tight" data-en="Vans vs Converse" data-es="Vans vs Converse">Vans vs Converse</h3>
+                            <p class="text-white/80 font-light text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100" data-en="A classic battle between canvas and skate." data-es="La clásica batalla entre lona y skate.">A classic battle between canvas and skate.</p>
                         </div>
                     </a>
 
@@ -505,14 +525,7 @@
             
             <!-- Footer Links -->
             <div class="flex flex-col md:items-end gap-6">
-                <!-- Guide links for SEO -->
-                <ul class="flex flex-wrap gap-4 md:gap-6 justify-center md:justify-end">
-                    <li><a href="guides/zara-vs-mango-kids.html" class="text-gray-400 text-sm hover:text-navy-deep transition-colors" data-en="Zara vs Mango Kids" data-es="Zara vs Mango Niños">Zara vs Mango Kids</a></li>
-                    <li><a href="guides/shein-vs-zara.html" class="text-gray-400 text-sm hover:text-navy-deep transition-colors">Shein vs Zara</a></li>
-                    <li><a href="guides/vans-vs-converse.html" class="text-gray-400 text-sm hover:text-navy-deep transition-colors">Vans vs Converse</a></li>
-                </ul>
-
-                <ul class="flex flex-wrap gap-6 justify-center md:justify-end border-t border-gray-200/50 pt-6 mt-2">
+                <ul class="flex flex-wrap gap-6 justify-center md:justify-end mt-2">
                     <li><button type="button" class="legal-trigger text-gray-500 text-sm hover:text-navy-deep transition-colors font-medium" data-modal="privacy" data-en="Privacy" data-es="Privacidad">Privacy</button></li>
                     <li><button type="button" class="legal-trigger text-gray-500 text-sm hover:text-navy-deep transition-colors font-medium" data-modal="terms" data-en="Terms" data-es="Términos">Terms</button></li>
                     <li><a href="mailto:info@sizes.es" class="text-gray-500 text-sm hover:text-navy-deep transition-colors font-medium" data-en="Contact" data-es="Contacto">Contact</a></li>
