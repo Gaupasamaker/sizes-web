@@ -1,580 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title data-en="SIZES | Your Exact Fit, In Any Brand" data-es="SIZES | Tu Talla Exacta, En Cualquier Marca">SIZES | Tu Talla Exacta, En Cualquier Marca</title>
-
-    <meta name="description" content="Sizes: The ultimate app to manage your family's clothing sizes. Forget returns and always get the perfect fit in brands like Zara, Mango, or H&M.">
-    <meta name="keywords" content="clothing sizes, body measurements AI, sustainable fashion, returns, kids sizes, smart tailoring, sizes app">
-    <meta name="author" content="Sizes">
-    <link rel="canonical" href="https://sizes.es/" />
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sizes.es/">
-    <meta property="og:title" content="The easiest way to organize the whole family's sizes.">
-    <meta property="og:description" content="Sizes: The personalized app that helps you always get the perfect fit for your children and family.">
-    <meta property="og:image" content="https://sizes.es/assets/og-image-v4.jpg">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://sizes.es/">
-    <meta property="twitter:title" content="The easiest way to organize the whole family's sizes.">
-    <meta property="twitter:description" content="Sizes: The personalized app that helps you always get the perfect fit for your children and family.">
-    <meta property="twitter:image" content="https://sizes.es/assets/og-image-v4.jpg">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-
-    <!-- JSON-LD Structured Data for SEO/GEO -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebApplication",
-      "name": "Sizes",
-      "url": "https://sizes.es",
-      "description": "Herramienta de medición corporal mediante IA que permite a los usuarios conocer su talla exacta en cualquier marca de moda.",
-      "applicationCategory": "LifestyleApplication",
-      "genre": "Moda / Tecnología",
-      "browserRequirements": "Requires JavaScript",
-      "operatingSystem": "All",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "EUR"
-      },
-      "author": {
-        "@type": "Organization",
-        "name": "Sizes",
-        "url": "https://sizes.es"
-      }
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sizes | Choose your language</title>
+  <meta name="description" content="Choose your language to visit Sizes in Spanish or English." />
+  <meta name="robots" content="noindex,follow" />
+  <link rel="canonical" href="https://sizes.es/" />
+  <link rel="alternate" hreflang="es" href="https://sizes.es/es/" />
+  <link rel="alternate" hreflang="en" href="https://sizes.es/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://sizes.es/" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="/assets/favicon.png" />
+  <link rel="apple-touch-icon" href="/assets/favicon.png" />
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #fdfbf7;
+      --surface: rgba(255, 255, 255, 0.88);
+      --border: rgba(10, 17, 40, 0.08);
+      --text: #0a1128;
+      --muted: #56627d;
+      --accent: #c5a065;
+      --accent-strong: #b0894d;
     }
-    </script>
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              "cream-bg": "#FDFBF7",
-              "cream-surface": "#FFFFFF",
-              "navy-deep": "#0A1128",
-              "navy-muted": "#1C2A4C",
-              "gold-accent": "#C5A065",
-              "gold-light": "#E8C082",
-              "outline": "#E2DFD8"
-            },
-            fontFamily: {
-              "editorial": ["Playfair Display", "serif"],
-              "sans": ["Inter", "sans-serif"]
-            },
-            boxShadow: {
-              'soft': '0 20px 40px -15px rgba(10, 17, 40, 0.05)',
-              'float': '0 30px 60px -20px rgba(10, 17, 40, 0.12)'
-            }
-          }
-        }
-      }
-    </script>
-    
-    <!-- Fonts & Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="style.css">
 
-    <style>
-        body { 
-            background-color: #FDFBF7;
-            color: #0A1128;
-            min-height: 100vh;
-            overflow-x: hidden;
-        }
-        .elegant-border {
-            border: 1px solid #E2DFD8;
-        }
-        .hero-image-wrapper {
-            position: relative;
-            z-index: 10;
-        }
-        /* Subtle noise texture for the cream background */
-        .bg-noise {
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
-            background-repeat: repeat;
-        }
-        
-        /* 3D Isometric Styles */
-        .iso-scene {
-            perspective: 2500px;
-            transform-style: preserve-3d;
-            backface-visibility: hidden;
-            will-change: transform;
-        }
-        .iso-container {
-            transform: rotateX(55deg) rotateZ(-40deg) translateZ(0); /* Better hardware acceleration */
-            transform-style: preserve-3d;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0; left: 0;
-            will-change: transform;
-        }
-        .iso-phone {
-            width: 280px;  /* Larger base for sharper internal resolution */
-            height: 580px;
-            border-radius: 40px;
-            border: 10px solid #0A1128;
-            background: #0A1128;
-            overflow: hidden;
-            /* 16px multi-layered realistic casing physical thickness */
-            box-shadow: 
-                -1px 1px 0px #444, -2px 2px 0px #444, -3px 3px 0px #444, -4px 4px 0px #3A3A40,
-                -5px 5px 0px #3A3A40, -6px 6px 0px #3A3A40, -7px 7px 0px #2A2A30, -8px 8px 0px #2A2A30,
-                -9px 9px 0px #2A2A30, -10px 10px 0px #1A1A24, -11px 11px 0px #1A1A24, -12px 12px 0px #1A1A24,
-                -13px 13px 0px #0D0D12, -14px 14px 0px #0D0D12, -15px 15px 0px #0D0D12, -16px 16px 0px #000,
-                -40px 40px 60px rgba(10, 17, 40, 0.5); 
-            position: absolute;
-            transform-style: preserve-3d;
-            backface-visibility: hidden;
-            will-change: transform;
-        }
-        /* Optimize image rendering inside 3D transform */
-        .iso-phone img {
-            image-rendering: high-quality;
-            image-rendering: -webkit-optimize-contrast;
-            transform: translateZ(1px); /* Prevent sub-pixel z-fighting edge bleeding */
-        }
-        .iso-notch {
-            position: absolute;
-            top: 0; left: 50%;
-            transform: translateX(-50%) translateZ(2px);
-            width: 110px; height: 26px;
-            background: #0A1128;
-            border-bottom-left-radius: 14px;
-            border-bottom-right-radius: 14px;
-            z-index: 30;
-        }
+    * {
+      box-sizing: border-box;
+    }
 
-        /* Cinematic 60fps independent floating animations */
-        @keyframes float-bot {
-            0%, 100% { transform: translateZ(0px); }
-            50% { transform: translateZ(15px); }
-        }
-        @keyframes float-mid {
-            0%, 100% { transform: translateZ(90px); }
-            50% { transform: translateZ(110px); }
-        }
-        @keyframes float-top {
-            0%, 100% { transform: translateZ(180px); }
-            50% { transform: translateZ(205px); }
-        }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Inter, system-ui, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(197, 160, 101, 0.22), transparent 32%),
+        radial-gradient(circle at bottom right, rgba(10, 17, 40, 0.12), transparent 30%),
+        var(--bg);
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
 
-        /* Infinite Marquee */
-        @keyframes marquee {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-        .animate-marquee {
-            animation: marquee 120s linear infinite;
-        }
-        .animate-marquee:hover {
-            animation-play-state: paused;
-        }
-        
-        /* Hide scrollbar for carousel but keep functionality */
-        .hide-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-        .hide-scrollbar {
-            -ms-overflow-style: none; /* IE and Edge */
-            scrollbar-width: none; /* Firefox */
-        }
-    </style>
+    main {
+      width: min(720px, 100%);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 40px 32px;
+      box-shadow: 0 30px 60px -30px rgba(10, 17, 40, 0.28);
+      backdrop-filter: blur(12px);
+    }
+
+    .logo {
+      height: 56px;
+      width: auto;
+      display: block;
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+    }
+
+    p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    .actions {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .action {
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 18px 20px;
+      text-decoration: none;
+      color: inherit;
+      background: #fff;
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .action:hover {
+      transform: translateY(-2px);
+      border-color: rgba(197, 160, 101, 0.6);
+      box-shadow: 0 20px 35px -24px rgba(10, 17, 40, 0.28);
+    }
+
+    .action strong {
+      display: block;
+      font-size: 1.05rem;
+      margin-bottom: 6px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(197, 160, 101, 0.12);
+      color: var(--accent-strong);
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .footnote {
+      margin-top: 24px;
+      font-size: 0.92rem;
+    }
+  </style>
 </head>
-
-<body class="font-sans antialiased bg-noise selection:bg-gold-light/30">
-    <!-- Navbar -->
-    <header class="fixed top-0 w-full z-50 bg-cream-bg/80 backdrop-blur-md border-b elegant-border transition-all h-16 md:h-24 shadow-sm">
-        <div class="flex justify-between items-center px-6 md:px-16 h-full max-w-[1400px] mx-auto">
-            <!-- Logo (Perfectly cropped and structurally integrated) -->
-            <a href="/" class="flex items-center h-full py-3 md:py-4 min-w-[120px]">
-                <img src="assets/logo_cinta_cropped.png" alt="Sizes Logo" class="h-full w-auto object-contain drop-shadow-md hover:scale-105 transition-transform duration-500 origin-left" />
-            </a>
-            
-            <!-- Navbar Links (Pushed Right) -->
-            <div class="flex items-center gap-8 lg:gap-12 ml-auto">
-                <nav class="hidden md:flex gap-8 lg:gap-12 items-center">
-                    <a href="#features" class="text-navy-muted text-sm font-medium tracking-wide uppercase hover:text-gold-accent transition-colors duration-300" data-en="Features" data-es="Características">Features</a>
-                    <a href="#guides" class="text-navy-muted text-sm font-medium tracking-wide uppercase hover:text-gold-accent transition-colors duration-300" data-en="Guides" data-es="Guías">Guides</a>
-                    <a href="#download" class="text-navy-muted text-sm font-medium tracking-wide uppercase hover:text-gold-accent transition-colors duration-300" data-en="Download" data-es="Descargar">Download</a>
-                </nav>
-                
-                <!-- Language Toggle -->
-                <div id="langToggle" class="flex items-center gap-2 text-sm font-medium cursor-pointer group">
-                    <span id="lang-es" class="text-gray-400 group-hover:text-navy-deep transition-all">ES</span>
-                    <span class="text-gray-300 select-none">/</span>
-                    <span id="lang-en" class="text-navy-deep font-semibold border-b border-navy-deep pb-0.5 transition-all">EN</span>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <!-- Full Bleed Hero Section -->
-        <section class="relative min-h-[100dvh] flex items-center pt-24 overflow-hidden border-b elegant-border">
-            
-            <!-- True Full Width Background Image with Soft Fade -->
-            <div class="absolute inset-0 z-0 bg-cream-bg">
-                <!-- Display the user's full 1920x1080 composition -->
-                <img src="assets/hero_mother_final.png" alt="Sizes Lifestyle" data-en="Sizes Lifestyle" data-es="Estilo de vida Sizes" class="absolute inset-0 w-full h-full object-cover object-[right_top]" />
-                
-                <!-- Additional fade for text readability over entire section on all screen sizes -->
-                <div class="absolute inset-0 bg-gradient-to-r from-cream-bg via-cream-bg/80 to-transparent w-full lg:w-[45%] z-10 pointer-events-none"></div>
-            </div>
-
-            <div class="px-6 md:px-16 w-full max-w-[1400px] mx-auto relative z-20 flex flex-col lg:flex-row items-center gap-16">
-                <!-- Text Content -->
-                <div class="w-full lg:w-[55%] text-left mt-10 md:mt-20 lg:mt-0">
-                    
-                    <h1 class="font-editorial text-5xl md:text-7xl lg:text-[6rem] font-medium leading-[1.05] text-navy-deep mb-8 tracking-tight drop-shadow-sm" data-en="Your exact size<br><span class='italic text-gold-accent'>in any brand.</span>" data-es="Tu talla exacta<br><span class='italic text-gold-accent'>en cualquier marca.</span>">
-                        Your exact size<br><span class="italic text-gold-accent">in any brand.</span>
-                    </h1>
-                    
-                    <p class="text-gray-700 text-lg md:text-xl max-w-xl mb-12 font-medium leading-relaxed drop-shadow-sm" data-en="The easiest way to organize the whole family's sizes. Always get it right with the kids' clothes and forget about returns." data-es="La forma más fácil de organizar las tallas de toda la familia. Acierta siempre con la ropa de los peques y olvídate de las devoluciones.">
-                        The easiest way to organize the whole family's sizes. Always get it right with the kids' clothes and forget about returns.
-                    </p>
-                    
-                    <!-- Download Button -->
-                    <div class="mt-10 max-w-xl flex justify-center -ml-4">
-                        <a href="https://play.google.com/store/apps/details?id=com.sizes.app" target="_blank" class="transition-transform hover:scale-105 active:scale-95 duration-300 inline-block">
-                            <img id="play-store-badge-hero" src="assets/google-play-badge-en.png" alt="Get it on Google Play" class="h-16 md:h-20 w-auto drop-shadow-lg" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Features Section (Split Isometric Layout) -->
-        <section id="features" class="py-24 md:py-32 bg-white border-y elegant-border overflow-hidden">
-            <div class="max-w-[1400px] mx-auto px-6 md:px-16 flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
-                
-                <!-- Left Side: Copy & 2x2 Grid -->
-                <div class="w-full lg:w-[50%] xl:w-[45%] z-20">
-                    <div class="mb-16 text-center lg:text-left">
-                        <h2 class="font-editorial text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-medium text-navy-deep mb-6 leading-tight" data-en="Designed for <span class='italic text-gold-accent'>families.</span>" data-es="Pensado para las <span class='italic text-gold-accent'>familias.</span>">
-                            Designed for <span class="italic text-gold-accent">families.</span>
-                        </h2>
-                        <p class="text-gray-500 md:text-lg font-light leading-relaxed max-w-xl mx-auto lg:mx-0" data-en="Forget the stress of buying kids' clothes. Keep everyone's measurements updated, 100% private and offline." data-es="Olvídate del estrés de comprar ropa para los niños. Mantén las medidas de todos actualizadas de forma 100% privada y offline.">
-                            Forget the stress of buying kids' clothes. Keep everyone's measurements updated, 100% private and offline.
-                        </p>
-                    </div>
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12">
-                        
-                        <!-- Multi-Profile -->
-                        <div class="flex flex-col gap-4 text-center md:text-left items-center md:items-start group">
-                            <div class="relative h-14 w-14 mb-2">
-                                <div class="absolute inset-0 bg-orange-200 rounded-full blur-md opacity-40 group-hover:opacity-80 transition-opacity duration-500"></div>
-                                <div class="absolute inset-0 bg-white/70 backdrop-blur-sm rounded-2xl border border-white shadow-[0_8px_20px_-8px_rgba(234,88,12,0.3)] flex items-center justify-center transform transition-transform duration-500 group-hover:-translate-y-1">
-                                    <span class="material-symbols-outlined text-orange-600 !text-[26px]">group</span>
-                                </div>
-                            </div>
-                            <h3 class="font-editorial text-xl text-navy-deep font-medium" data-en="For Family & Friends" data-es="Familia y Amigos">For Family & Friends</h3>
-                            <p class="text-gray-500 font-light text-sm leading-relaxed" data-en="Family and friends in one place. Note down your kids' sizes and share them with the grandparents in a second." data-es="Toda la familia y amigos en un solo lugar. Anota las tallas de tus hijos y compártelas con los abuelos en un segundo.">
-                                Family and friends in one place. Note down your kids' sizes and share them with the grandparents in a second.
-                            </p>
-                        </div>
-
-                        <!-- Offline First -->
-                        <div class="flex flex-col gap-4 text-center md:text-left items-center md:items-start group">
-                            <div class="relative h-14 w-14 mb-2">
-                                <div class="absolute inset-0 bg-sky-200 rounded-full blur-md opacity-40 group-hover:opacity-80 transition-opacity duration-500"></div>
-                                <div class="absolute inset-0 bg-white/70 backdrop-blur-sm rounded-2xl border border-white shadow-[0_8px_20px_-8px_rgba(2,132,199,0.3)] flex items-center justify-center transform transition-transform duration-500 group-hover:-translate-y-1">
-                                    <span class="material-symbols-outlined text-sky-600 !text-[26px]">wifi_off</span>
-                                </div>
-                            </div>
-                            <h3 class="font-editorial text-xl text-navy-deep font-medium" data-en="Always Offline" data-es="Siempre Offline">Always Offline</h3>
-                            <p class="text-gray-500 font-light text-sm leading-relaxed" data-en="No signal in the basement fitting room? No problem. Your data is on your phone, not the internet." data-es="¿Sin cobertura en el probador del sótano? Sin problemas. Tus datos están en tu móvil, no en internet.">
-                                No signal in the basement fitting room? No problem. Your data is on your phone, not the internet.
-                            </p>
-                        </div>
-
-                        <!-- Privacy -->
-                        <div class="flex flex-col gap-4 text-center md:text-left items-center md:items-start group">
-                            <div class="relative h-14 w-14 mb-2">
-                                <div class="absolute inset-0 bg-violet-200 rounded-full blur-md opacity-40 group-hover:opacity-80 transition-opacity duration-500"></div>
-                                <div class="absolute inset-0 bg-white/70 backdrop-blur-sm rounded-2xl border border-white shadow-[0_8px_20px_-8px_rgba(124,58,237,0.3)] flex items-center justify-center transform transition-transform duration-500 group-hover:-translate-y-1">
-                                    <span class="material-symbols-outlined text-violet-600 !text-[26px]">shield_lock</span>
-                                </div>
-                            </div>
-                            <h3 class="font-editorial text-xl text-navy-deep font-medium" data-en="Absolute Privacy" data-es="Privacidad Absoluta">Absolute Privacy</h3>
-                            <p class="text-gray-500 font-light text-sm leading-relaxed" data-en="We don't sell your data. We don't even see it. Everything stays securely on your device." data-es="No vendemos tus datos. Ni siquiera los vemos. Todo se queda de forma segura en tu dispositivo.">
-                                We don't sell your data. We don't even see it. Everything stays securely on your device.
-                            </p>
-                        </div>
-
-                        <!-- Exact Brands -->
-                        <div class="flex flex-col gap-4 text-center md:text-left items-center md:items-start group">
-                            <div class="relative h-14 w-14 mb-2">
-                                <div class="absolute inset-0 bg-rose-200 rounded-full blur-md opacity-40 group-hover:opacity-80 transition-opacity duration-500"></div>
-                                <div class="absolute inset-0 bg-white/70 backdrop-blur-sm rounded-2xl border border-white shadow-[0_8px_20px_-8px_rgba(225,29,72,0.3)] flex items-center justify-center transform transition-transform duration-500 group-hover:-translate-y-1">
-                                    <span class="material-symbols-outlined text-rose-600 !text-[26px]">sell</span>
-                                </div>
-                            </div>
-                            <h3 class="font-editorial text-xl text-navy-deep font-medium" data-en="Specific Brands" data-es="Marcas Específicas">Specific Brands</h3>
-                            <p class="text-gray-500 font-light text-sm leading-relaxed" data-en="Does that brand run small? Add custom notes and brands to guarantee the perfect fit every time." data-es="¿Esa marca talla pequeño? Añade notas y marcas personalizadas para garantizar el ajuste perfecto siempre.">
-                                Does that brand run small? Add custom notes and brands to guarantee the perfect fit every time.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Right Side: Native CSS Isometric Focus -->
-                <div class="w-full lg:w-[50%] xl:w-[55%] flex justify-center lg:justify-end relative z-10 mt-10 lg:mt-0 h-[600px] md:h-[700px] lg:h-[800px] iso-scene">
-                    <!-- Subtle glowing background drop behind the phones -->
-                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60%] h-[60%] bg-[#E8C082]/15 rounded-full blur-[100px] z-0 pointer-events-none"></div>
-                    
-                    <div class="iso-container">
-                        <!-- Bottom Left Phone (Settings/Profile) -->
-                        <div class="iso-phone" style="top: 45%; left: 0%; animation: float-bot 6s ease-in-out infinite;">
-                            <div class="iso-notch"></div>
-                            <img id="mockup-1" src="assets/screenshots/espanol/clear/guia-tallas-nino.jpeg" class="w-full h-full object-cover object-top" alt="Sizes App: Guía de tallas para niños con medidas automáticas" data-en="Sizes App: Kids size guide with automatic measurements" data-es="Sizes App: Guía de tallas para niños con medidas automáticas" />
-                        </div>
-
-                        <!-- Middle Center Phone (Sizes List) -->
-                        <div class="iso-phone" style="top: 20%; left: 25%; animation: float-mid 6s ease-in-out infinite 1s;">
-                            <div class="iso-notch"></div>
-                            <img id="mockup-2" src="assets/screenshots/espanol/clear/tallas-mujer.jpeg" class="w-full h-full object-cover object-top" alt="Sizes App: Perfil de tallas de mujer personalizable por marca" data-en="Sizes App: Women size profile customizable by brand" data-es="Sizes App: Perfil de tallas de mujer personalizable por marca" />
-                        </div>
-
-                        <!-- Top Right Phone (Home/Wardrobe) -->
-                        <div class="iso-phone" style="top: -5%; left: 50%; animation: float-top 6s ease-in-out infinite 2s;">
-                            <div class="iso-notch"></div>
-                            <img id="mockup-3" src="assets/screenshots/espanol/clear/home-3-usuarios.jpeg" class="w-full h-full object-cover object-top" alt="Sizes App: Pantalla principal con perfiles de toda la familia" data-en="Sizes App: Main dashboard with family profiles" data-es="Sizes App: Pantalla principal con perfiles de toda la familia" />
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Sizing Guides Section -->
-        <section id="guides" class="py-24 bg-cream-bg overflow-hidden relative">
-            <div class="max-w-[1400px] mx-auto px-6 md:px-16">
-                
-                <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-                    <div class="max-w-2xl">
-                        <h2 class="font-editorial text-4xl md:text-5xl font-medium text-navy-deep mb-4" data-en="The Ultimate <span class='italic text-gold-accent'>Size Guides</span>" data-es="Las grandes <span class='italic text-gold-accent'>Guías de Tallas</span>">
-                            The Ultimate <span class="italic text-gold-accent">Size Guides</span>
-                        </h2>
-                        <p class="text-gray-500 font-light text-lg" data-en="Because 1 inch can make or break an outfit. Discover the secrets behind your favorite brands." data-es="Porque un centímetro cambia un outfit entero. Descubre los secretos detrás del tallaje de tus marcas favoritas.">
-                            Because 1 inch can make or break an outfit. Discover the secrets behind your favorite brands.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Horizontal Scroll Carousel of Guides -->
-                <div id="guides-carousel" class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-8 -mx-6 px-6 md:-mx-16 md:px-16 hide-scrollbar cursor-grab active:cursor-grabbing">
-                    
-                    <!-- Guide 1 -->
-                    <a href="guides/zara-vs-mango-kids.html" class="flex-none w-[85vw] md:w-[400px] group block relative rounded-3xl overflow-hidden aspect-[4/5] shadow-md hover:shadow-xl transition-all duration-500 snap-center">
-                        <img src="assets/img/hero_zarakids.png" alt="Zara vs Mango Kids" class="absolute w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
-                        <div class="absolute inset-0 bg-gradient-to-t from-navy-deep/90 via-navy-deep/20 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 w-full p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                            <span class="inline-block px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-white text-xs font-semibold mb-3 tracking-widest uppercase" data-en="Kids" data-es="Niños">Kids</span>
-                            <h3 class="font-editorial text-2xl text-white mb-2 leading-tight" data-en="Zara vs Mango Kids" data-es="Zara vs Mango Niños">Zara vs Mango Kids</h3>
-                            <p class="text-white/80 font-light text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100" data-en="Discover which brand runs smaller." data-es="Descubre qué marca talla más pequeño realmente.">Discover which brand runs smaller.</p>
-                        </div>
-                    </a>
-
-                    <!-- Guide 2 -->
-                    <a href="guides/shein-vs-zara.html" class="flex-none w-[85vw] md:w-[400px] group block relative rounded-3xl overflow-hidden aspect-[4/5] shadow-md hover:shadow-xl transition-all duration-500 snap-center">
-                        <img src="assets/img/hero_shein.png" alt="Shein vs Zara" class="absolute w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
-                        <div class="absolute inset-0 bg-gradient-to-t from-navy-deep/90 via-navy-deep/20 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 w-full p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                            <span class="inline-block px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-white text-xs font-semibold mb-3 tracking-widest uppercase" data-en="Women" data-es="Mujer">Women</span>
-                            <h3 class="font-editorial text-2xl text-white mb-2 leading-tight" data-en="Shein vs Zara" data-es="Shein vs Zara">Shein vs Zara</h3>
-                            <p class="text-white/80 font-light text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100" data-en="The definitive hack to avoid returns on Shein." data-es="El hack definitivo para no fallar en Shein.">The definitive hack to avoid returns on Shein.</p>
-                        </div>
-                    </a>
-
-                    <!-- Guide 3 -->
-                    <a href="guides/nike-vs-adidas-kids.html" class="flex-none w-[85vw] md:w-[400px] group block relative rounded-3xl overflow-hidden aspect-[4/5] shadow-md hover:shadow-xl transition-all duration-500 snap-center">
-                        <img src="assets/img/hero_nikekids.png" alt="Nike vs Adidas Niños" class="absolute w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
-                        <div class="absolute inset-0 bg-gradient-to-t from-navy-deep/90 via-navy-deep/20 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 w-full p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                            <span class="inline-block px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-white text-xs font-semibold mb-3 tracking-widest uppercase" data-en="Sneakers" data-es="Zapatillas">Sneakers</span>
-                            <h3 class="font-editorial text-2xl text-white mb-2 leading-tight" data-en="Nike vs Adidas Kids" data-es="Nike vs Adidas Niños">Nike vs Adidas Kids</h3>
-                            <p class="text-white/80 font-light text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100" data-en="Centimeters never lie with sports shoes." data-es="Los centímetros no mienten en calzado deportivo.">Centimeters never lie with sports shoes.</p>
-                        </div>
-                    </a>
-
-                    <!-- Guide 4 - Vans vs Converse -->
-                    <a href="guides/vans-vs-converse.html" class="flex-none w-[85vw] md:w-[400px] group block relative rounded-3xl overflow-hidden aspect-[4/5] shadow-md hover:shadow-xl transition-all duration-500 snap-center">
-                        <img src="assets/img/hero_vans.png" alt="Vans vs Converse" class="absolute w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
-                        <div class="absolute inset-0 bg-gradient-to-t from-navy-deep/90 via-navy-deep/20 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 w-full p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                            <span class="inline-block px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-white text-xs font-semibold mb-3 tracking-widest uppercase" data-en="Sneakers" data-es="Zapatillas">Sneakers</span>
-                            <h3 class="font-editorial text-2xl text-white mb-2 leading-tight" data-en="Vans vs Converse" data-es="Vans vs Converse">Vans vs Converse</h3>
-                            <p class="text-white/80 font-light text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100" data-en="A classic battle between canvas and skate." data-es="La clásica batalla entre lona y skate.">A classic battle between canvas and skate.</p>
-                        </div>
-                    </a>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Brands Marquee Section -->
-        <section class="py-16 md:py-20 bg-[#FDFBF7] border-b border-t elegant-border overflow-hidden">
-            <div class="text-center mb-10 px-6">
-                <h3 class="font-editorial text-2xl md:text-3xl text-navy-muted" data-en="Take your favorite brands with you." data-es="Lleva tus marcas favoritas contigo.">
-                    Take your favorite brands with you.
-                </h3>
-            </div>
-            
-            <!-- Infinite Text Carousel -->
-            <div class="relative w-full flex items-center overflow-hidden h-16 md:h-20">
-                <!-- Soft Fade Edges (Using cream background to blend perfectly) -->
-                <div class="absolute left-0 top-0 w-20 md:w-56 h-full bg-gradient-to-r from-[#FDFBF7] to-transparent z-10 pointer-events-none"></div>
-                <div class="absolute right-0 top-0 w-20 md:w-56 h-full bg-gradient-to-l from-[#FDFBF7] to-transparent z-10 pointer-events-none"></div>
-                
-                <!-- Moving Track -->
-                <div class="flex animate-marquee gap-24 px-12 w-max items-center h-full text-gray-400 opacity-60">
-                    <!-- Set 1 (17 Brands) -->
-                    <span class="font-serif font-black text-3xl tracking-tighter" style="font-family: 'Playfair Display', serif; transform: scaleX(1.15);">ZARA</span>
-                    <span class="font-sans font-black text-3xl italic tracking-tighter">H&M</span>
-                    <span class="font-sans font-black text-2xl tracking-[0.2em] uppercase">Mango</span>
-                    <span class="font-sans font-black text-xl tracking-[0.1em] border-[3px] border-current px-2 py-[2px] uppercase">GAP</span>
-                    <span class="font-sans font-bold text-2xl tracking-normal uppercase">Sfera</span>
-                    <span class="font-sans font-medium text-2xl tracking-[0.1em] lowercase" style="font-family: 'Century Gothic', Arial, sans-serif;">mayoral</span>
-                    <span class="font-sans font-bold text-2xl tracking-tighter uppercase">Benetton</span>
-                    <span class="font-sans font-black text-2xl tracking-tighter uppercase" style="font-family: 'Arial Black', sans-serif;">Primark</span>
-                    <span class="font-serif font-black text-3xl tracking-widest uppercase" style="transform: scaleY(0.9);">C&A</span>
-                    <span class="font-sans font-black text-3xl tracking-tighter lowercase">kiabi</span>
-                    <span class="font-sans font-black text-3xl italic tracking-tight lowercase">lefties</span>
-                    <span class="font-sans font-bold text-2xl lowercase tracking-wider">boboli</span>
-                    <span class="font-sans font-light text-2xl tracking-[0.3em] uppercase">GOCCO</span>
-                    <span class="font-sans font-black text-2xl tracking-tight uppercase">CHICCO</span>
-                    <span class="font-serif font-bold text-2xl tracking-tight uppercase">PETIT BATEAU</span>
-                    <span class="font-sans font-black text-3xl tracking-tighter uppercase">Zippy</span>
-                    <span class="font-serif font-bold text-2xl tracking-tight uppercase">NECK&NECK</span>
-                    
-                    <!-- Set 2 (Duplicate to loop seamlessly) -->
-                    <span class="font-serif font-black text-3xl tracking-tighter" style="font-family: 'Playfair Display', serif; transform: scaleX(1.15);">ZARA</span>
-                    <span class="font-sans font-black text-3xl italic tracking-tighter">H&M</span>
-                    <span class="font-sans font-black text-2xl tracking-[0.2em] uppercase">Mango</span>
-                    <span class="font-sans font-black text-xl tracking-[0.1em] border-[3px] border-current px-2 py-[2px] uppercase">GAP</span>
-                    <span class="font-sans font-bold text-2xl tracking-normal uppercase">Sfera</span>
-                    <span class="font-sans font-medium text-2xl tracking-[0.1em] lowercase" style="font-family: 'Century Gothic', Arial, sans-serif;">mayoral</span>
-                    <span class="font-sans font-bold text-2xl tracking-tighter uppercase">Benetton</span>
-                    <span class="font-sans font-black text-2xl tracking-tighter uppercase" style="font-family: 'Arial Black', sans-serif;">Primark</span>
-                    <span class="font-serif font-black text-3xl tracking-widest uppercase" style="transform: scaleY(0.9);">C&A</span>
-                    <span class="font-sans font-black text-3xl tracking-tighter lowercase">kiabi</span>
-                    <span class="font-sans font-black text-3xl italic tracking-tight lowercase">lefties</span>
-                    <span class="font-sans font-bold text-2xl lowercase tracking-wider">boboli</span>
-                    <span class="font-sans font-light text-2xl tracking-[0.3em] uppercase">GOCCO</span>
-                    <span class="font-sans font-black text-2xl tracking-tight uppercase">CHICCO</span>
-                    <span class="font-serif font-bold text-2xl tracking-tight uppercase">PETIT BATEAU</span>
-                    <span class="font-sans font-black text-3xl tracking-tighter uppercase">Zippy</span>
-                    <span class="font-serif font-bold text-2xl tracking-tight uppercase">NECK&NECK</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA End -->
-        <section id="download" class="py-32 bg-white w-full relative z-20">
-            <div class="px-6 max-w-4xl mx-auto text-center">
-                <h2 class="font-editorial text-5xl md:text-6xl font-medium text-navy-deep mb-8 leading-tight" data-en="The peace of mind of <br><span class='italic text-gold-accent'>always</span> getting it right." data-es="La tranquilidad de <br><span class='italic text-gold-accent'>acertar</span> siempre.">
-                    The peace of mind of <br><span class="italic text-gold-accent">always</span> getting it right.
-                </h2>
-                <div class="flex flex-col items-center gap-8">
-                    <p class="text-gray-500 md:text-xl font-light max-w-2xl mx-auto" data-en="Download Sizes today and start managing your family's sizes with ease." data-es="Descarga Sizes hoy y empieza a gestionar las tallas de tu familia con facilidad.">
-                        Download Sizes today and start managing your family's sizes with ease.
-                    </p>
-                    
-                    <a href="https://play.google.com/store/apps/details?id=com.sizes.app" target="_blank" class="transition-transform hover:scale-105 active:scale-95 duration-300">
-                        <img id="play-store-badge-footer" src="assets/google-play-badge-en.png" alt="Get it on Google Play" class="h-20 md:h-24 w-auto drop-shadow-xl" />
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-cream-bg border-t elegant-border py-12 md:py-20">
-        <div class="max-w-[1400px] mx-auto px-6 md:px-16 flex flex-col md:flex-row justify-between items-center md:items-end gap-10">
-            <!-- Footer Branding -->
-            <div class="flex flex-col items-center md:items-start gap-5">
-                <img src="assets/logo_cinta_cropped.png" alt="Sizes Logo" data-en="Sizes Logo" data-es="Logo de Sizes" class="h-10 md:h-14 opacity-90 object-contain drop-shadow-sm" />
-                <p class="text-gray-400 text-xs tracking-[0.1em] uppercase">© <span id="year"></span> SIZES. <span data-en="ALL RIGHTS RESERVED." data-es="TODOS LOS DERECHOS RESERVADOS.">ALL RIGHTS RESERVED.</span></p>
-            </div>
-            
-            <!-- Footer Links -->
-            <div class="flex flex-col md:items-end gap-6">
-                <ul class="flex flex-wrap gap-6 justify-center md:justify-end mt-2">
-                    <li><button type="button" class="legal-trigger text-gray-500 text-sm hover:text-navy-deep transition-colors font-medium" data-modal="privacy" data-en="Privacy" data-es="Privacidad">Privacy</button></li>
-                    <li><button type="button" class="legal-trigger text-gray-500 text-sm hover:text-navy-deep transition-colors font-medium" data-modal="terms" data-en="Terms" data-es="Términos">Terms</button></li>
-                    <li><a href="mailto:info@sizes.es" class="text-gray-500 text-sm hover:text-navy-deep transition-colors font-medium" data-en="Contact" data-es="Contacto">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Legal Modal -->
-    <div id="legalModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4">
-        <div class="absolute inset-0 bg-navy-deep/60 backdrop-blur-sm" onclick="closeLegalModal()"></div>
-        <div class="relative w-full max-w-2xl bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[80vh]">
-            <div class="p-6 border-b flex justify-between items-center bg-cream-bg">
-                <h3 id="modalTitle" class="font-editorial text-2xl text-navy-deep"></h3>
-                <button onclick="closeLegalModal()" class="text-navy-muted hover:text-navy-deep transition-colors text-3xl leading-none">&times;</button>
-            </div>
-            <div id="modalContent" class="p-8 overflow-y-auto text-navy-muted leading-relaxed prose prose-sm max-w-none">
-                <!-- Content will be injected by JS -->
-            </div>
-        </div>
+<body>
+  <main>
+    <img class="logo" src="/assets/logo_cinta_cropped.png" alt="Sizes" />
+    <span class="eyebrow">x-default</span>
+    <h1>Choose your language<br />Elige tu idioma</h1>
+    <p>Sizes is now available in separate language versions for a cleaner international experience and stronger SEO.</p>
+    <div class="actions">
+      <a class="action" href="/es/" data-locale-choice="es">
+        <strong>Espa&ntilde;ol</strong>
+        <span>Ir a la versi&oacute;n en espa&ntilde;ol</span>
+      </a>
+      <a class="action" href="/en/" data-locale-choice="en">
+        <strong>English</strong>
+        <span>Go to the English version</span>
+      </a>
     </div>
+    <p class="footnote">We also remember your preference for future visits.</p>
+  </main>
+  <script>
+    (function () {
+      const storageKey = 'sizes-preferred-locale';
+      const localeLinks = document.querySelectorAll('[data-locale-choice]');
 
-    <!-- Script Logic -->
-    <script src="script.js?v=5.4"></script>
-    <script>
-        // Desktop horizontal drag scroll for the Guides carousel
-        document.addEventListener('DOMContentLoaded', () => {
-            const slider = document.getElementById('guides-carousel');
-            if (slider) {
-                let isDown = false;
-                let startX;
-                let scrollLeft;
-
-                slider.addEventListener('mousedown', (e) => {
-                    isDown = true;
-                    slider.classList.add('active');
-                    // Temporarily disable snap during drag for smoother experience
-                    slider.style.scrollSnapType = 'none';
-                    startX = e.pageX - slider.offsetLeft;
-                    scrollLeft = slider.scrollLeft;
-                });
-                slider.addEventListener('mouseleave', () => {
-                    isDown = false;
-                    slider.classList.remove('active');
-                    slider.style.scrollSnapType = 'x mandatory';
-                });
-                slider.addEventListener('mouseup', () => {
-                    isDown = false;
-                    slider.classList.remove('active');
-                    slider.style.scrollSnapType = 'x mandatory';
-                });
-                slider.addEventListener('mousemove', (e) => {
-                    if (!isDown) return;
-                    e.preventDefault();
-                    const x = e.pageX - slider.offsetLeft;
-                    const walk = (x - startX) * 2; // Scroll-fast multiplier
-                    slider.scrollLeft = scrollLeft - walk;
-                });
-            }
+      localeLinks.forEach((link) => {
+        link.addEventListener('click', function () {
+          try {
+            localStorage.setItem(storageKey, this.dataset.localeChoice);
+          } catch (error) {
+            // Ignore storage failures.
+          }
         });
-    </script>
+      });
+
+      let preferred = null;
+      try {
+        preferred = localStorage.getItem(storageKey);
+      } catch (error) {
+        preferred = null;
+      }
+
+      if (!preferred) {
+        const languages = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en']).join(',').toLowerCase();
+        preferred = languages.includes('es') ? 'es' : 'en';
+      }
+
+      const destination = preferred === 'es' ? '/es/' : '/en/';
+      window.location.replace(destination);
+    }());
+  </script>
 </body>
 </html>
