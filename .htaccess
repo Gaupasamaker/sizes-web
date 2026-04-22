@@ -1,3 +1,11 @@
+# OpenAI access: allow user-triggered fetches and ChatGPT Search crawling
+# before any future rewrite-based bot filters are evaluated.
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTP_USER_AGENT} (ChatGPT-User|OAI-SearchBot) [NC]
+    RewriteRule ^ - [L]
+</IfModule>
+
 # Security: Protect leads.txt from public access
 <Files "leads.txt">
     <IfModule mod_authz_core.c>
