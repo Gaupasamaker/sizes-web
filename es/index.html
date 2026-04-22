@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIZES | Tu talla exacta, en cualquier marca</title>
+  <meta name="description" content="La forma m&aacute;s f&aacute;cil de organizar las tallas de toda la familia. Acierta siempre con la ropa de los peques y olv&iacute;date de las devoluciones." />
+  <link rel="canonical" href="https://sizes.es/es/" />
+  <link rel="alternate" hreflang="es" href="https://sizes.es/es/" />
+  <link rel="alternate" hreflang="en" href="https://sizes.es/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://sizes.es/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sizes.es/es/" />
+  <meta property="og:title" content="SIZES | Tu talla exacta, en cualquier marca" />
+  <meta property="og:description" content="Organiza las tallas de toda la familia, guarda notas por marca y compra con m&aacute;s confianza desde la app de Sizes." />
+  <meta property="og:image" content="https://sizes.es/assets/og-image-v4.jpg" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://sizes.es/es/" />
+  <meta property="twitter:title" content="SIZES | Tu talla exacta, en cualquier marca" />
+  <meta property="twitter:description" content="Organiza las tallas de toda la familia, guarda notas por marca y compra con m&aacute;s confianza desde la app de Sizes." />
+  <meta property="twitter:image" content="https://sizes.es/assets/og-image-v4.jpg" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="/assets/favicon.png" />
+  <link rel="apple-touch-icon" href="/assets/favicon.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Sizes",
+    "url": "https://sizes.es/es/",
+    "description": "La forma m\u00e1s f\u00e1cil de organizar las tallas de toda la familia y acertar al comprar en cualquier marca.",
+    "applicationCategory": "LifestyleApplication",
+    "operatingSystem": "Android",
+    "inLanguage": "es",
+    "downloadUrl": "https://play.google.com/store/apps/details?id=com.sizes.app",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "Sizes",
+      "url": "https://sizes.es/"
+    },
+    "sameAs": [
+      "https://play.google.com/store/apps/details?id=com.sizes.app"
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #fdfbf7;
+      --surface: rgba(255, 255, 255, 0.88);
+      --surface-strong: #ffffff;
+      --text: #0a1128;
+      --muted: #56627d;
+      --line: rgba(10, 17, 40, 0.08);
+      --accent: #c5a065;
+      --accent-dark: #9f7a40;
+      --shadow: 0 30px 60px -30px rgba(10, 17, 40, 0.24);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(197, 160, 101, 0.2), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(10, 17, 40, 0.1), transparent 30%),
+        var(--bg);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .shell {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(12px);
+      background: rgba(253, 251, 247, 0.82);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 78px;
+      gap: 20px;
+    }
+
+    .logo {
+      height: 42px;
+      width: auto;
+      display: block;
+    }
+
+    .nav-links,
+    .lang-switch {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .lang-switch a[aria-current="page"] {
+      color: var(--text);
+      font-weight: 700;
+      border-bottom: 1px solid var(--text);
+      padding-bottom: 2px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 40px;
+      align-items: center;
+      padding: 72px 0 56px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(197, 160, 101, 0.12);
+      color: var(--accent-dark);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2 {
+      font-family: "Playfair Display", Georgia, serif;
+      letter-spacing: -0.03em;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: clamp(2.8rem, 6vw, 5.2rem);
+      line-height: 0.98;
+      margin-top: 18px;
+    }
+
+    h1 em,
+    h2 em {
+      color: var(--accent-dark);
+      font-style: italic;
+    }
+
+    .lead {
+      max-width: 620px;
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+      line-height: 1.8;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 28px;
+      align-items: center;
+    }
+
+    .badge {
+      height: 56px;
+      width: auto;
+      display: block;
+    }
+
+    .secondary-link {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .hero-visual {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      padding: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero-visual img {
+      width: 100%;
+      display: block;
+      border-radius: 22px;
+      object-fit: cover;
+      max-height: 560px;
+    }
+
+    section {
+      padding: 28px 0 64px;
+    }
+
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: end;
+      margin-bottom: 24px;
+    }
+
+    .section-head p {
+      max-width: 620px;
+      color: var(--muted);
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    .cards,
+    .guide-grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .cards {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .guide-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .card,
+    .guide {
+      background: var(--surface-strong);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 24px;
+      box-shadow: 0 20px 40px -32px rgba(10, 17, 40, 0.3);
+    }
+
+    .card h3,
+    .guide h3 {
+      margin: 0 0 12px;
+      font-size: 1.12rem;
+    }
+
+    .card p,
+    .guide p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    .guide small {
+      display: inline-block;
+      margin-bottom: 10px;
+      color: var(--accent-dark);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .cta {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: center;
+      background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(245, 239, 227, 0.9));
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .cta p {
+      margin: 10px 0 0;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 28px 0 40px;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 900px) {
+      .hero,
+      .cards,
+      .guide-grid,
+      .cta {
+        grid-template-columns: 1fr;
+        display: grid;
+      }
+
+      .hero {
+        padding-top: 48px;
+      }
+
+      .nav {
+        flex-wrap: wrap;
+        padding: 14px 0;
+      }
+
+      .section-head,
+      .footer-row {
+        display: grid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="shell nav">
+      <a href="/es/"><img class="logo" src="/assets/logo_cinta_cropped.png" alt="Sizes" /></a>
+      <div class="nav-links">
+        <a href="#funciona">Funciones</a>
+        <a href="#guias">Gu&iacute;as</a>
+        <a href="#descarga">Descargar</a>
+      </div>
+      <div class="lang-switch">
+        <a href="/es/" data-lang="es" aria-current="page">ES</a>
+        <span>/</span>
+        <a href="/en/" data-lang="en">EN</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="hero">
+      <div>
+        <span class="eyebrow">App Android</span>
+        <h1>Tu talla exacta<br /><em>en cualquier marca.</em></h1>
+        <p class="lead">La forma m&aacute;s f&aacute;cil de organizar las tallas de toda la familia. Acierta siempre con la ropa de los peques, guarda notas por marca y olv&iacute;date de las devoluciones innecesarias.</p>
+        <div class="hero-actions">
+          <a href="https://play.google.com/store/apps/details?id=com.sizes.app" target="_blank" rel="noopener">
+            <img class="badge" src="/assets/google-play-badge-es.png" alt="Disponible en Google Play" />
+          </a>
+          <a class="secondary-link" href="#guias">Ver gu&iacute;as de tallas</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="/assets/hero_mother_final.png" alt="Sizes para familias y compras entre marcas" />
+      </div>
+    </section>
+
+    <section id="funciona">
+      <div class="section-head">
+        <div>
+          <h2>Pensado para <em>familias</em></h2>
+        </div>
+        <p>Sizes te ayuda a recordar tallas, consultar referencias al comprar y tener toda la informaci&oacute;n importante a mano cuando cambias de tienda o de marca.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <h3>Familia y amigos</h3>
+          <p>Guarda perfiles de varias personas en un solo lugar y comparte la referencia correcta cuando alguien compra por ti.</p>
+        </article>
+        <article class="card">
+          <h3>Siempre offline</h3>
+          <p>Tus datos viven en el m&oacute;vil. Si est&aacute;s en tienda, en un probador o sin cobertura, la informaci&oacute;n sigue contigo.</p>
+        </article>
+        <article class="card">
+          <h3>Notas por marca</h3>
+          <p>A&ntilde;ade observaciones para recordar si una marca talla peque&ntilde;o, grande o diferente seg&uacute;n el tipo de prenda.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="guias">
+      <div class="section-head">
+        <div>
+          <h2>Gu&iacute;as destacadas</h2>
+        </div>
+        <p>Mientras seguimos ampliando la parte editorial, estas comparativas ya te ayudan a comprar con m&aacute;s contexto entre marcas populares.</p>
+      </div>
+      <div class="guide-grid">
+        <a class="guide" href="/guides/zara-vs-mango-kids.html">
+          <small>Ni&ntilde;os</small>
+          <h3>Zara vs Mango Kids</h3>
+          <p>Descubre qu&eacute; marca talla m&aacute;s peque&ntilde;o y c&oacute;mo acertar mejor con ropa infantil.</p>
+        </a>
+        <a class="guide" href="/guides/shein-vs-zara.html">
+          <small>Mujer</small>
+          <h3>Shein vs Zara</h3>
+          <p>Una comparativa directa para entender diferencias de tallaje y reducir devoluciones.</p>
+        </a>
+        <a class="guide" href="/guides/nike-vs-adidas-kids.html">
+          <small>Calzado</small>
+          <h3>Nike vs Adidas Kids</h3>
+          <p>Los cent&iacute;metros importan mucho en zapatillas. Aqu&iacute; tienes una referencia r&aacute;pida y clara.</p>
+        </a>
+        <a class="guide" href="/guides/vans-vs-converse.html">
+          <small>Zapatillas</small>
+          <h3>Vans vs Converse</h3>
+          <p>Una gu&iacute;a sencilla para comparar dos cl&aacute;sicos y elegir mejor seg&uacute;n forma y ajuste.</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="descarga">
+      <div class="cta">
+        <div>
+          <h2>Descarga Sizes y empieza a acertar m&aacute;s</h2>
+          <p>Dejamos ya lista la estructura internacional. En el siguiente paso pulimos el copy final en espa&ntilde;ol e ingl&eacute;s sobre esta base.</p>
+        </div>
+        <a href="https://play.google.com/store/apps/details?id=com.sizes.app" target="_blank" rel="noopener">
+          <img class="badge" src="/assets/google-play-badge-es.png" alt="Disponible en Google Play" />
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-row">
+      <span>&copy; 2026 Sizes</span>
+      <div class="nav-links">
+        <a href="mailto:info@sizes.es">Contacto</a>
+        <a href="https://play.google.com/store/apps/details?id=com.sizes.app" target="_blank" rel="noopener">Google Play</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const links = document.querySelectorAll('[data-lang]');
+      links.forEach((link) => {
+        link.addEventListener('click', function () {
+          try {
+            localStorage.setItem('sizes-preferred-locale', this.dataset.lang);
+          } catch (error) {
+            // Ignore storage failures.
+          }
+        });
+      });
+    }());
+  </script>
+</body>
+</html>
