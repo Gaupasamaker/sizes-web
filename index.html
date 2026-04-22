@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sizes | Choose your language</title>
-  <meta name="description" content="Choose your language to visit Sizes in Spanish or English." />
+  <title>Sizes</title>
+  <meta name="description" content="Sizes language router." />
   <meta name="robots" content="noindex,follow" />
   <link rel="canonical" href="https://sizes.es/" />
   <link rel="alternate" hreflang="es" href="https://sizes.es/es/" />
@@ -13,150 +13,16 @@
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" href="/assets/favicon.png" />
   <link rel="apple-touch-icon" href="/assets/favicon.png" />
-  <style>
-    :root {
-      color-scheme: light;
-      --bg: #fdfbf7;
-      --surface: rgba(255, 255, 255, 0.88);
-      --border: rgba(10, 17, 40, 0.08);
-      --text: #0a1128;
-      --muted: #56627d;
-      --accent: #c5a065;
-      --accent-strong: #b0894d;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      font-family: Inter, system-ui, sans-serif;
-      color: var(--text);
-      background:
-        radial-gradient(circle at top left, rgba(197, 160, 101, 0.22), transparent 32%),
-        radial-gradient(circle at bottom right, rgba(10, 17, 40, 0.12), transparent 30%),
-        var(--bg);
-      display: grid;
-      place-items: center;
-      padding: 24px;
-    }
-
-    main {
-      width: min(720px, 100%);
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 28px;
-      padding: 40px 32px;
-      box-shadow: 0 30px 60px -30px rgba(10, 17, 40, 0.28);
-      backdrop-filter: blur(12px);
-    }
-
-    .logo {
-      height: 56px;
-      width: auto;
-      display: block;
-      margin-bottom: 28px;
-    }
-
-    h1 {
-      margin: 0 0 14px;
-      font-family: "Playfair Display", Georgia, serif;
-      font-size: clamp(2rem, 4vw, 3.4rem);
-      line-height: 1.05;
-      letter-spacing: -0.03em;
-    }
-
-    p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 1.05rem;
-      line-height: 1.7;
-    }
-
-    .actions {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 16px;
-      margin-top: 28px;
-    }
-
-    .action {
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 18px 20px;
-      text-decoration: none;
-      color: inherit;
-      background: #fff;
-      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .action:hover {
-      transform: translateY(-2px);
-      border-color: rgba(197, 160, 101, 0.6);
-      box-shadow: 0 20px 35px -24px rgba(10, 17, 40, 0.28);
-    }
-
-    .action strong {
-      display: block;
-      font-size: 1.05rem;
-      margin-bottom: 6px;
-    }
-
-    .eyebrow {
-      display: inline-block;
-      margin-bottom: 14px;
-      padding: 6px 10px;
-      border-radius: 999px;
-      background: rgba(197, 160, 101, 0.12);
-      color: var(--accent-strong);
-      font-size: 0.78rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-    }
-
-    .footnote {
-      margin-top: 24px;
-      font-size: 0.92rem;
-    }
-  </style>
 </head>
 <body>
-  <main>
-    <img class="logo" src="/assets/logo_cinta_cropped.png" alt="Sizes" />
-    <span class="eyebrow">x-default</span>
-    <h1>Choose your language<br />Elige tu idioma</h1>
-    <p>Sizes is now available in separate language versions for a cleaner international experience and stronger SEO.</p>
-    <div class="actions">
-      <a class="action" href="/es/" data-locale-choice="es">
-        <strong>Espa&ntilde;ol</strong>
-        <span>Ir a la versi&oacute;n en espa&ntilde;ol</span>
-      </a>
-      <a class="action" href="/en/" data-locale-choice="en">
-        <strong>English</strong>
-        <span>Go to the English version</span>
-      </a>
-    </div>
-    <p class="footnote">We also remember your preference for future visits.</p>
-  </main>
+  <noscript>
+    <p><a href="/es/">Espa&ntilde;ol</a> | <a href="/en/">English</a></p>
+  </noscript>
   <script>
     (function () {
-      const storageKey = 'sizes-preferred-locale';
-      const localeLinks = document.querySelectorAll('[data-locale-choice]');
+      var storageKey = 'sizes-preferred-locale';
+      var preferred = null;
 
-      localeLinks.forEach((link) => {
-        link.addEventListener('click', function () {
-          try {
-            localStorage.setItem(storageKey, this.dataset.localeChoice);
-          } catch (error) {
-            // Ignore storage failures.
-          }
-        });
-      });
-
-      let preferred = null;
       try {
         preferred = localStorage.getItem(storageKey);
       } catch (error) {
@@ -164,12 +30,11 @@
       }
 
       if (!preferred) {
-        const languages = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en']).join(',').toLowerCase();
-        preferred = languages.includes('es') ? 'es' : 'en';
+        var languages = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en']).join(',').toLowerCase();
+        preferred = languages.indexOf('es') !== -1 ? 'es' : 'en';
       }
 
-      const destination = preferred === 'es' ? '/es/' : '/en/';
-      window.location.replace(destination);
+      window.location.replace(preferred === 'es' ? '/es/' : '/en/');
     }());
   </script>
 </body>
