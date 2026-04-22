@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <h4 class="font-bold text-navy-deep mt-6 mb-2">2. Use of data</h4>
                 <p class="mb-4">We use your email exclusively to inform you about the launch of SIZES and to grant you access to the application.</p>
                 <h4 class="font-bold text-navy-deep mt-6 mb-2">3. Storage</h4>
-                <p class="mb-4">Your data is stored securely on your servers and is not shared with third parties or sold.</p>
+                <p class="mb-4">Your data is stored securely on our servers and is not shared with third parties or sold.</p>
                 <h4 class="font-bold text-navy-deep mt-6 mb-2">4. Your rights</h4>
                 <p class="mb-4">You can request to be removed from our list or have your data deleted at any time by writing to <a href="mailto:info@sizes.es" class="text-gold-accent underline">info@sizes.es</a>.</p>
             `,
