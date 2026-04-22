@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>SIZES | Tu talla exacta, en cualquier marca</title>
+
+    <meta name="description" content="La forma más fácil de organizar las tallas de toda la familia. Acierta siempre con la ropa de los peques y olvídate de las devoluciones.">
+    <meta name="author" content="Sizes">
+    <link rel="canonical" href="https://sizes.es/es/" />
+    <link rel="alternate" hreflang="es" href="https://sizes.es/es/" />
+    <link rel="alternate" hreflang="en" href="https://sizes.es/en/" />
+    <link rel="alternate" hreflang="x-default" href="https://sizes.es/" />
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:locale:alternate" content="en_US">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sizes.es/es/">
+    <meta property="og:title" content="SIZES | Tu talla exacta, en cualquier marca">
+    <meta property="og:description" content="Organiza las tallas de toda la familia, guarda notas por marca y compra con más confianza desde la app de Sizes.">
+    <meta property="og:image" content="https://sizes.es/assets/og-image-v4.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sizes.es/es/">
+    <meta property="twitter:title" content="SIZES | Tu talla exacta, en cualquier marca">
+    <meta property="twitter:description" content="Organiza las tallas de toda la familia, guarda notas por marca y compra con más confianza desde la app de Sizes.">
+    <meta property="twitter:image" content="https://sizes.es/assets/og-image-v4.jpg">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/favicon.png">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Sizes",
+      "url": "https://sizes.es/es/",
+      "description": "La forma más fácil de organizar las tallas de toda la familia y acertar al comprar en cualquier marca.",
+      "applicationCategory": "LifestyleApplication",
+      "operatingSystem": "Android",
+      "inLanguage": "es",
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.sizes.app",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Sizes",
+        "url": "https://sizes.es/"
+      },
+      "sameAs": [
+        "https://play.google.com/store/apps/details?id=com.sizes.app"
+      ]
+    }
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "cream-bg": "#FDFBF7",
+              "cream-surface": "#FFFFFF",
+              "navy-deep": "#0A1128",
+              "navy-muted": "#1C2A4C",
+              "gold-accent": "#C5A065",
+              "gold-light": "#E8C082",
+              "outline": "#E2DFD8"
+            },
+            fontFamily: {
+              "editorial": ["Playfair Display", "serif"],
+              "sans": ["Inter", "sans-serif"]
+            },
+            boxShadow: {
+              'soft': '0 20px 40px -15px rgba(10, 17, 40, 0.05)',
+              'float': '0 30px 60px -20px rgba(10, 17, 40, 0.12)'
+            }
+          }
+        }
+      }
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        body {
+            background-color: #FDFBF7;
+            color: #0A1128;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        .elegant-border {
+            border: 1px solid #E2DFD8;
+        }
+        .bg-noise {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+            background-repeat: repeat;
+        }
+        .iso-scene {
+            perspective: 2500px;
+            transform-style: preserve-3d;
+            backface-visibility: hidden;
+            will-change: transform;
+        }
+        .iso-container {
+            transform: rotateX(55deg) rotateZ(-40deg) translateZ(0);
+            transform-style: preserve-3d;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            will-change: transform;
+        }
+        .iso-phone {
+            width: 280px;
+            height: 580px;
+            border-radius: 40px;
+            border: 10px solid #0A1128;
+            background: #0A1128;
+            overflow: hidden;
+            box-shadow:
+                -1px 1px 0px #444, -2px 2px 0px #444, -3px 3px 0px #444, -4px 4px 0px #3A3A40,
+                -5px 5px 0px #3A3A40, -6px 6px 0px #3A3A40, -7px 7px 0px #2A2A30, -8px 8px 0px #2A2A30,
+                -9px 9px 0px #2A2A30, -10px 10px 0px #1A1A24, -11px 11px 0px #1A1A24, -12px 12px 0px #1A1A24,
+                -13px 13px 0px #0D0D12, -14px 14px 0px #0D0D12, -15px 15px 0px #0D0D12, -16px 16px 0px #000,
+                -40px 40px 60px rgba(10, 17, 40, 0.5);
+            position: absolute;
+            transform-style: preserve-3d;
+            backface-visibility: hidden;
+            will-change: transform;
+        }
+        .iso-phone img {
+            image-rendering: high-quality;
+            image-rendering: -webkit-optimize-contrast;
+            transform: translateZ(1px);
+        }
+        .iso-notch {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%) translateZ(2px);
+            width: 110px;
+            height: 26px;
+            background: #0A1128;
+            border-bottom-left-radius: 14px;
+            border-bottom-right-radius: 14px;
+            z-index: 30;
+        }
+        @keyframes float-bot {
+            0%, 100% { transform: translateZ(0px); }
+            50% { transform: translateZ(15px); }
+        }
+        @keyframes float-mid {
+            0%, 100% { transform: translateZ(90px); }
+            50% { transform: translateZ(110px); }
+        }
+        @keyframes float-top {
+            0%, 100% { transform: translateZ(180px); }
+            50% { transform: translateZ(205px); }
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            animation: marquee 120s linear infinite;
+        }
+        .animate-marquee:hover {
+            animation-play-state: paused;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body></body>
+</html>
