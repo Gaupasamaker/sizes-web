@@ -1,462 +1,469 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SIZES | Your exact fit, in any brand</title>
-  <meta name="description" content="The easiest way to organize the whole family's sizes. Get the kids' clothes right every time and forget about returns." />
-  <link rel="canonical" href="https://sizes.es/en/" />
-  <link rel="alternate" hreflang="es" href="https://sizes.es/es/" />
-  <link rel="alternate" hreflang="en" href="https://sizes.es/en/" />
-  <link rel="alternate" hreflang="x-default" href="https://sizes.es/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://sizes.es/en/" />
-  <meta property="og:title" content="SIZES | Your exact fit, in any brand" />
-  <meta property="og:description" content="Organize the whole family's sizes, save brand-specific notes, and shop with more confidence using Sizes." />
-  <meta property="og:image" content="https://sizes.es/assets/og-image-v4.jpg" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://sizes.es/en/" />
-  <meta property="twitter:title" content="SIZES | Your exact fit, in any brand" />
-  <meta property="twitter:description" content="Organize the whole family's sizes, save brand-specific notes, and shop with more confidence using Sizes." />
-  <meta property="twitter:image" content="https://sizes.es/assets/og-image-v4.jpg" />
-  <link rel="icon" href="/favicon.ico" sizes="any" />
-  <link rel="icon" type="image/png" href="/assets/favicon.png" />
-  <link rel="apple-touch-icon" href="/assets/favicon.png" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Sizes",
-    "url": "https://sizes.es/en/",
-    "description": "The easiest way to organize the whole family's sizes and get the perfect fit in any brand.",
-    "applicationCategory": "LifestyleApplication",
-    "operatingSystem": "Android",
-    "inLanguage": "en",
-    "downloadUrl": "https://play.google.com/store/apps/details?id=com.sizes.app",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "EUR"
-    },
-    "author": {
-      "@type": "Organization",
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>SIZES | Your exact fit, in any brand</title>
+
+    <meta name="description" content="The easiest way to organize the whole family's sizes. Get the kids' clothes right every time and forget about returns.">
+    <meta name="author" content="Sizes">
+    <link rel="canonical" href="https://sizes.es/en/" />
+    <link rel="alternate" hreflang="es" href="https://sizes.es/es/" />
+    <link rel="alternate" hreflang="en" href="https://sizes.es/en/" />
+    <link rel="alternate" hreflang="x-default" href="https://sizes.es/" />
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="es_ES">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sizes.es/en/">
+    <meta property="og:title" content="SIZES | Your exact fit, in any brand">
+    <meta property="og:description" content="Organize the whole family's sizes, save brand-specific notes, and shop with more confidence using Sizes.">
+    <meta property="og:image" content="https://sizes.es/assets/og-image-v4.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sizes.es/en/">
+    <meta property="twitter:title" content="SIZES | Your exact fit, in any brand">
+    <meta property="twitter:description" content="Organize the whole family's sizes, save brand-specific notes, and shop with more confidence using Sizes.">
+    <meta property="twitter:image" content="https://sizes.es/assets/og-image-v4.jpg">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/favicon.png">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
       "name": "Sizes",
-      "url": "https://sizes.es/"
-    },
-    "sameAs": [
-      "https://play.google.com/store/apps/details?id=com.sizes.app"
-    ]
-  }
-  </script>
-  <style>
-    :root {
-      color-scheme: light;
-      --bg: #fdfbf7;
-      --surface: rgba(255, 255, 255, 0.88);
-      --surface-strong: #ffffff;
-      --text: #0a1128;
-      --muted: #56627d;
-      --line: rgba(10, 17, 40, 0.08);
-      --accent: #c5a065;
-      --accent-dark: #9f7a40;
-      --shadow: 0 30px 60px -30px rgba(10, 17, 40, 0.24);
+      "url": "https://sizes.es/en/",
+      "description": "The easiest way to organize the whole family's sizes and get the perfect fit in any brand.",
+      "applicationCategory": "LifestyleApplication",
+      "operatingSystem": "Android",
+      "inLanguage": "en",
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.sizes.app",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Sizes",
+        "url": "https://sizes.es/"
+      },
+      "sameAs": [
+        "https://play.google.com/store/apps/details?id=com.sizes.app"
+      ]
     }
-
-    * { box-sizing: border-box; }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      margin: 0;
-      font-family: Inter, system-ui, sans-serif;
-      color: var(--text);
-      background:
-        radial-gradient(circle at top left, rgba(197, 160, 101, 0.2), transparent 28%),
-        radial-gradient(circle at bottom right, rgba(10, 17, 40, 0.1), transparent 30%),
-        var(--bg);
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .shell {
-      width: min(1180px, calc(100% - 32px));
-      margin: 0 auto;
-    }
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      backdrop-filter: blur(12px);
-      background: rgba(253, 251, 247, 0.82);
-      border-bottom: 1px solid var(--line);
-    }
-
-    .nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      min-height: 78px;
-      gap: 20px;
-    }
-
-    .logo {
-      height: 42px;
-      width: auto;
-      display: block;
-    }
-
-    .nav-links,
-    .lang-switch {
-      display: flex;
-      align-items: center;
-      gap: 18px;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .lang-switch a[aria-current="page"] {
-      color: var(--text);
-      font-weight: 700;
-      border-bottom: 1px solid var(--text);
-      padding-bottom: 2px;
-    }
-
-    .hero {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 40px;
-      align-items: center;
-      padding: 72px 0 56px;
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: rgba(197, 160, 101, 0.12);
-      color: var(--accent-dark);
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-    }
-
-    h1,
-    h2 {
-      font-family: "Playfair Display", Georgia, serif;
-      letter-spacing: -0.03em;
-      margin: 0;
-    }
-
-    h1 {
-      font-size: clamp(2.8rem, 6vw, 5.2rem);
-      line-height: 0.98;
-      margin-top: 18px;
-    }
-
-    h1 em,
-    h2 em {
-      color: var(--accent-dark);
-      font-style: italic;
-    }
-
-    .lead {
-      max-width: 620px;
-      margin: 22px 0 0;
-      color: var(--muted);
-      font-size: 1.08rem;
-      line-height: 1.8;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-      margin-top: 28px;
-      align-items: center;
-    }
-
-    .badge {
-      height: 56px;
-      width: auto;
-      display: block;
-    }
-
-    .secondary-link {
-      color: var(--text);
-      font-weight: 600;
-    }
-
-    .hero-visual {
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: 30px;
-      padding: 18px;
-      box-shadow: var(--shadow);
-    }
-
-    .hero-visual img {
-      width: 100%;
-      display: block;
-      border-radius: 22px;
-      object-fit: cover;
-      max-height: 560px;
-    }
-
-    section {
-      padding: 28px 0 64px;
-    }
-
-    .section-head {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      align-items: end;
-      margin-bottom: 24px;
-    }
-
-    .section-head p {
-      max-width: 620px;
-      color: var(--muted);
-      line-height: 1.8;
-      margin: 0;
-    }
-
-    .cards,
-    .guide-grid {
-      display: grid;
-      gap: 18px;
-    }
-
-    .cards {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .guide-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .card,
-    .guide {
-      background: var(--surface-strong);
-      border: 1px solid var(--line);
-      border-radius: 24px;
-      padding: 24px;
-      box-shadow: 0 20px 40px -32px rgba(10, 17, 40, 0.3);
-    }
-
-    .card h3,
-    .guide h3 {
-      margin: 0 0 12px;
-      font-size: 1.12rem;
-    }
-
-    .card p,
-    .guide p {
-      margin: 0;
-      color: var(--muted);
-      line-height: 1.75;
-    }
-
-    .guide small {
-      display: inline-block;
-      margin-bottom: 10px;
-      color: var(--accent-dark);
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-    }
-
-    .cta {
-      display: flex;
-      justify-content: space-between;
-      gap: 24px;
-      align-items: center;
-      background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(245, 239, 227, 0.9));
-      border: 1px solid var(--line);
-      border-radius: 28px;
-      padding: 28px;
-      box-shadow: var(--shadow);
-    }
-
-    .cta p {
-      margin: 10px 0 0;
-      color: var(--muted);
-      line-height: 1.8;
-    }
-
-    footer {
-      border-top: 1px solid var(--line);
-      padding: 28px 0 40px;
-      color: var(--muted);
-      font-size: 0.94rem;
-    }
-
-    .footer-row {
-      display: flex;
-      justify-content: space-between;
-      gap: 16px;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    @media (max-width: 900px) {
-      .hero,
-      .cards,
-      .guide-grid,
-      .cta {
-        grid-template-columns: 1fr;
-        display: grid;
-      }
-
-      .hero {
-        padding-top: 48px;
-      }
-
-      .nav {
-        flex-wrap: wrap;
-        padding: 14px 0;
-      }
-
-      .section-head,
-      .footer-row {
-        display: grid;
-      }
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="shell nav">
-      <a href="/en/"><img class="logo" src="/assets/logo_cinta_cropped.png" alt="Sizes" /></a>
-      <div class="nav-links">
-        <a href="#features">Features</a>
-        <a href="#guides">Guides</a>
-        <a href="#download">Download</a>
-      </div>
-      <div class="lang-switch">
-        <a href="/es/" data-lang="es">ES</a>
-        <span>/</span>
-        <a href="/en/" data-lang="en" aria-current="page">EN</a>
-      </div>
-    </div>
-  </header>
-
-  <main class="shell">
-    <section class="hero">
-      <div>
-        <span class="eyebrow">Android app</span>
-        <h1>Your exact fit<br /><em>in any brand.</em></h1>
-        <p class="lead">The easiest way to organize the whole family's sizes. Get the kids' clothes right every time, save brand-specific notes, and forget about unnecessary returns.</p>
-        <div class="hero-actions">
-          <a href="https://play.google.com/store/apps/details?id=com.sizes.app" target="_blank" rel="noopener">
-            <img class="badge" src="/assets/google-play-badge-en.png" alt="Get it on Google Play" />
-          </a>
-          <a class="secondary-link" href="#guides">Explore size guides</a>
-        </div>
-      </div>
-      <div class="hero-visual">
-        <img src="/assets/hero_mother_final.png" alt="Sizes for families and cross-brand shopping" />
-      </div>
-    </section>
-
-    <section id="features">
-      <div class="section-head">
-        <div>
-          <h2>Designed for <em>families</em></h2>
-        </div>
-        <p>Sizes helps you remember sizes, check references while shopping, and keep the important information close when you jump from one store or brand to another.</p>
-      </div>
-      <div class="cards">
-        <article class="card">
-          <h3>Family and friends</h3>
-          <p>Store multiple profiles in one place and share the right reference when someone else is buying for you.</p>
-        </article>
-        <article class="card">
-          <h3>Always offline</h3>
-          <p>Your data stays on your phone. If you are in-store, inside a fitting room, or without signal, the information stays with you.</p>
-        </article>
-        <article class="card">
-          <h3>Brand notes</h3>
-          <p>Add reminders to remember whether a brand runs small, large, or simply behaves differently depending on the garment.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="guides">
-      <div class="section-head">
-        <div>
-          <h2>Featured guides</h2>
-        </div>
-        <p>While we keep expanding the editorial side, these comparisons already help you shop with more context across popular brands.</p>
-      </div>
-      <div class="guide-grid">
-        <a class="guide" href="/guides/zara-vs-mango-kids.html">
-          <small>Kids</small>
-          <h3>Zara vs Mango Kids</h3>
-          <p>Find out which brand runs smaller and how to get children's clothing sizes right more often.</p>
-        </a>
-        <a class="guide" href="/guides/shein-vs-zara.html">
-          <small>Women</small>
-          <h3>Shein vs Zara</h3>
-          <p>A direct comparison to understand sizing differences and reduce returns.</p>
-        </a>
-        <a class="guide" href="/guides/nike-vs-adidas-kids.html">
-          <small>Footwear</small>
-          <h3>Nike vs Adidas Kids</h3>
-          <p>Centimeters matter in sneakers. Here you have a quick and clearer reference point.</p>
-        </a>
-        <a class="guide" href="/guides/vans-vs-converse.html">
-          <small>Sneakers</small>
-          <h3>Vans vs Converse</h3>
-          <p>A simple guide to compare two classics and choose better based on shape and fit.</p>
-        </a>
-      </div>
-    </section>
-
-    <section id="download">
-      <div class="cta">
-        <div>
-          <h2>Download Sizes and shop with more confidence</h2>
-          <p>The international structure is now ready. Next we can refine the final copy in Spanish and English on top of this foundation.</p>
-        </div>
-        <a href="https://play.google.com/store/apps/details?id=com.sizes.app" target="_blank" rel="noopener">
-          <img class="badge" src="/assets/google-play-badge-en.png" alt="Get it on Google Play" />
-        </a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="shell footer-row">
-      <span>&copy; 2026 Sizes</span>
-      <div class="nav-links">
-        <a href="mailto:info@sizes.es">Contact</a>
-        <a href="https://play.google.com/store/apps/details?id=com.sizes.app" target="_blank" rel="noopener">Google Play</a>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    (function () {
-      const links = document.querySelectorAll('[data-lang]');
-      links.forEach((link) => {
-        link.addEventListener('click', function () {
-          try {
-            localStorage.setItem('sizes-preferred-locale', this.dataset.lang);
-          } catch (error) {
-            // Ignore storage failures.
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "cream-bg": "#FDFBF7",
+              "cream-surface": "#FFFFFF",
+              "navy-deep": "#0A1128",
+              "navy-muted": "#1C2A4C",
+              "gold-accent": "#C5A065",
+              "gold-light": "#E8C082",
+              "outline": "#E2DFD8"
+            },
+            fontFamily: {
+              "editorial": ["Playfair Display", "serif"],
+              "sans": ["Inter", "sans-serif"]
+            },
+            boxShadow: {
+              'soft': '0 20px 40px -15px rgba(10, 17, 40, 0.05)',
+              'float': '0 30px 60px -20px rgba(10, 17, 40, 0.12)'
+            }
           }
+        }
+      }
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        body {
+            background-color: #FDFBF7;
+            color: #0A1128;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        .elegant-border {
+            border: 1px solid #E2DFD8;
+        }
+        .bg-noise {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+            background-repeat: repeat;
+        }
+        .iso-scene {
+            perspective: 2500px;
+            transform-style: preserve-3d;
+            backface-visibility: hidden;
+            will-change: transform;
+        }
+        .iso-container {
+            transform: rotateX(55deg) rotateZ(-40deg) translateZ(0);
+            transform-style: preserve-3d;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            will-change: transform;
+        }
+        .iso-phone {
+            width: 280px;
+            height: 580px;
+            border-radius: 40px;
+            border: 10px solid #0A1128;
+            background: #0A1128;
+            overflow: hidden;
+            box-shadow:
+                -1px 1px 0px #444, -2px 2px 0px #444, -3px 3px 0px #444, -4px 4px 0px #3A3A40,
+                -5px 5px 0px #3A3A40, -6px 6px 0px #3A3A40, -7px 7px 0px #2A2A30, -8px 8px 0px #2A2A30,
+                -9px 9px 0px #2A2A30, -10px 10px 0px #1A1A24, -11px 11px 0px #1A1A24, -12px 12px 0px #1A1A24,
+                -13px 13px 0px #0D0D12, -14px 14px 0px #0D0D12, -15px 15px 0px #0D0D12, -16px 16px 0px #000,
+                -40px 40px 60px rgba(10, 17, 40, 0.5);
+            position: absolute;
+            transform-style: preserve-3d;
+            backface-visibility: hidden;
+            will-change: transform;
+        }
+        .iso-phone img {
+            image-rendering: high-quality;
+            image-rendering: -webkit-optimize-contrast;
+            transform: translateZ(1px);
+        }
+        .iso-notch {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%) translateZ(2px);
+            width: 110px;
+            height: 26px;
+            background: #0A1128;
+            border-bottom-left-radius: 14px;
+            border-bottom-right-radius: 14px;
+            z-index: 30;
+        }
+        @keyframes float-bot {
+            0%, 100% { transform: translateZ(0px); }
+            50% { transform: translateZ(15px); }
+        }
+        @keyframes float-mid {
+            0%, 100% { transform: translateZ(90px); }
+            50% { transform: translateZ(110px); }
+        }
+        @keyframes float-top {
+            0%, 100% { transform: translateZ(180px); }
+            50% { transform: translateZ(205px); }
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            animation: marquee 120s linear infinite;
+        }
+        .animate-marquee:hover {
+            animation-play-state: paused;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+
+<body class="font-sans antialiased bg-noise selection:bg-gold-light/30">
+    <header class="fixed top-0 w-full z-50 bg-cream-bg/80 backdrop-blur-md border-b elegant-border transition-all h-16 md:h-24 shadow-sm">
+        <div class="flex justify-between items-center px-6 md:px-16 h-full max-w-[1400px] mx-auto">
+            <a href="/en/" class="flex items-center h-full py-3 md:py-4 min-w-[120px]">
+                <img src="/assets/logo_cinta_cropped.png" alt="Sizes Logo" class="h-full w-auto object-contain drop-shadow-md hover:scale-105 transition-transform duration-500 origin-left" />
+            </a>
+            <div class="flex items-center gap-8 lg:gap-12 ml-auto">
+                <nav class="hidden md:flex gap-8 lg:gap-12 items-center">
+                    <a href="#features" class="text-navy-muted text-sm font-medium tracking-wide uppercase hover:text-gold-accent transition-colors duration-300">Features</a>
+                    <a href="#guides" class="text-navy-muted text-sm font-medium tracking-wide uppercase hover:text-gold-accent transition-colors duration-300">Guides</a>
+                    <a href="#download" class="text-navy-muted text-sm font-medium tracking-wide uppercase hover:text-gold-accent transition-colors duration-300">Download</a>
+                </nav>
+                <div id="langToggle" class="flex items-center gap-2 text-sm font-medium group">
+                    <a href="/es/" data-lang-switch="es" class="text-gray-400 hover:text-navy-deep transition-all">ES</a>
+                    <span class="text-gray-300 select-none">/</span>
+                    <a href="/en/" data-lang-switch="en" class="text-gray-400 hover:text-navy-deep transition-all">EN</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative min-h-[100dvh] flex items-center pt-24 overflow-hidden border-b elegant-border">
+            <div class="absolute inset-0 z-0 bg-cream-bg">
+                <img src="/assets/hero_mother_final.png" alt="Sizes Lifestyle" class="absolute inset-0 w-full h-full object-cover object-[right_top]" />
+                <div class="absolute inset-0 bg-gradient-to-r from-cream-bg via-cream-bg/80 to-transparent w-full lg:w-[45%] z-10 pointer-events-none"></div>
+            </div>
+            <div class="px-6 md:px-16 w-full max-w-[1400px] mx-auto relative z-20 flex flex-col lg:flex-row items-center gap-16">
+                <div class="w-full lg:w-[55%] text-left mt-10 md:mt-20 lg:mt-0">
+                    <h1 class="font-editorial text-5xl md:text-7xl lg:text-[6rem] font-medium leading-[1.05] text-navy-deep mb-8 tracking-tight drop-shadow-sm">Your exact size<br><span class='italic text-gold-accent'>in any brand.</span></h1>
+                    <p class="text-gray-700 text-lg md:text-xl max-w-xl mb-12 font-medium leading-relaxed drop-shadow-sm">The easiest way to organize the whole family's sizes. Always get it right with the kids' clothes and forget about returns.</p>
+                    <div class="mt-10 max-w-xl flex justify-center -ml-4">
+                        <a href="https://play.google.com/store/apps/details?id=com.sizes.app" target="_blank" class="transition-transform hover:scale-105 active:scale-95 duration-300 inline-block">
+                            <img id="play-store-badge-hero" src="/assets/google-play-badge-en.png" alt="Get it on Google Play" class="h-16 md:h-20 w-auto drop-shadow-lg" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="py-24 md:py-32 bg-white border-y elegant-border overflow-hidden">
+            <div class="max-w-[1400px] mx-auto px-6 md:px-16 flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+                <div class="w-full lg:w-[50%] xl:w-[45%] z-20">
+                    <div class="mb-16 text-center lg:text-left">
+                        <h2 class="font-editorial text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-medium text-navy-deep mb-6 leading-tight">Designed for <span class='italic text-gold-accent'>families.</span></h2>
+                        <p class="text-gray-500 md:text-lg font-light leading-relaxed max-w-xl mx-auto lg:mx-0">Forget the stress of buying kids' clothes. Keep everyone's measurements updated, 100% private and offline.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12">
+                        <div class="flex flex-col gap-4 text-center md:text-left items-center md:items-start group">
+                            <div class="relative h-14 w-14 mb-2">
+                                <div class="absolute inset-0 bg-orange-200 rounded-full blur-md opacity-40 group-hover:opacity-80 transition-opacity duration-500"></div>
+                                <div class="absolute inset-0 bg-white/70 backdrop-blur-sm rounded-2xl border border-white shadow-[0_8px_20px_-8px_rgba(234,88,12,0.3)] flex items-center justify-center transform transition-transform duration-500 group-hover:-translate-y-1">
+                                    <span class="material-symbols-outlined text-orange-600 !text-[26px]">group</span>
+                                </div>
+                            </div>
+                            <h3 class="font-editorial text-xl text-navy-deep font-medium">For Family &amp; Friends</h3>
+                            <p class="text-gray-500 font-light text-sm leading-relaxed">Family and friends in one place. Note down your kids' sizes and share them with the grandparents in a second.</p>
+                        </div>
+                        <div class="flex flex-col gap-4 text-center md:text-left items-center md:items-start group">
+                            <div class="relative h-14 w-14 mb-2">
+                                <div class="absolute inset-0 bg-sky-200 rounded-full blur-md opacity-40 group-hover:opacity-80 transition-opacity duration-500"></div>
+                                <div class="absolute inset-0 bg-white/70 backdrop-blur-sm rounded-2xl border border-white shadow-[0_8px_20px_-8px_rgba(2,132,199,0.3)] flex items-center justify-center transform transition-transform duration-500 group-hover:-translate-y-1">
+                                    <span class="material-symbols-outlined text-sky-600 !text-[26px]">wifi_off</span>
+                                </div>
+                            </div>
+                            <h3 class="font-editorial text-xl text-navy-deep font-medium">Always Offline</h3>
+                            <p class="text-gray-500 font-light text-sm leading-relaxed">No signal in the basement fitting room? No problem. Your data is on your phone, not the internet.</p>
+                        </div>
+                        <div class="flex flex-col gap-4 text-center md:text-left items-center md:items-start group">
+                            <div class="relative h-14 w-14 mb-2">
+                                <div class="absolute inset-0 bg-violet-200 rounded-full blur-md opacity-40 group-hover:opacity-80 transition-opacity duration-500"></div>
+                                <div class="absolute inset-0 bg-white/70 backdrop-blur-sm rounded-2xl border border-white shadow-[0_8px_20px_-8px_rgba(124,58,237,0.3)] flex items-center justify-center transform transition-transform duration-500 group-hover:-translate-y-1">
+                                    <span class="material-symbols-outlined text-violet-600 !text-[26px]">shield_lock</span>
+                                </div>
+                            </div>
+                            <h3 class="font-editorial text-xl text-navy-deep font-medium">Absolute Privacy</h3>
+                            <p class="text-gray-500 font-light text-sm leading-relaxed">We don't sell your data. We don't even see it. Everything stays securely on your device.</p>
+                        </div>
+                        <div class="flex flex-col gap-4 text-center md:text-left items-center md:items-start group">
+                            <div class="relative h-14 w-14 mb-2">
+                                <div class="absolute inset-0 bg-rose-200 rounded-full blur-md opacity-40 group-hover:opacity-80 transition-opacity duration-500"></div>
+                                <div class="absolute inset-0 bg-white/70 backdrop-blur-sm rounded-2xl border border-white shadow-[0_8px_20px_-8px_rgba(225,29,72,0.3)] flex items-center justify-center transform transition-transform duration-500 group-hover:-translate-y-1">
+                                    <span class="material-symbols-outlined text-rose-600 !text-[26px]">sell</span>
+                                </div>
+                            </div>
+                            <h3 class="font-editorial text-xl text-navy-deep font-medium">Specific Brands</h3>
+                            <p class="text-gray-500 font-light text-sm leading-relaxed">Does that brand run small? Add custom notes and brands to guarantee the perfect fit every time.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-[50%] xl:w-[55%] flex justify-center lg:justify-end relative z-10 mt-10 lg:mt-0 h-[600px] md:h-[700px] lg:h-[800px] iso-scene">
+                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60%] h-[60%] bg-[#E8C082]/15 rounded-full blur-[100px] z-0 pointer-events-none"></div>
+                    <div class="iso-container">
+                        <div class="iso-phone" style="top: 45%; left: 0%; animation: float-bot 6s ease-in-out infinite;">
+                            <div class="iso-notch"></div>
+                            <img id="mockup-1" src="/assets/screenshots/ingles/Clear/size-table-child.jpeg" class="w-full h-full object-cover object-top" alt="Sizes App: Kids size guide with automatic measurements" />
+                        </div>
+                        <div class="iso-phone" style="top: 20%; left: 25%; animation: float-mid 6s ease-in-out infinite 1s;">
+                            <div class="iso-notch"></div>
+                            <img id="mockup-2" src="/assets/screenshots/ingles/Clear/brand-sizes-woman.jpeg" class="w-full h-full object-cover object-top" alt="Sizes App: Women size profile customizable by brand" />
+                        </div>
+                        <div class="iso-phone" style="top: -5%; left: 50%; animation: float-top 6s ease-in-out infinite 2s;">
+                            <div class="iso-notch"></div>
+                            <img id="mockup-3" src="/assets/screenshots/ingles/Clear/home-3-users.jpeg" class="w-full h-full object-cover object-top" alt="Sizes App: Main dashboard with family profiles" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="guides" class="py-24 bg-cream-bg overflow-hidden relative">
+            <div class="max-w-[1400px] mx-auto px-6 md:px-16">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                    <div class="max-w-2xl">
+                        <h2 class="font-editorial text-4xl md:text-5xl font-medium text-navy-deep mb-4">The Ultimate <span class='italic text-gold-accent'>Size Guides</span></h2>
+                        <p class="text-gray-500 font-light text-lg">Because 1 inch can make or break an outfit. Discover the secrets behind your favorite brands.</p>
+                    </div>
+                </div>
+                <div id="guides-carousel" class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-8 -mx-6 px-6 md:-mx-16 md:px-16 hide-scrollbar cursor-grab active:cursor-grabbing">
+                    <a href="/guides/zara-vs-mango-kids.html" class="flex-none w-[85vw] md:w-[400px] group block relative rounded-3xl overflow-hidden aspect-[4/5] shadow-md hover:shadow-xl transition-all duration-500 snap-center">
+                        <img src="/assets/img/hero_zarakids.png" alt="Zara vs Mango Kids" class="absolute w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy-deep/90 via-navy-deep/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 w-full p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                            <span class="inline-block px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-white text-xs font-semibold mb-3 tracking-widest uppercase">Kids</span>
+                            <h3 class="font-editorial text-2xl text-white mb-2 leading-tight">Zara vs Mango Kids</h3>
+                            <p class="text-white/80 font-light text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">Discover which brand runs smaller.</p>
+                        </div>
+                    </a>
+                    <a href="/guides/shein-vs-zara.html" class="flex-none w-[85vw] md:w-[400px] group block relative rounded-3xl overflow-hidden aspect-[4/5] shadow-md hover:shadow-xl transition-all duration-500 snap-center">
+                        <img src="/assets/img/hero_shein.png" alt="Shein vs Zara" class="absolute w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy-deep/90 via-navy-deep/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 w-full p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                            <span class="inline-block px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-white text-xs font-semibold mb-3 tracking-widest uppercase">Women</span>
+                            <h3 class="font-editorial text-2xl text-white mb-2 leading-tight">Shein vs Zara</h3>
+                            <p class="text-white/80 font-light text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">The definitive hack to avoid returns on Shein.</p>
+                        </div>
+                    </a>
+                    <a href="/guides/nike-vs-adidas-kids.html" class="flex-none w-[85vw] md:w-[400px] group block relative rounded-3xl overflow-hidden aspect-[4/5] shadow-md hover:shadow-xl transition-all duration-500 snap-center">
+                        <img src="/assets/img/hero_nikekids.png" alt="Nike vs Adidas Kids" class="absolute w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy-deep/90 via-navy-deep/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 w-full p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                            <span class="inline-block px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-white text-xs font-semibold mb-3 tracking-widest uppercase">Sneakers</span>
+                            <h3 class="font-editorial text-2xl text-white mb-2 leading-tight">Nike vs Adidas Kids</h3>
+                            <p class="text-white/80 font-light text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">Centimeters never lie with sports shoes.</p>
+                        </div>
+                    </a>
+                    <a href="/guides/vans-vs-converse.html" class="flex-none w-[85vw] md:w-[400px] group block relative rounded-3xl overflow-hidden aspect-[4/5] shadow-md hover:shadow-xl transition-all duration-500 snap-center">
+                        <img src="/assets/img/hero_vans.png" alt="Vans vs Converse" class="absolute w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy-deep/90 via-navy-deep/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 w-full p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                            <span class="inline-block px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-white text-xs font-semibold mb-3 tracking-widest uppercase">Sneakers</span>
+                            <h3 class="font-editorial text-2xl text-white mb-2 leading-tight">Vans vs Converse</h3>
+                            <p class="text-white/80 font-light text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">A classic battle between canvas and skate.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 md:py-20 bg-[#FDFBF7] border-b border-t elegant-border overflow-hidden">
+            <div class="text-center mb-10 px-6">
+                <h3 class="font-editorial text-2xl md:text-3xl text-navy-muted">Take your favorite brands with you.</h3>
+            </div>
+            <div class="relative w-full flex items-center overflow-hidden h-16 md:h-20">
+                <div class="absolute left-0 top-0 w-20 md:w-56 h-full bg-gradient-to-r from-[#FDFBF7] to-transparent z-10 pointer-events-none"></div>
+                <div class="absolute right-0 top-0 w-20 md:w-56 h-full bg-gradient-to-l from-[#FDFBF7] to-transparent z-10 pointer-events-none"></div>
+                <div class="flex animate-marquee gap-24 px-12 w-max items-center h-full text-gray-400 opacity-60">
+                    <span class="font-serif font-black text-3xl tracking-tighter" style="font-family: 'Playfair Display', serif; transform: scaleX(1.15);">ZARA</span>
+                    <span class="font-sans font-black text-3xl italic tracking-tighter">H&amp;M</span>
+                    <span class="font-sans font-black text-2xl tracking-[0.2em] uppercase">Mango</span>
+                    <span class="font-sans font-black text-xl tracking-[0.1em] border-[3px] border-current px-2 py-[2px] uppercase">GAP</span>
+                    <span class="font-sans font-bold text-2xl tracking-normal uppercase">Sfera</span>
+                    <span class="font-sans font-medium text-2xl tracking-[0.1em] lowercase" style="font-family: 'Century Gothic', Arial, sans-serif;">mayoral</span>
+                    <span class="font-sans font-bold text-2xl tracking-tighter uppercase">Benetton</span>
+                    <span class="font-sans font-black text-2xl tracking-tighter uppercase" style="font-family: 'Arial Black', sans-serif;">Primark</span>
+                    <span class="font-serif font-black text-3xl tracking-widest uppercase" style="transform: scaleY(0.9);">C&amp;A</span>
+                    <span class="font-sans font-black text-3xl tracking-tighter lowercase">kiabi</span>
+                    <span class="font-sans font-black text-3xl italic tracking-tight lowercase">lefties</span>
+                    <span class="font-sans font-bold text-2xl lowercase tracking-wider">boboli</span>
+                    <span class="font-sans font-light text-2xl tracking-[0.3em] uppercase">GOCCO</span>
+                    <span class="font-sans font-black text-2xl tracking-tight uppercase">CHICCO</span>
+                    <span class="font-serif font-bold text-2xl tracking-tight uppercase">PETIT BATEAU</span>
+                    <span class="font-sans font-black text-3xl tracking-tighter uppercase">Zippy</span>
+                    <span class="font-serif font-bold text-2xl tracking-tight uppercase">NECK&amp;NECK</span>
+                    <span class="font-serif font-black text-3xl tracking-tighter" style="font-family: 'Playfair Display', serif; transform: scaleX(1.15);">ZARA</span>
+                    <span class="font-sans font-black text-3xl italic tracking-tighter">H&amp;M</span>
+                    <span class="font-sans font-black text-2xl tracking-[0.2em] uppercase">Mango</span>
+                    <span class="font-sans font-black text-xl tracking-[0.1em] border-[3px] border-current px-2 py-[2px] uppercase">GAP</span>
+                    <span class="font-sans font-bold text-2xl tracking-normal uppercase">Sfera</span>
+                    <span class="font-sans font-medium text-2xl tracking-[0.1em] lowercase" style="font-family: 'Century Gothic', Arial, sans-serif;">mayoral</span>
+                    <span class="font-sans font-bold text-2xl tracking-tighter uppercase">Benetton</span>
+                    <span class="font-sans font-black text-2xl tracking-tighter uppercase" style="font-family: 'Arial Black', sans-serif;">Primark</span>
+                    <span class="font-serif font-black text-3xl tracking-widest uppercase" style="transform: scaleY(0.9);">C&amp;A</span>
+                    <span class="font-sans font-black text-3xl tracking-tighter lowercase">kiabi</span>
+                    <span class="font-sans font-black text-3xl italic tracking-tight lowercase">lefties</span>
+                    <span class="font-sans font-bold text-2xl lowercase tracking-wider">boboli</span>
+                    <span class="font-sans font-light text-2xl tracking-[0.3em] uppercase">GOCCO</span>
+                    <span class="font-sans font-black text-2xl tracking-tight uppercase">CHICCO</span>
+                    <span class="font-serif font-bold text-2xl tracking-tight uppercase">PETIT BATEAU</span>
+                    <span class="font-sans font-black text-3xl tracking-tighter uppercase">Zippy</span>
+                    <span class="font-serif font-bold text-2xl tracking-tight uppercase">NECK&amp;NECK</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="download" class="py-32 bg-white w-full relative z-20">
+            <div class="px-6 max-w-4xl mx-auto text-center">
+                <h2 class="font-editorial text-5xl md:text-6xl font-medium text-navy-deep mb-8 leading-tight">The peace of mind of <br><span class='italic text-gold-accent'>always</span> getting it right.</h2>
+                <div class="flex flex-col items-center gap-8">
+                    <p class="text-gray-500 md:text-xl font-light max-w-2xl mx-auto">Download Sizes today and start managing your family's sizes with ease.</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.sizes.app" target="_blank" class="transition-transform hover:scale-105 active:scale-95 duration-300">
+                        <img id="play-store-badge-footer" src="/assets/google-play-badge-en.png" alt="Get it on Google Play" class="h-20 md:h-24 w-auto drop-shadow-xl" />
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-cream-bg border-t elegant-border py-12 md:py-20">
+        <div class="max-w-[1400px] mx-auto px-6 md:px-16 flex flex-col md:flex-row justify-between items-center md:items-end gap-10">
+            <div class="flex flex-col items-center md:items-start gap-5">
+                <img src="/assets/logo_cinta_cropped.png" alt="Sizes Logo" class="h-10 md:h-14 opacity-90 object-contain drop-shadow-sm" />
+                <p class="text-gray-400 text-xs tracking-[0.1em] uppercase">&#169; <span id="year"></span> SIZES. ALL RIGHTS RESERVED.</p>
+            </div>
+            <div class="flex flex-col md:items-end gap-6">
+                <ul class="flex flex-wrap gap-6 justify-center md:justify-end mt-2">
+                    <li><button type="button" class="legal-trigger text-gray-500 text-sm hover:text-navy-deep transition-colors font-medium" data-modal="privacy">Privacy</button></li>
+                    <li><button type="button" class="legal-trigger text-gray-500 text-sm hover:text-navy-deep transition-colors font-medium" data-modal="terms">Terms</button></li>
+                    <li><a href="mailto:info@sizes.es" class="text-gray-500 text-sm hover:text-navy-deep transition-colors font-medium">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div id="legalModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4">
+        <div class="absolute inset-0 bg-navy-deep/60 backdrop-blur-sm" onclick="closeLegalModal()"></div>
+        <div class="relative w-full max-w-2xl bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[80vh]">
+            <div class="p-6 border-b flex justify-between items-center bg-cream-bg">
+                <h3 id="modalTitle" class="font-editorial text-2xl text-navy-deep"></h3>
+                <button onclick="closeLegalModal()" class="text-navy-muted hover:text-navy-deep transition-colors text-3xl leading-none">&times;</button>
+            </div>
+            <div id="modalContent" class="p-8 overflow-y-auto text-navy-muted leading-relaxed prose prose-sm max-w-none"></div>
+        </div>
+    </div>
+
+    <script src="/script.js?v=6.1"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slider = document.getElementById('guides-carousel');
+            if (slider) {
+                let isDown = false;
+                let startX;
+                let scrollLeft;
+                slider.addEventListener('mousedown', (e) => {
+                    isDown = true;
+                    slider.classList.add('active');
+                    slider.style.scrollSnapType = 'none';
+                    startX = e.pageX - slider.offsetLeft;
+                    scrollLeft = slider.scrollLeft;
+                });
+                slider.addEventListener('mouseleave', () => {
+                    isDown = false;
+                    slider.classList.remove('active');
+                    slider.style.scrollSnapType = 'x mandatory';
+                });
+                slider.addEventListener('mouseup', () => {
+                    isDown = false;
+                    slider.classList.remove('active');
+                    slider.style.scrollSnapType = 'x mandatory';
+                });
+                slider.addEventListener('mousemove', (e) => {
+                    if (!isDown) return;
+                    e.preventDefault();
+                    const x = e.pageX - slider.offsetLeft;
+                    const walk = (x - startX) * 2;
+                    slider.scrollLeft = scrollLeft - walk;
+                });
+            }
         });
-      });
-    }());
-  </script>
+    </script>
 </body>
 </html>
