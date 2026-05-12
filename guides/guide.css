@@ -96,9 +96,9 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 58px;
+    gap: clamp(28px, 3.8vw, 54px);
     margin-left: auto;
-    margin-right: clamp(40px, 6vw, 110px);
+    margin-right: clamp(32px, 5vw, 88px);
     padding-top: 0;
 }
 
