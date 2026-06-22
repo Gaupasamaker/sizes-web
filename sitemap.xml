@@ -360,4 +360,40 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/blog/between-two-sizes.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/blog/entre-dos-tallas.html" />
   </url>
+  <url>
+    <loc>https://sizes.es/es/blog/elegir-talla-banador-infantil.html</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sizes.es/es/blog/elegir-talla-banador-infantil.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/blog/choose-kids-swimwear-size.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/blog/elegir-talla-banador-infantil.html" />
+  </url>
+  <url>
+    <loc>https://sizes.es/en/blog/choose-kids-swimwear-size.html</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sizes.es/es/blog/elegir-talla-banador-infantil.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/blog/choose-kids-swimwear-size.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/blog/elegir-talla-banador-infantil.html" />
+  </url>
+  <url>
+    <loc>https://sizes.es/es/guias/decathlon-vs-speedo-ninos.html</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sizes.es/es/guias/decathlon-vs-speedo-ninos.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/guides/decathlon-vs-speedo-kids.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/guias/decathlon-vs-speedo-ninos.html" />
+  </url>
+  <url>
+    <loc>https://sizes.es/en/guides/decathlon-vs-speedo-kids.html</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sizes.es/es/guias/decathlon-vs-speedo-ninos.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/guides/decathlon-vs-speedo-kids.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/guias/decathlon-vs-speedo-ninos.html" />
+  </url>
 </urlset>
