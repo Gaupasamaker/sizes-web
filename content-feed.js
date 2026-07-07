@@ -1,0 +1,465 @@
+window.SIZES_CONTENT_FEED = {
+  "version": "2026-07-06",
+  "items": [
+    {
+      "id": "blog-elegir-talla-sandalias-infantiles-es",
+      "type": "blog",
+      "lang": "es",
+      "title": "C\u00f3mo elegir la talla de sandalias infantiles",
+      "summary": "Medida del pie, margen real y sujeci\u00f3n para acertar con sandalias de verano sin comprar de m\u00e1s.",
+      "tag": "Calzado",
+      "image": "https://sizes.es/assets/blog/kids-sandals-size.jpg",
+      "url": "https://sizes.es/es/blog/elegir-talla-sandalias-infantiles.html"
+    },
+    {
+      "id": "blog-elegir-talla-ropa-rebajas-online-es",
+      "type": "blog",
+      "lang": "es",
+      "title": "C\u00f3mo elegir talla al comprar ropa de rebajas online",
+      "summary": "Un m\u00e9todo sencillo para revisar medidas, tejido y margen real antes de dejarte llevar por el descuento.",
+      "tag": "Online",
+      "image": "https://sizes.es/assets/blog/online-sales-size.jpg",
+      "url": "https://sizes.es/es/blog/elegir-talla-ropa-rebajas-online.html"
+    },
+    {
+      "id": "blog-elegir-talla-banador-infantil-es",
+      "type": "blog",
+      "lang": "es",
+      "title": "C\u00f3mo elegir la talla de ba\u00f1ador infantil",
+      "summary": "Medidas, movimiento y margen \u00fatil para acertar sin comprar una prenda demasiado grande.",
+      "tag": "Verano",
+      "image": "https://sizes.es/assets/blog/kids-swimwear-size.png",
+      "url": "https://sizes.es/es/blog/elegir-talla-banador-infantil.html"
+    },
+    {
+      "id": "blog-como-medir-ropa-ninos-es",
+      "type": "blog",
+      "lang": "es",
+      "title": "C\u00f3mo medir la ropa de ni\u00f1os en casa",
+      "summary": "Una gu\u00eda sencilla para medir prendas, comparar con lo que ya queda bien y evitar comprar solo por edad.",
+      "tag": "Familias",
+      "image": "https://sizes.es/assets/blog/measure-kids.jpg",
+      "url": "https://sizes.es/es/blog/como-medir-ropa-ninos.html"
+    },
+    {
+      "id": "blog-guia-tallas-eu-uk-us-es",
+      "type": "blog",
+      "lang": "es",
+      "title": "Gu\u00eda r\u00e1pida de tallas EU, UK y US",
+      "summary": "Qu\u00e9 mirar antes de convertir tallas y por qu\u00e9 las equivalencias no siempre funcionan igual entre marcas.",
+      "tag": "Tallas",
+      "image": "https://sizes.es/assets/blog/size-conversion.jpg",
+      "url": "https://sizes.es/es/blog/guia-tallas-eu-uk-us.html"
+    },
+    {
+      "id": "blog-por-que-cambia-talla-entre-marcas-es",
+      "type": "blog",
+      "lang": "es",
+      "title": "Por qu\u00e9 cambia tu talla entre marcas",
+      "summary": "Patr\u00f3n, tejido, fit y p\u00fablico objetivo: las razones reales por las que una misma talla puede sentirse distinta.",
+      "tag": "Marcas",
+      "image": "https://sizes.es/assets/blog/brand-fit.jpg",
+      "url": "https://sizes.es/es/blog/por-que-cambia-talla-entre-marcas.html"
+    },
+    {
+      "id": "blog-como-reducir-devoluciones-ropa-online-es",
+      "type": "blog",
+      "lang": "es",
+      "title": "C\u00f3mo reducir devoluciones al comprar ropa online",
+      "summary": "Un m\u00e9todo antes de comprar para revisar medidas, tejido, opiniones y margen de error.",
+      "tag": "Online",
+      "image": "https://sizes.es/assets/blog/online-returns.jpg",
+      "url": "https://sizes.es/es/blog/como-reducir-devoluciones-ropa-online.html"
+    },
+    {
+      "id": "blog-armario-infantil-temporada-es",
+      "type": "blog",
+      "lang": "es",
+      "title": "C\u00f3mo preparar el armario infantil de temporada",
+      "summary": "Qu\u00e9 revisar antes de comprar ropa nueva y c\u00f3mo dejar margen para crecimiento, colegio y capas.",
+      "tag": "Ni\u00f1os",
+      "image": "https://sizes.es/assets/blog/seasonal-wardrobe.jpg",
+      "url": "https://sizes.es/es/blog/armario-infantil-temporada.html"
+    },
+    {
+      "id": "blog-entre-dos-tallas-es",
+      "type": "blog",
+      "lang": "es",
+      "title": "Qu\u00e9 hacer cuando est\u00e1s entre dos tallas",
+      "summary": "Un m\u00e9todo sencillo para decidir si subir, bajar o mantener talla seg\u00fan prenda, tejido y uso real.",
+      "tag": "Decisi\u00f3n",
+      "image": "https://sizes.es/assets/blog/between-sizes.jpg",
+      "url": "https://sizes.es/es/blog/entre-dos-tallas.html"
+    },
+    {
+      "id": "guide-kiabi-vs-hm-ninos-es",
+      "type": "guide",
+      "lang": "es",
+      "title": "Kiabi vs H&M Ni\u00f1os",
+      "summary": "Compara tallas infantiles para b\u00e1sicos, pantalones, sudaderas, vestidos y abrigos.",
+      "tag": "Ni\u00f1os",
+      "image": "https://sizes.es/assets/img/hero_kiabi_hm_kids.jpg",
+      "url": "https://sizes.es/es/guias/kiabi-vs-hm-ninos.html"
+    },
+    {
+      "id": "guide-lefties-vs-primark-ninos-es",
+      "type": "guide",
+      "lang": "es",
+      "title": "Lefties vs Primark Ni\u00f1os",
+      "summary": "Compara tallas infantiles para b\u00e1sicos, pantalones, sudaderas, vestidos y abrigos.",
+      "tag": "Ni\u00f1os",
+      "image": "https://sizes.es/assets/img/hero_lefties_primark_kids.jpg",
+      "url": "https://sizes.es/es/guias/lefties-vs-primark-ninos.html"
+    },
+    {
+      "id": "guide-decathlon-vs-speedo-ninos-es",
+      "type": "guide",
+      "lang": "es",
+      "title": "Decathlon vs Speedo Ni\u00f1os",
+      "summary": "Compara tallas infantiles de ba\u00f1ador seg\u00fan prenda, actividad, medidas y nivel de ajuste.",
+      "tag": "Nataci\u00f3n",
+      "image": "https://sizes.es/assets/img/hero_decathlon_speedo.png",
+      "url": "https://sizes.es/es/guias/decathlon-vs-speedo-ninos.html"
+    },
+    {
+      "id": "guide-zara-vs-mango-ninos-es",
+      "type": "guide",
+      "lang": "es",
+      "title": "Zara vs Mango Ni\u00f1os",
+      "summary": "Compara tallas infantiles de Zara y Mango por prenda: camisetas, pantalones, vestidos y chaquetas. Consejos pr\u00e1cticos para comprar con menos dudas.",
+      "tag": "Ni\u00f1os",
+      "image": "https://sizes.es/assets/img/zara_vs_mango_kids_hero.png",
+      "url": "https://sizes.es/es/guias/zara-vs-mango-ninos.html"
+    },
+    {
+      "id": "guide-shein-vs-zara-es",
+      "type": "guide",
+      "lang": "es",
+      "title": "Shein vs Zara",
+      "summary": "Gu\u00eda pr\u00e1ctica para comparar tallas de Shein y Zara en vestidos, tops, vaqueros y chaquetas. Consejos para reducir devoluciones.",
+      "tag": "Mujer",
+      "image": "https://sizes.es/assets/img/hero_shein.png",
+      "url": "https://sizes.es/es/guias/shein-vs-zara.html"
+    },
+    {
+      "id": "guide-nike-vs-adidas-ninos-es",
+      "type": "guide",
+      "lang": "es",
+      "title": "Nike vs Adidas Ni\u00f1os",
+      "summary": "Compara tallas infantiles de zapatillas Nike y Adidas. Aprende a medir el pie, dejar margen y evitar cambios innecesarios.",
+      "tag": "Sneakers",
+      "image": "https://sizes.es/assets/img/hero_nikekids.png",
+      "url": "https://sizes.es/es/guias/nike-vs-adidas-ninos.html"
+    },
+    {
+      "id": "guide-vans-vs-converse-es",
+      "type": "guide",
+      "lang": "es",
+      "title": "Vans vs Converse",
+      "summary": "Compara c\u00f3mo tallan Vans y Converse en zapatillas casual. Consejos sobre horma, ancho, media talla y comodidad.",
+      "tag": "Sneakers",
+      "image": "https://sizes.es/assets/img/hero_vans.png",
+      "url": "https://sizes.es/es/guias/vans-vs-converse.html"
+    },
+    {
+      "id": "guide-stradivarius-vs-bershka-es",
+      "type": "guide",
+      "lang": "es",
+      "title": "Stradivarius vs Bershka",
+      "summary": "Compara tallas de Stradivarius y Bershka en vaqueros, tops, vestidos y chaquetas. Consejos para elegir mejor seg\u00fan patr\u00f3n, fit y tejido.",
+      "tag": "Mujer",
+      "image": "https://sizes.es/assets/img/hero_stradivarius.png",
+      "url": "https://sizes.es/es/guias/stradivarius-vs-bershka.html"
+    },
+    {
+      "id": "guide-hm-vs-zara-es",
+      "type": "guide",
+      "lang": "es",
+      "title": "H&M vs Zara",
+      "summary": "Compara tallas de H&M y Zara en b\u00e1sicos, vaqueros, vestidos y chaquetas. Consejos para elegir mejor al comprar online.",
+      "tag": "Mujer",
+      "image": "https://sizes.es/assets/img/hero_hm.png",
+      "url": "https://sizes.es/es/guias/hm-vs-zara.html"
+    },
+    {
+      "id": "guide-primark-vs-hm-ninos-es",
+      "type": "guide",
+      "lang": "es",
+      "title": "Primark vs H&M Ni\u00f1os",
+      "summary": "Compara tallas infantiles de Primark y H&M para b\u00e1sicos, pijamas, pantalones y abrigos. Consejos \u00fatiles para familias.",
+      "tag": "Ni\u00f1os",
+      "image": "https://sizes.es/assets/img/cta_family_new.png",
+      "url": "https://sizes.es/es/guias/primark-vs-hm-ninos.html"
+    },
+    {
+      "id": "guide-massimo-dutti-vs-zara-es",
+      "type": "guide",
+      "lang": "es",
+      "title": "Massimo Dutti vs Zara",
+      "summary": "Compara tallas de Massimo Dutti y Zara en blazers, camisas, pantalones y vestidos. Consejos para elegir cortes m\u00e1s formales.",
+      "tag": "Mujer",
+      "image": "https://sizes.es/assets/img/hero_massimo.png",
+      "url": "https://sizes.es/es/guias/massimo-dutti-vs-zara.html"
+    },
+    {
+      "id": "guide-pull-and-bear-vs-bershka-es",
+      "type": "guide",
+      "lang": "es",
+      "title": "Pull&Bear vs Bershka",
+      "summary": "Compara tallas de Pull&Bear y Bershka en denim, camisetas, cargos y prendas oversize. Gu\u00eda pr\u00e1ctica para fits urbanos.",
+      "tag": "Mujer",
+      "image": "https://sizes.es/assets/img/hero_shein.png",
+      "url": "https://sizes.es/es/guias/pull-and-bear-vs-bershka.html"
+    },
+    {
+      "id": "guide-sfera-vs-mayoral-ninos-es",
+      "type": "guide",
+      "lang": "es",
+      "title": "Sfera vs Mayoral Ni\u00f1os",
+      "summary": "Compara tallas infantiles de Sfera y Mayoral en ropa de vestir, b\u00e1sicos, pantalones y abrigos. Consejos para familias.",
+      "tag": "Ni\u00f1os",
+      "image": "https://sizes.es/assets/img/hero_zarakids.png",
+      "url": "https://sizes.es/es/guias/sfera-vs-mayoral-ninos.html"
+    },
+    {
+      "id": "guide-decathlon-vs-nike-ninos-es",
+      "type": "guide",
+      "lang": "es",
+      "title": "Decathlon vs Nike Ni\u00f1os",
+      "summary": "Compara tallas infantiles de Decathlon y Nike en ropa deportiva, zapatillas y prendas de colegio. Consejos para elegir seg\u00fan uso.",
+      "tag": "Deporte",
+      "image": "https://sizes.es/assets/img/hero_nikekids.png",
+      "url": "https://sizes.es/es/guias/decathlon-vs-nike-ninos.html"
+    },
+    {
+      "id": "blog-choose-kids-sandals-size-en",
+      "type": "blog",
+      "lang": "en",
+      "title": "How to choose the right kids' sandal size",
+      "summary": "Foot length, realistic growing room and secure straps for summer sandals that actually fit.",
+      "tag": "Footwear",
+      "image": "https://sizes.es/assets/blog/kids-sandals-size.jpg",
+      "url": "https://sizes.es/en/blog/choose-kids-sandals-size.html"
+    },
+    {
+      "id": "blog-choose-size-online-sales-en",
+      "type": "blog",
+      "lang": "en",
+      "title": "How to choose the right size when shopping online sales",
+      "summary": "A simple method for checking measurements, fabric and realistic ease before following the discount.",
+      "tag": "Online",
+      "image": "https://sizes.es/assets/blog/online-sales-size.jpg",
+      "url": "https://sizes.es/en/blog/choose-size-online-sales.html"
+    },
+    {
+      "id": "blog-choose-kids-swimwear-size-en",
+      "type": "blog",
+      "lang": "en",
+      "title": "How to choose the right kids' swimwear size",
+      "summary": "Measurements, movement and useful growing room without buying a swimsuit too large.",
+      "tag": "Summer",
+      "image": "https://sizes.es/assets/blog/kids-swimwear-size.png",
+      "url": "https://sizes.es/en/blog/choose-kids-swimwear-size.html"
+    },
+    {
+      "id": "blog-how-to-measure-kids-clothes-en",
+      "type": "blog",
+      "lang": "en",
+      "title": "How to measure kids clothes at home",
+      "summary": "A simple way to measure garments, compare with what already fits and avoid buying by age alone.",
+      "tag": "Families",
+      "image": "https://sizes.es/assets/blog/measure-kids.jpg",
+      "url": "https://sizes.es/en/blog/how-to-measure-kids-clothes.html"
+    },
+    {
+      "id": "blog-eu-uk-us-size-guide-en",
+      "type": "blog",
+      "lang": "en",
+      "title": "Quick guide to EU, UK and US sizes",
+      "summary": "What to check before converting sizes and why equivalence charts do not always work across brands.",
+      "tag": "Sizing",
+      "image": "https://sizes.es/assets/blog/size-conversion.jpg",
+      "url": "https://sizes.es/en/blog/eu-uk-us-size-guide.html"
+    },
+    {
+      "id": "blog-why-size-changes-between-brands-en",
+      "type": "blog",
+      "lang": "en",
+      "title": "Why your size changes between brands",
+      "summary": "Pattern, fabric, fit and customer profile: the real reasons one size can feel different.",
+      "tag": "Brands",
+      "image": "https://sizes.es/assets/blog/brand-fit.jpg",
+      "url": "https://sizes.es/en/blog/why-size-changes-between-brands.html"
+    },
+    {
+      "id": "blog-how-to-reduce-online-clothing-returns-en",
+      "type": "blog",
+      "lang": "en",
+      "title": "How to reduce returns when buying clothes online",
+      "summary": "A pre-purchase method for checking measurements, fabric, reviews and margin for error.",
+      "tag": "Online",
+      "image": "https://sizes.es/assets/blog/online-returns.jpg",
+      "url": "https://sizes.es/en/blog/how-to-reduce-online-clothing-returns.html"
+    },
+    {
+      "id": "blog-kids-seasonal-wardrobe-en",
+      "type": "blog",
+      "lang": "en",
+      "title": "How to prepare a kids seasonal wardrobe",
+      "summary": "What to review before buying new clothes and how to leave room for growth, school and layers.",
+      "tag": "Kids",
+      "image": "https://sizes.es/assets/blog/seasonal-wardrobe.jpg",
+      "url": "https://sizes.es/en/blog/kids-seasonal-wardrobe.html"
+    },
+    {
+      "id": "blog-between-two-sizes-en",
+      "type": "blog",
+      "lang": "en",
+      "title": "What to do when you are between two sizes",
+      "summary": "A simple method for deciding whether to size up, size down or stay put depending on garment, fabric and real use.",
+      "tag": "Decision",
+      "image": "https://sizes.es/assets/blog/between-sizes.jpg",
+      "url": "https://sizes.es/en/blog/between-two-sizes.html"
+    },
+    {
+      "id": "guide-kiabi-vs-hm-kids-en",
+      "type": "guide",
+      "lang": "en",
+      "title": "Kiabi vs H&M Kids",
+      "summary": "Compare kids sizing for basics, trousers, sweatshirts, dresses and coats.",
+      "tag": "Kids",
+      "image": "https://sizes.es/assets/img/hero_kiabi_hm_kids.jpg",
+      "url": "https://sizes.es/en/guides/kiabi-vs-hm-kids.html"
+    },
+    {
+      "id": "guide-lefties-vs-primark-kids-en",
+      "type": "guide",
+      "lang": "en",
+      "title": "Lefties vs Primark Kids",
+      "summary": "Compare kids sizing for basics, trousers, sweatshirts, dresses and coats.",
+      "tag": "Kids",
+      "image": "https://sizes.es/assets/img/hero_lefties_primark_kids.jpg",
+      "url": "https://sizes.es/en/guides/lefties-vs-primark-kids.html"
+    },
+    {
+      "id": "guide-decathlon-vs-speedo-kids-en",
+      "type": "guide",
+      "lang": "en",
+      "title": "Decathlon vs Speedo Kids",
+      "summary": "Compare children's swimwear sizes by garment, activity, measurements and intended fit.",
+      "tag": "Swimming",
+      "image": "https://sizes.es/assets/img/hero_decathlon_speedo.png",
+      "url": "https://sizes.es/en/guides/decathlon-vs-speedo-kids.html"
+    },
+    {
+      "id": "guide-zara-vs-mango-kids-en",
+      "type": "guide",
+      "lang": "en",
+      "title": "Zara vs Mango Kids",
+      "summary": "Compare Zara and Mango kids sizing by garment: T-shirts, trousers, dresses and jackets. Practical tips for buying with fewer doubts.",
+      "tag": "Kids",
+      "image": "https://sizes.es/assets/img/zara_vs_mango_kids_hero.png",
+      "url": "https://sizes.es/en/guides/zara-vs-mango-kids.html"
+    },
+    {
+      "id": "guide-shein-vs-zara-en",
+      "type": "guide",
+      "lang": "en",
+      "title": "Shein vs Zara",
+      "summary": "A practical guide to compare Shein and Zara sizing in dresses, tops, jeans and jackets, with tips to reduce returns.",
+      "tag": "Women",
+      "image": "https://sizes.es/assets/img/hero_shein.png",
+      "url": "https://sizes.es/en/guides/shein-vs-zara.html"
+    },
+    {
+      "id": "guide-nike-vs-adidas-kids-en",
+      "type": "guide",
+      "lang": "en",
+      "title": "Nike vs Adidas Kids",
+      "summary": "Compare Nike and Adidas kids sneaker sizing. Learn how to measure feet, allow growth room and avoid unnecessary exchanges.",
+      "tag": "Sneakers",
+      "image": "https://sizes.es/assets/img/hero_nikekids.png",
+      "url": "https://sizes.es/en/guides/nike-vs-adidas-kids.html"
+    },
+    {
+      "id": "guide-vans-vs-converse-en",
+      "type": "guide",
+      "lang": "en",
+      "title": "Vans vs Converse",
+      "summary": "Compare Vans and Converse casual sneaker sizing, including shape, width, half sizes and comfort tips.",
+      "tag": "Sneakers",
+      "image": "https://sizes.es/assets/img/hero_vans.png",
+      "url": "https://sizes.es/en/guides/vans-vs-converse.html"
+    },
+    {
+      "id": "guide-stradivarius-vs-bershka-en",
+      "type": "guide",
+      "lang": "en",
+      "title": "Stradivarius vs Bershka",
+      "summary": "Compare Stradivarius and Bershka sizing in jeans, tops, dresses and jackets, with practical tips by fit, cut and fabric.",
+      "tag": "Women",
+      "image": "https://sizes.es/assets/img/hero_stradivarius.png",
+      "url": "https://sizes.es/en/guides/stradivarius-vs-bershka.html"
+    },
+    {
+      "id": "guide-hm-vs-zara-en",
+      "type": "guide",
+      "lang": "en",
+      "title": "H&M vs Zara",
+      "summary": "Compare H&M and Zara sizing in basics, jeans, dresses and jackets, with practical tips for buying online.",
+      "tag": "Women",
+      "image": "https://sizes.es/assets/img/hero_hm.png",
+      "url": "https://sizes.es/en/guides/hm-vs-zara.html"
+    },
+    {
+      "id": "guide-primark-vs-hm-kids-en",
+      "type": "guide",
+      "lang": "en",
+      "title": "Primark vs H&M Kids",
+      "summary": "Compare Primark and H&M kids sizing for basics, pyjamas, trousers and coats, with practical family shopping tips.",
+      "tag": "Kids",
+      "image": "https://sizes.es/assets/img/cta_family_new.png",
+      "url": "https://sizes.es/en/guides/primark-vs-hm-kids.html"
+    },
+    {
+      "id": "guide-massimo-dutti-vs-zara-en",
+      "type": "guide",
+      "lang": "en",
+      "title": "Massimo Dutti vs Zara",
+      "summary": "Compare Massimo Dutti and Zara sizing in blazers, shirts, trousers and dresses, with tips for smarter cuts.",
+      "tag": "Women",
+      "image": "https://sizes.es/assets/img/hero_massimo.png",
+      "url": "https://sizes.es/en/guides/massimo-dutti-vs-zara.html"
+    },
+    {
+      "id": "guide-pull-and-bear-vs-bershka-en",
+      "type": "guide",
+      "lang": "en",
+      "title": "Pull&Bear vs Bershka",
+      "summary": "Compare Pull&Bear and Bershka sizing in denim, T-shirts, cargos and oversized pieces with practical urban-fit advice.",
+      "tag": "Women",
+      "image": "https://sizes.es/assets/img/hero_shein.png",
+      "url": "https://sizes.es/en/guides/pull-and-bear-vs-bershka.html"
+    },
+    {
+      "id": "guide-sfera-vs-mayoral-kids-en",
+      "type": "guide",
+      "lang": "en",
+      "title": "Sfera vs Mayoral Kids",
+      "summary": "Compare Sfera and Mayoral kids sizing in smart clothes, basics, trousers and coats, with practical family tips.",
+      "tag": "Kids",
+      "image": "https://sizes.es/assets/img/hero_zarakids.png",
+      "url": "https://sizes.es/en/guides/sfera-vs-mayoral-kids.html"
+    },
+    {
+      "id": "guide-decathlon-vs-nike-kids-en",
+      "type": "guide",
+      "lang": "en",
+      "title": "Decathlon vs Nike Kids",
+      "summary": "Compare Decathlon and Nike kids sizing in sportswear, sneakers and school-friendly pieces, with practical tips by use.",
+      "tag": "Sports",
+      "image": "https://sizes.es/assets/img/hero_nikekids.png",
+      "url": "https://sizes.es/en/guides/decathlon-vs-nike-kids.html"
+    }
+  ]
+};
