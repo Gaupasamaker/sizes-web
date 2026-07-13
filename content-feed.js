@@ -1,12 +1,12 @@
 window.SIZES_CONTENT_FEED = {
-  "version": "2026-07-13",
+  "version": "2026-07-13.1",
   "items": [
     {
       "id": "blog-elegir-talla-ropa-verano-infantil-es",
       "type": "blog",
       "lang": "es",
-      "title": "C?mo elegir talla en ropa de verano infantil",
-      "summary": "Camisetas, shorts, vestidos y sandalias: c?mo dejar margen ?til sin comprar demasiado grande.",
+      "title": "C\u00f3mo elegir talla en ropa de verano infantil",
+      "summary": "Camisetas, shorts, vestidos y sandalias: c\u00f3mo dejar margen \u00fatil sin comprar demasiado grande.",
       "tag": "Verano",
       "image": "https://sizes.es/assets/blog/kids-summer-clothes-size.jpg",
       "url": "https://sizes.es/es/blog/elegir-talla-ropa-verano-infantil.html"
@@ -15,9 +15,9 @@ window.SIZES_CONTENT_FEED = {
       "id": "guide-ca-vs-hm-ninos-es",
       "type": "guide",
       "lang": "es",
-      "title": "C&A vs H&M Ni?os",
-      "summary": "Compara tallas infantiles para camisetas, shorts, vestidos, sudaderas finas y b?sicos de verano.",
-      "tag": "Ni?os",
+      "title": "C&A vs H&M Ni\u00f1os",
+      "summary": "Compara tallas infantiles para camisetas, shorts, vestidos, sudaderas finas y b\u00e1sicos de verano.",
+      "tag": "Ni\u00f1os",
       "image": "https://sizes.es/assets/img/hero_ca_hm_kids.jpg",
       "url": "https://sizes.es/es/guias/ca-vs-hm-ninos.html"
     },
