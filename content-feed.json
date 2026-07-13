@@ -1,6 +1,46 @@
 {
-  "version": "2026-07-06",
+  "version": "2026-07-13",
   "items": [
+    {
+      "id": "blog-elegir-talla-ropa-verano-infantil-es",
+      "type": "blog",
+      "lang": "es",
+      "title": "C?mo elegir talla en ropa de verano infantil",
+      "summary": "Camisetas, shorts, vestidos y sandalias: c?mo dejar margen ?til sin comprar demasiado grande.",
+      "tag": "Verano",
+      "image": "https://sizes.es/assets/blog/kids-summer-clothes-size.jpg",
+      "url": "https://sizes.es/es/blog/elegir-talla-ropa-verano-infantil.html"
+    },
+    {
+      "id": "guide-ca-vs-hm-ninos-es",
+      "type": "guide",
+      "lang": "es",
+      "title": "C&A vs H&M Ni?os",
+      "summary": "Compara tallas infantiles para camisetas, shorts, vestidos, sudaderas finas y b?sicos de verano.",
+      "tag": "Ni?os",
+      "image": "https://sizes.es/assets/img/hero_ca_hm_kids.jpg",
+      "url": "https://sizes.es/es/guias/ca-vs-hm-ninos.html"
+    },
+    {
+      "id": "blog-choose-kids-summer-clothing-size-en",
+      "type": "blog",
+      "lang": "en",
+      "title": "How to choose kids' summer clothing sizes",
+      "summary": "T-shirts, shorts, dresses and sandals: how to leave useful room without buying too big.",
+      "tag": "Summer",
+      "image": "https://sizes.es/assets/blog/kids-summer-clothes-size.jpg",
+      "url": "https://sizes.es/en/blog/choose-kids-summer-clothing-size.html"
+    },
+    {
+      "id": "guide-ca-vs-hm-kids-en",
+      "type": "guide",
+      "lang": "en",
+      "title": "C&A vs H&M Kids",
+      "summary": "Compare kids sizing for T-shirts, shorts, dresses, light sweatshirts and summer basics.",
+      "tag": "Kids",
+      "image": "https://sizes.es/assets/img/hero_ca_hm_kids.jpg",
+      "url": "https://sizes.es/en/guides/ca-vs-hm-kids.html"
+    },
     {
       "id": "blog-elegir-talla-sandalias-infantiles-es",
       "type": "blog",

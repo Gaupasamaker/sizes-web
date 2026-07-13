@@ -168,10 +168,7 @@ a {
     position: relative;
     overflow: hidden;
     margin-top: var(--header-h);
-    background:
-        linear-gradient(90deg, #fbf7f0 0%, rgba(251, 247, 240, 0.92) 32%, rgba(251, 247, 240, 0.64) 48%, rgba(251, 247, 240, 0.18) 66%, rgba(251, 247, 240, 0) 100%),
-        var(--guide-hero-image, url("../assets/img/hero_stradivarius.png")) right center / min(64vw, 980px) auto no-repeat,
-        var(--cream);
+    background: var(--guide-hero-image, url("../assets/img/hero_stradivarius.png")) center center / cover no-repeat var(--cream);
 }
 
 .guide-hero::before {
@@ -179,8 +176,8 @@ a {
     position: absolute;
     inset: 0;
     background:
-        radial-gradient(ellipse at 44% 52%, rgba(251, 247, 240, 0.84) 0%, rgba(251, 247, 240, 0.58) 20%, rgba(251, 247, 240, 0.18) 38%, rgba(251, 247, 240, 0) 56%),
-        linear-gradient(90deg, #fbf7f0 0%, rgba(251, 247, 240, 0.98) 28%, rgba(251, 247, 240, 0.66) 48%, rgba(251, 247, 240, 0.2) 66%, rgba(251, 247, 240, 0) 100%),
+        linear-gradient(90deg, rgba(251, 247, 240, 0.94) 0%, rgba(251, 247, 240, 0.78) 38%, rgba(251, 247, 240, 0.34) 68%, rgba(251, 247, 240, 0.08) 100%),
+        radial-gradient(ellipse at 40% 52%, rgba(251, 247, 240, 0.46) 0%, rgba(251, 247, 240, 0.22) 30%, rgba(251, 247, 240, 0) 62%),
         linear-gradient(180deg, rgba(251, 247, 240, 0) 68%, #fbf7f0 100%);
     pointer-events: none;
 }

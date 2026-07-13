@@ -468,4 +468,40 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/guides/kiabi-vs-hm-kids.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/guias/kiabi-vs-hm-ninos.html" />
   </url>
+  <url>
+    <loc>https://sizes.es/es/blog/elegir-talla-ropa-verano-infantil.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sizes.es/es/blog/elegir-talla-ropa-verano-infantil.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/blog/choose-kids-summer-clothing-size.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/blog/elegir-talla-ropa-verano-infantil.html" />
+  </url>
+  <url>
+    <loc>https://sizes.es/en/blog/choose-kids-summer-clothing-size.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sizes.es/es/blog/elegir-talla-ropa-verano-infantil.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/blog/choose-kids-summer-clothing-size.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/blog/elegir-talla-ropa-verano-infantil.html" />
+  </url>
+  <url>
+    <loc>https://sizes.es/es/guias/ca-vs-hm-ninos.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sizes.es/es/guias/ca-vs-hm-ninos.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/guides/ca-vs-hm-kids.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/guias/ca-vs-hm-ninos.html" />
+  </url>
+  <url>
+    <loc>https://sizes.es/en/guides/ca-vs-hm-kids.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sizes.es/es/guias/ca-vs-hm-ninos.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/guides/ca-vs-hm-kids.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/guias/ca-vs-hm-ninos.html" />
+  </url>
 </urlset>
