@@ -1,6 +1,46 @@
 {
-  "version": "2026-07-13.1",
+  "version": "2026-07-20",
   "items": [
+    {
+      "id": "blog-elegir-talla-bikini-banador-online-es",
+      "type": "blog",
+      "lang": "es",
+      "title": "C\u00f3mo elegir talla de bikini o ba\u00f1ador online",
+      "summary": "Pecho, contorno, cadera, torso y sujeci\u00f3n: qu\u00e9 mirar antes de pedir ropa de ba\u00f1o.",
+      "tag": "Mujer",
+      "image": "https://sizes.es/assets/blog/choose-swimwear-size-online.jpg",
+      "url": "https://sizes.es/es/blog/elegir-talla-bikini-banador-online.html"
+    },
+    {
+      "id": "guide-oysho-vs-calzedonia-es",
+      "type": "guide",
+      "lang": "es",
+      "title": "Oysho vs Calzedonia: bikinis y ba\u00f1adores",
+      "summary": "Compara tops, braguitas y ba\u00f1adores por medidas, copa, cobertura y tipo de ajuste.",
+      "tag": "Ba\u00f1o",
+      "image": "https://sizes.es/assets/img/hero_oysho_calzedonia_swimwear.jpg",
+      "url": "https://sizes.es/es/guias/oysho-vs-calzedonia.html"
+    },
+    {
+      "id": "blog-choose-bikini-swimsuit-size-online-en",
+      "type": "blog",
+      "lang": "en",
+      "title": "How to choose a bikini or swimsuit size online",
+      "summary": "Bust, underbust, hips, torso and support: what to check before ordering swimwear.",
+      "tag": "Women",
+      "image": "https://sizes.es/assets/blog/choose-swimwear-size-online.jpg",
+      "url": "https://sizes.es/en/blog/choose-bikini-swimsuit-size-online.html"
+    },
+    {
+      "id": "guide-oysho-vs-calzedonia-en",
+      "type": "guide",
+      "lang": "en",
+      "title": "Oysho vs Calzedonia: bikinis and swimsuits",
+      "summary": "Compare tops, bottoms and one-pieces by measurements, cup, coverage and adjustment.",
+      "tag": "Swimwear",
+      "image": "https://sizes.es/assets/img/hero_oysho_calzedonia_swimwear.jpg",
+      "url": "https://sizes.es/en/guides/oysho-vs-calzedonia.html"
+    },
     {
       "id": "blog-elegir-talla-ropa-verano-infantil-es",
       "type": "blog",
