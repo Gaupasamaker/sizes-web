@@ -832,9 +832,11 @@ a {
 
 .latest-post-card img {
     width: 100%;
+    height: auto;
     aspect-ratio: 1.55;
     object-fit: cover;
     object-position: center;
+    display: block;
 }
 
 .latest-post-card-body {
@@ -1391,6 +1393,7 @@ a {
     }
 
     .latest-post-card img {
+        height: auto;
         aspect-ratio: 1.52;
     }
 
