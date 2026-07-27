@@ -1,6 +1,46 @@
 {
-  "version": "2026-07-20",
+  "version": "2026-07-27",
   "items": [
+    {
+      "id": "blog-elegir-talla-vestidos-verano-es",
+      "type": "blog",
+      "lang": "es",
+      "title": "C\u00f3mo elegir talla en vestidos de verano",
+      "summary": "Compara corte, tejido, forro y medidas reales para elegir un vestido que se mueva contigo.",
+      "tag": "Vestidos",
+      "image": "https://sizes.es/assets/blog/summer-dress-fit.jpg",
+      "url": "https://sizes.es/es/blog/elegir-talla-vestidos-verano.html"
+    },
+    {
+      "id": "guide-mango-vs-zara-vestidos-verano-es",
+      "type": "guide",
+      "lang": "es",
+      "title": "Mango vs Zara: vestidos de verano",
+      "summary": "Compara vestidos camiseros, cruzados, entallados, fluidos y de lino antes de elegir talla.",
+      "tag": "Vestidos",
+      "image": "https://sizes.es/assets/img/hero_mango_zara_summer_dresses.jpg",
+      "url": "https://sizes.es/es/guias/mango-vs-zara-vestidos-verano.html"
+    },
+    {
+      "id": "blog-choose-summer-dress-size-en",
+      "type": "blog",
+      "lang": "en",
+      "title": "How to choose the right summer dress size",
+      "summary": "Compare cut, fabric, lining and real measurements to choose a dress that moves with you.",
+      "tag": "Dresses",
+      "image": "https://sizes.es/assets/blog/summer-dress-fit.jpg",
+      "url": "https://sizes.es/en/blog/choose-summer-dress-size.html"
+    },
+    {
+      "id": "guide-mango-vs-zara-summer-dresses-en",
+      "type": "guide",
+      "lang": "en",
+      "title": "Mango vs Zara: summer dresses",
+      "summary": "Compare shirt, wrap, fitted, flowing and linen dresses before choosing a size.",
+      "tag": "Dresses",
+      "image": "https://sizes.es/assets/img/hero_mango_zara_summer_dresses.jpg",
+      "url": "https://sizes.es/en/guides/mango-vs-zara-summer-dresses.html"
+    },
     {
       "id": "blog-elegir-talla-bikini-banador-online-es",
       "type": "blog",
