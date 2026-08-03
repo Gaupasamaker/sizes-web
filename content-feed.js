@@ -1,6 +1,46 @@
 window.SIZES_CONTENT_FEED = {
-  "version": "2026-07-27",
+  "version": "2026-08-03",
   "items": [
+    {
+      "id": "blog-elegir-talla-ropa-lino-es",
+      "type": "blog",
+      "lang": "es",
+      "title": "Cómo elegir talla en ropa de lino",
+      "summary": "Camisas, pantalones y vestidos: qué medir y cuánto margen dejar según el corte y la mezcla.",
+      "tag": "Lino",
+      "image": "https://sizes.es/assets/blog/linen-clothing-size.jpg",
+      "url": "https://sizes.es/es/blog/elegir-talla-ropa-lino.html"
+    },
+    {
+      "id": "guide-uniqlo-vs-zara-lino-es",
+      "type": "guide",
+      "lang": "es",
+      "title": "Uniqlo vs Zara: ropa de lino",
+      "summary": "Compara camisas, pantalones, vestidos y faldas de lino por corte, composición y medidas.",
+      "tag": "Lino",
+      "image": "https://sizes.es/assets/img/hero_uniqlo_zara_linen.jpg",
+      "url": "https://sizes.es/es/guias/uniqlo-vs-zara-lino.html"
+    },
+    {
+      "id": "blog-choose-linen-clothing-size-en",
+      "type": "blog",
+      "lang": "en",
+      "title": "How to choose the right size in linen clothing",
+      "summary": "Shirts, trousers and dresses: what to measure and how much ease each cut and blend needs.",
+      "tag": "Linen",
+      "image": "https://sizes.es/assets/blog/linen-clothing-size.jpg",
+      "url": "https://sizes.es/en/blog/choose-linen-clothing-size.html"
+    },
+    {
+      "id": "guide-uniqlo-vs-zara-linen-en",
+      "type": "guide",
+      "lang": "en",
+      "title": "Uniqlo vs Zara: linen clothing",
+      "summary": "Compare linen shirts, trousers, dresses and skirts by cut, fibre content and measurements.",
+      "tag": "Linen",
+      "image": "https://sizes.es/assets/img/hero_uniqlo_zara_linen.jpg",
+      "url": "https://sizes.es/en/guides/uniqlo-vs-zara-linen.html"
+    },
     {
       "id": "blog-elegir-talla-vestidos-verano-es",
       "type": "blog",
@@ -582,4 +622,4 @@ window.SIZES_CONTENT_FEED = {
       "url": "https://sizes.es/en/guides/decathlon-vs-nike-kids.html"
     }
   ]
-}
+};

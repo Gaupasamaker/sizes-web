@@ -576,4 +576,40 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/guides/mango-vs-zara-summer-dresses.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/guias/mango-vs-zara-vestidos-verano.html" />
   </url>
+  <url>
+    <loc>https://sizes.es/es/blog/elegir-talla-ropa-lino.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sizes.es/es/blog/elegir-talla-ropa-lino.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/blog/choose-linen-clothing-size.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/blog/elegir-talla-ropa-lino.html" />
+  </url>
+  <url>
+    <loc>https://sizes.es/en/blog/choose-linen-clothing-size.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sizes.es/es/blog/elegir-talla-ropa-lino.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/blog/choose-linen-clothing-size.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/blog/elegir-talla-ropa-lino.html" />
+  </url>
+  <url>
+    <loc>https://sizes.es/es/guias/uniqlo-vs-zara-lino.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sizes.es/es/guias/uniqlo-vs-zara-lino.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/guides/uniqlo-vs-zara-linen.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/guias/uniqlo-vs-zara-lino.html" />
+  </url>
+  <url>
+    <loc>https://sizes.es/en/guides/uniqlo-vs-zara-linen.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sizes.es/es/guias/uniqlo-vs-zara-lino.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/guides/uniqlo-vs-zara-linen.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/guias/uniqlo-vs-zara-lino.html" />
+  </url>
 </urlset>
