@@ -612,4 +612,40 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/guides/uniqlo-vs-zara-linen.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/guias/uniqlo-vs-zara-lino.html" />
   </url>
+  <url>
+    <loc>https://sizes.es/es/blog/elegir-talla-ropa-entretiempo.html</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sizes.es/es/blog/elegir-talla-ropa-entretiempo.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/blog/choose-transitional-clothing-size.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/blog/elegir-talla-ropa-entretiempo.html" />
+  </url>
+  <url>
+    <loc>https://sizes.es/en/blog/choose-transitional-clothing-size.html</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sizes.es/es/blog/elegir-talla-ropa-entretiempo.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/blog/choose-transitional-clothing-size.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/blog/elegir-talla-ropa-entretiempo.html" />
+  </url>
+  <url>
+    <loc>https://sizes.es/es/guias/primark-vs-hm-capas-ligeras.html</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sizes.es/es/guias/primark-vs-hm-capas-ligeras.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/guides/primark-vs-hm-light-layers.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/guias/primark-vs-hm-capas-ligeras.html" />
+  </url>
+  <url>
+    <loc>https://sizes.es/en/guides/primark-vs-hm-light-layers.html</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sizes.es/es/guias/primark-vs-hm-capas-ligeras.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/guides/primark-vs-hm-light-layers.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/guias/primark-vs-hm-capas-ligeras.html" />
+  </url>
 </urlset>

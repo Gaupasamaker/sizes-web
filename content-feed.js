@@ -1,6 +1,46 @@
 window.SIZES_CONTENT_FEED = {
-  "version": "2026-08-03",
+  "version": "2026-08-10",
   "items": [
+    {
+      "id": "blog-elegir-talla-ropa-entretiempo-es",
+      "type": "blog",
+      "lang": "es",
+      "title": "Cómo elegir talla en ropa de entretiempo",
+      "summary": "Capas, camisetas, camisas y chaquetas ligeras: cuánto margen dejar sin comprar de más.",
+      "tag": "Entretiempo",
+      "image": "https://sizes.es/assets/blog/transitional-clothing-size.png",
+      "url": "https://sizes.es/es/blog/elegir-talla-ropa-entretiempo.html"
+    },
+    {
+      "id": "guide-primark-vs-hm-capas-ligeras-es",
+      "type": "guide",
+      "lang": "es",
+      "title": "Primark vs H&M: básicos y capas ligeras",
+      "summary": "Compara camisetas, camisas, sobrecamisas y capas ligeras por medidas, corte y tejido.",
+      "tag": "Entretiempo",
+      "image": "https://sizes.es/assets/img/hero_primark_hm_layers.png",
+      "url": "https://sizes.es/es/guias/primark-vs-hm-capas-ligeras.html"
+    },
+    {
+      "id": "blog-choose-transitional-clothing-size-en",
+      "type": "blog",
+      "lang": "en",
+      "title": "How to choose your size for transitional clothing",
+      "summary": "Layers, T-shirts, shirts and light jackets: how much room to allow without overbuying.",
+      "tag": "Transitional",
+      "image": "https://sizes.es/assets/blog/transitional-clothing-size.png",
+      "url": "https://sizes.es/en/blog/choose-transitional-clothing-size.html"
+    },
+    {
+      "id": "guide-primark-vs-hm-light-layers-en",
+      "type": "guide",
+      "lang": "en",
+      "title": "Primark vs H&M: basics and light layers",
+      "summary": "Compare T-shirts, shirts, overshirts and light layers by measurements, cut and fabric.",
+      "tag": "Transitional",
+      "image": "https://sizes.es/assets/img/hero_primark_hm_layers.png",
+      "url": "https://sizes.es/en/guides/primark-vs-hm-light-layers.html"
+    },
     {
       "id": "blog-elegir-talla-ropa-lino-es",
       "type": "blog",
@@ -622,4 +662,5 @@ window.SIZES_CONTENT_FEED = {
       "url": "https://sizes.es/en/guides/decathlon-vs-nike-kids.html"
     }
   ]
-};
+}
+;
