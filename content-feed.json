@@ -1,6 +1,46 @@
 {
-  "version": "2026-08-10",
+  "version": "2026-08-18",
   "items": [
+    {
+      "id": "blog-elegir-talla-vaqueros-online-es",
+      "type": "blog",
+      "lang": "es",
+      "title": "Cómo elegir talla de vaqueros online",
+      "summary": "Cintura, tiro, cadera y largo: un método práctico para elegir jeans sin adivinar.",
+      "tag": "Denim",
+      "image": "https://sizes.es/assets/blog/jeans-size-measurement.png",
+      "url": "https://sizes.es/es/blog/elegir-talla-vaqueros-online.html"
+    },
+    {
+      "id": "guide-levis-vs-wrangler-vaqueros-es",
+      "type": "guide",
+      "lang": "es",
+      "title": "Levi’s vs Wrangler: tallas de vaqueros",
+      "summary": "Compara cintura, tiro, largo, tejido y corte antes de trasladar una talla entre marcas.",
+      "tag": "Denim",
+      "image": "https://sizes.es/assets/img/hero_levis_wrangler_jeans.png",
+      "url": "https://sizes.es/es/guias/levis-vs-wrangler-vaqueros.html"
+    },
+    {
+      "id": "blog-choose-jeans-size-online-en",
+      "type": "blog",
+      "lang": "en",
+      "title": "How to choose your jeans size online",
+      "summary": "Waist, rise, hip and length: a practical way to choose jeans without guessing.",
+      "tag": "Denim",
+      "image": "https://sizes.es/assets/blog/jeans-size-measurement.png",
+      "url": "https://sizes.es/en/blog/choose-jeans-size-online.html"
+    },
+    {
+      "id": "guide-levis-vs-wrangler-jeans-en",
+      "type": "guide",
+      "lang": "en",
+      "title": "Levi’s vs Wrangler: jeans sizing",
+      "summary": "Compare waist, rise, length, fabric and cut before transferring a size between brands.",
+      "tag": "Denim",
+      "image": "https://sizes.es/assets/img/hero_levis_wrangler_jeans.png",
+      "url": "https://sizes.es/en/guides/levis-vs-wrangler-jeans.html"
+    },
     {
       "id": "blog-elegir-talla-ropa-entretiempo-es",
       "type": "blog",

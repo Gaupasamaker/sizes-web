@@ -648,4 +648,40 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/guides/primark-vs-hm-light-layers.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/guias/primark-vs-hm-capas-ligeras.html" />
   </url>
+  <url>
+    <loc>https://sizes.es/es/blog/elegir-talla-vaqueros-online.html</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sizes.es/es/blog/elegir-talla-vaqueros-online.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/blog/choose-jeans-size-online.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/blog/elegir-talla-vaqueros-online.html" />
+  </url>
+  <url>
+    <loc>https://sizes.es/en/blog/choose-jeans-size-online.html</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sizes.es/es/blog/elegir-talla-vaqueros-online.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/blog/choose-jeans-size-online.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/blog/elegir-talla-vaqueros-online.html" />
+  </url>
+  <url>
+    <loc>https://sizes.es/es/guias/levis-vs-wrangler-vaqueros.html</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sizes.es/es/guias/levis-vs-wrangler-vaqueros.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/guides/levis-vs-wrangler-jeans.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/guias/levis-vs-wrangler-vaqueros.html" />
+  </url>
+  <url>
+    <loc>https://sizes.es/en/guides/levis-vs-wrangler-jeans.html</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sizes.es/es/guias/levis-vs-wrangler-vaqueros.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/guides/levis-vs-wrangler-jeans.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/guias/levis-vs-wrangler-vaqueros.html" />
+  </url>
 </urlset>
