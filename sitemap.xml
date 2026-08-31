@@ -720,4 +720,40 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/guides/nike-vs-new-balance-kids-back-to-school.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/guias/nike-vs-new-balance-ninos-vuelta-al-cole.html" />
   </url>
+  <url>
+    <loc>https://sizes.es/es/blog/elegir-talla-chandal-infantil.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sizes.es/es/blog/elegir-talla-chandal-infantil.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/blog/choose-kids-jogger-size.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/blog/elegir-talla-chandal-infantil.html" />
+  </url>
+  <url>
+    <loc>https://sizes.es/en/blog/choose-kids-jogger-size.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sizes.es/es/blog/elegir-talla-chandal-infantil.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/blog/choose-kids-jogger-size.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/blog/elegir-talla-chandal-infantil.html" />
+  </url>
+  <url>
+    <loc>https://sizes.es/es/guias/adidas-vs-puma-ninos-zapatillas.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sizes.es/es/guias/adidas-vs-puma-ninos-zapatillas.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/guides/adidas-vs-puma-kids-shoes.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/guias/adidas-vs-puma-ninos-zapatillas.html" />
+  </url>
+  <url>
+    <loc>https://sizes.es/en/guides/adidas-vs-puma-kids-shoes.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sizes.es/es/guias/adidas-vs-puma-ninos-zapatillas.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/guides/adidas-vs-puma-kids-shoes.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/guias/adidas-vs-puma-ninos-zapatillas.html" />
+  </url>
 </urlset>

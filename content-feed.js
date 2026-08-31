@@ -1,6 +1,46 @@
 window.SIZES_CONTENT_FEED = {
-  "version": "2026-08-24",
+  "version": "2026-08-31",
   "items": [
+    {
+      "id": "blog-elegir-talla-chandal-infantil-es",
+      "type": "blog",
+      "lang": "es",
+      "title": "Cómo elegir talla de pantalón de chándal infantil",
+      "summary": "Cintura, cadera, tiro y largo para acertar en el cole y las extraescolares.",
+      "tag": "Familias · Cole",
+      "image": "https://sizes.es/assets/blog/kids-jogger-size.png",
+      "url": "https://sizes.es/es/blog/elegir-talla-chandal-infantil.html"
+    },
+    {
+      "id": "guide-adidas-vs-puma-ninos-zapatillas-es",
+      "type": "guide",
+      "lang": "es",
+      "title": "Adidas vs Puma Niños",
+      "summary": "Compara tallas de zapatillas para colegio y deporte midiendo ambos pies, largo, ancho y margen.",
+      "tag": "Niños · Sneakers",
+      "image": "https://sizes.es/assets/img/hero_adidas_puma_kids.png",
+      "url": "https://sizes.es/es/guias/adidas-vs-puma-ninos-zapatillas.html"
+    },
+    {
+      "id": "blog-choose-kids-jogger-size-en",
+      "type": "blog",
+      "lang": "en",
+      "title": "How to choose a kids' jogger size",
+      "summary": "Waist, hip, rise and length for school and after-school activities.",
+      "tag": "Families · School",
+      "image": "https://sizes.es/assets/blog/kids-jogger-size.png",
+      "url": "https://sizes.es/en/blog/choose-kids-jogger-size.html"
+    },
+    {
+      "id": "guide-adidas-vs-puma-kids-shoes-en",
+      "type": "guide",
+      "lang": "en",
+      "title": "Adidas vs PUMA Kids",
+      "summary": "Compare shoe sizes for school and sport by checking both feet, length, width and toe room.",
+      "tag": "Kids · Trainers",
+      "image": "https://sizes.es/assets/img/hero_adidas_puma_kids.png",
+      "url": "https://sizes.es/en/guides/adidas-vs-puma-kids-shoes.html"
+    },
     {
       "id": "blog-elegir-talla-sudadera-infantil-vuelta-al-cole-es",
       "type": "blog",
