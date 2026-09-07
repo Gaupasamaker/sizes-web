@@ -1,6 +1,46 @@
 {
-  "version": "2026-08-31",
+  "version": "2026-09-07",
   "items": [
+    {
+      "id": "blog-elegir-talla-uniforme-escolar-infantil-es",
+      "type": "blog",
+      "lang": "es",
+      "title": "Cómo elegir talla de uniforme escolar infantil",
+      "summary": "Polo, pantalón, falda y jersey con margen útil para empezar el curso.",
+      "tag": "Familias · Vuelta al cole",
+      "image": "https://sizes.es/assets/blog/kids-school-uniform-size.png",
+      "url": "https://sizes.es/es/blog/elegir-talla-uniforme-escolar-infantil.html"
+    },
+    {
+      "id": "guide-geox-vs-skechers-ninos-zapatillas-es",
+      "type": "guide",
+      "lang": "es",
+      "title": "Geox vs Skechers Niños",
+      "summary": "Compara tallas de zapatillas escolares midiendo largo, ancho, cierre y margen antes de comprar.",
+      "tag": "Niños · Colegio",
+      "image": "https://sizes.es/assets/img/hero_geox_skechers_school.png",
+      "url": "https://sizes.es/es/guias/geox-vs-skechers-ninos-zapatillas.html"
+    },
+    {
+      "id": "blog-choose-kids-school-uniform-size-en",
+      "type": "blog",
+      "lang": "en",
+      "title": "How to choose the right kids' school uniform size",
+      "summary": "Polo, trousers, skirt and jumper with useful room for the first term.",
+      "tag": "Families · Back to school",
+      "image": "https://sizes.es/assets/blog/kids-school-uniform-size.png",
+      "url": "https://sizes.es/en/blog/choose-kids-school-uniform-size.html"
+    },
+    {
+      "id": "guide-geox-vs-skechers-kids-shoes-en",
+      "type": "guide",
+      "lang": "en",
+      "title": "Geox vs Skechers Kids",
+      "summary": "Compare school shoe sizes by measuring length, width, fastening and room before buying.",
+      "tag": "Kids · School",
+      "image": "https://sizes.es/assets/img/hero_geox_skechers_school.png",
+      "url": "https://sizes.es/en/guides/geox-vs-skechers-kids-shoes.html"
+    },
     {
       "id": "blog-elegir-talla-chandal-infantil-es",
       "type": "blog",
