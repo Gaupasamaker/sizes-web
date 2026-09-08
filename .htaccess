@@ -1,7 +1,30 @@
-# OpenAI access: allow user-triggered fetches and ChatGPT Search crawling
-# before any future rewrite-based bot filters are evaluated.
+# Canonical host, retired URLs and crawler policy.
 <IfModule mod_rewrite.c>
     RewriteEngine On
+
+    # One public origin: HTTPS without www.
+    RewriteCond %{HTTPS} !=on [OR]
+    RewriteCond %{HTTP_HOST} !^sizes\.es$ [NC]
+    RewriteRule ^ https://sizes.es%{REQUEST_URI} [R=301,L,NE]
+
+    # Consolidate the seven pre-bilingual guide URLs into their final locations.
+    RewriteRule ^guides/hm-vs-primark\.html$ /es/guias/primark-vs-hm-ninos.html [R=301,L,NE]
+    RewriteRule ^guides/massimo-dutti-vs-zara\.html$ /es/guias/massimo-dutti-vs-zara.html [R=301,L,NE]
+    RewriteRule ^guides/nike-vs-adidas-kids\.html$ /en/guides/nike-vs-adidas-kids.html [R=301,L,NE]
+    RewriteRule ^guides/shein-vs-zara\.html$ /es/guias/shein-vs-zara.html [R=301,L,NE]
+    RewriteRule ^guides/stradivarius-vs-bershka\.html$ /es/guias/stradivarius-vs-bershka.html [R=301,L,NE]
+    RewriteRule ^guides/vans-vs-converse\.html$ /es/guias/vans-vs-converse.html [R=301,L,NE]
+    RewriteRule ^guides/zara-vs-mango-kids\.html$ /en/guides/zara-vs-mango-kids.html [R=301,L,NE]
+
+    # Old prototypes and snapshots must not remain publicly addressable.
+    RewriteRule ^(?:conceptos_movil|stitch_output)\.html$ - [R=410,L]
+    RewriteRule ^(?:archive|temp-git)(?:/|$) - [R=410,L]
+
+    # This is a static site, so common WordPress probe targets are unequivocally gone.
+    RewriteRule ^(?:wp-admin(?:/|$)|wp-login\.php$|xmlrpc\.php$) - [R=410,L]
+
+    # Allow user-triggered OpenAI fetches and Search crawling before any
+    # future rewrite-based bot filters are evaluated.
     RewriteCond %{HTTP_USER_AGENT} (ChatGPT-User|OAI-SearchBot) [NC]
     RewriteRule ^ - [L]
 </IfModule>
@@ -17,9 +40,31 @@
     </IfModule>
 </Files>
 
+# Never serve credentials or accidental backup/configuration files.
+<FilesMatch "(?i)^(?:\.env(?:\..*)?|.*\.(?:bak|backup|sql|log))$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order deny,allow
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
 # Performance: Enable basic compression and caching
 <IfModule mod_deflate.c>
     AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json
+</IfModule>
+
+# Low-risk browser protections. HSTS starts deliberately short for rollout.
+<IfModule mod_headers.c>
+    Header always set Strict-Transport-Security "max-age=300"
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "camera=(), geolocation=(), microphone=()"
+    Header always set X-Frame-Options "DENY"
+    Header always set Cross-Origin-Opener-Policy "same-origin-allow-popups"
+    Header always set Content-Security-Policy "upgrade-insecure-requests; object-src 'none'; base-uri 'self'; frame-ancestors 'none'"
 </IfModule>
 
 # Serve a favicon for clients that still request /favicon.ico
