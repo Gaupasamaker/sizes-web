@@ -1,6 +1,46 @@
 window.SIZES_CONTENT_FEED = {
-  "version": "2026-09-07",
+  "version": "2026-09-14",
   "items": [
+    {
+      "id": "blog-elegir-talla-botas-otono-online-es",
+      "type": "blog",
+      "lang": "es",
+      "title": "Cómo elegir talla de botas online",
+      "summary": "Calcetines, horma, empeine y margen para elegir botas de otoño sin adivinar.",
+      "tag": "Adultos · Otoño",
+      "image": "https://sizes.es/assets/blog/autumn-boot-size-online.png",
+      "url": "https://sizes.es/es/blog/elegir-talla-botas-otono-online.html"
+    },
+    {
+      "id": "guide-timberland-vs-dr-martens-botas-es",
+      "type": "guide",
+      "lang": "es",
+      "title": "Timberland vs Dr. Martens",
+      "summary": "Compara longitud, ancho, empeine, calcetín y ajuste antes de elegir talla de botas.",
+      "tag": "Adultos · Botas",
+      "image": "https://sizes.es/assets/img/hero_timberland_dr_martens_boots.png",
+      "url": "https://sizes.es/es/guias/timberland-vs-dr-martens-botas.html"
+    },
+    {
+      "id": "blog-choose-autumn-boot-size-online-en",
+      "type": "blog",
+      "lang": "en",
+      "title": "How to choose your autumn boot size online",
+      "summary": "Socks, last, instep and room for choosing autumn boots without guessing.",
+      "tag": "Adults · Autumn",
+      "image": "https://sizes.es/assets/blog/autumn-boot-size-online.png",
+      "url": "https://sizes.es/en/blog/choose-autumn-boot-size-online.html"
+    },
+    {
+      "id": "guide-timberland-vs-dr-martens-boots-en",
+      "type": "guide",
+      "lang": "en",
+      "title": "Timberland vs Dr. Martens",
+      "summary": "Compare length, width, instep, socks and fit before choosing a boot size.",
+      "tag": "Adults · Boots",
+      "image": "https://sizes.es/assets/img/hero_timberland_dr_martens_boots.png",
+      "url": "https://sizes.es/en/guides/timberland-vs-dr-martens-boots.html"
+    },
     {
       "id": "blog-elegir-talla-uniforme-escolar-infantil-es",
       "type": "blog",
