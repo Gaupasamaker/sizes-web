@@ -385,30 +385,6 @@ a {
     line-height: 0.72;
 }
 
-.content-visual {
-    margin: 0 0 44px;
-    overflow: hidden;
-    border: 1px solid rgba(17, 37, 82, 0.1);
-    border-radius: 24px;
-    background: #f4eee5;
-    box-shadow: 0 18px 40px rgba(17, 37, 82, 0.1);
-}
-
-.content-visual img {
-    display: block;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-}
-
-.content-visual figcaption {
-    padding: 13px 18px 16px;
-    color: var(--ink-soft);
-    font-size: 0.84rem;
-    line-height: 1.55;
-}
-
 .blog-article h2 {
     margin: 54px 0 18px;
     font-family: "Cormorant Garamond", serif;
