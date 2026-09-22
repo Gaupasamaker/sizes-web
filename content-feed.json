@@ -1,6 +1,46 @@
 {
-  "version": "2026-09-14",
+  "version": "2026-09-22",
   "items": [
+    {
+      "id": "blog-rain-jacket-layering-size-es",
+      "type": "blog",
+      "lang": "es",
+      "title": "Cómo elegir talla de chaqueta impermeable para llevar capas",
+      "summary": "Medidas, corte y movilidad para elegir una chaqueta que funcione con las capas que realmente llevarás.",
+      "tag": "Adultos · Chaquetas",
+      "image": "https://sizes.es/assets/blog/rain-jacket-size-layering.png",
+      "url": "https://sizes.es/es/blog/elegir-talla-chaqueta-impermeable.html"
+    },
+    {
+      "id": "guide-patagonia-vs-north-face-rain-jackets-es",
+      "type": "guide",
+      "lang": "es",
+      "title": "Patagonia vs The North Face: chaquetas impermeables",
+      "summary": "Compara las tablas oficiales y el ajuste de Torrentshell 3L y Antora antes de elegir talla.",
+      "tag": "Adultos · Chaquetas",
+      "image": "https://sizes.es/assets/img/patagonia-north-face-rain-jackets.png",
+      "url": "https://sizes.es/es/guias/patagonia-vs-the-north-face-chaquetas-impermeables.html"
+    },
+    {
+      "id": "blog-rain-jacket-layering-size-en",
+      "type": "blog",
+      "lang": "en",
+      "title": "How to choose a rain-jacket size for layering",
+      "summary": "Measurements, cut and movement for choosing a jacket that works with the layers you will actually wear.",
+      "tag": "Adults · Jackets",
+      "image": "https://sizes.es/assets/blog/rain-jacket-size-layering.png",
+      "url": "https://sizes.es/en/blog/choose-rain-jacket-size.html"
+    },
+    {
+      "id": "guide-patagonia-vs-north-face-rain-jackets-en",
+      "type": "guide",
+      "lang": "en",
+      "title": "Patagonia vs The North Face: Rain Jacket Sizing",
+      "summary": "Compare the official charts and Torrentshell 3L and Antora fit notes before choosing a size.",
+      "tag": "Adults · Jackets",
+      "image": "https://sizes.es/assets/img/patagonia-north-face-rain-jackets.png",
+      "url": "https://sizes.es/en/guides/patagonia-vs-the-north-face-rain-jacket-sizing.html"
+    },
     {
       "id": "blog-elegir-talla-botas-otono-online-es",
       "type": "blog",
