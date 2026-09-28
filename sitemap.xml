@@ -864,4 +864,40 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/guides/patagonia-vs-the-north-face-rain-jacket-sizing.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/guias/patagonia-vs-the-north-face-chaquetas-impermeables.html" />
   </url>
+  <url>
+    <loc>https://sizes.es/es/blog/elegir-talla-jersey-punto-online.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sizes.es/es/blog/elegir-talla-jersey-punto-online.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/blog/choose-knitwear-size-online.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/blog/elegir-talla-jersey-punto-online.html" />
+  </url>
+  <url>
+    <loc>https://sizes.es/en/blog/choose-knitwear-size-online.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sizes.es/es/blog/elegir-talla-jersey-punto-online.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/blog/choose-knitwear-size-online.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/blog/elegir-talla-jersey-punto-online.html" />
+  </url>
+  <url>
+    <loc>https://sizes.es/es/guias/adidas-vs-asics-tallas-running.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sizes.es/es/guias/adidas-vs-asics-tallas-running.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/guides/adidas-vs-asics-running-shoe-sizing.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/guias/adidas-vs-asics-tallas-running.html" />
+  </url>
+  <url>
+    <loc>https://sizes.es/en/guides/adidas-vs-asics-running-shoe-sizing.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sizes.es/es/guias/adidas-vs-asics-tallas-running.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/guides/adidas-vs-asics-running-shoe-sizing.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/guias/adidas-vs-asics-tallas-running.html" />
+  </url>
 </urlset>

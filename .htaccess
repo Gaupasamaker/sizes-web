@@ -7,6 +7,10 @@
     RewriteCond %{HTTP_HOST} !^sizes\.es$ [NC]
     RewriteRule ^ https://sizes.es%{REQUEST_URI} [R=301,L,NE]
 
+    # Normalize static directory-index aliases to their canonical directory URLs.
+    RewriteRule ^es/guias/index\.html$ /es/guias/ [R=301,L,NE]
+    RewriteRule ^en/guides/index\.html$ /en/guides/ [R=301,L,NE]
+
     # Consolidate the seven pre-bilingual guide URLs into their final locations.
     RewriteRule ^guides/hm-vs-primark\.html$ /es/guias/primark-vs-hm-ninos.html [R=301,L,NE]
     RewriteRule ^guides/massimo-dutti-vs-zara\.html$ /es/guias/massimo-dutti-vs-zara.html [R=301,L,NE]

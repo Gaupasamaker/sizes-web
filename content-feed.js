@@ -1,6 +1,46 @@
 window.SIZES_CONTENT_FEED = {
-  "version": "2026-09-22",
+  "version": "2026-09-28",
   "items": [
+    {
+      "id": "blog-elegir-talla-jersey-punto-online-es",
+      "type": "blog",
+      "lang": "es",
+      "title": "Cómo elegir talla de jersey de punto online",
+      "summary": "Compara una prenda de referencia, el corte y las capas que llevarás antes de elegir talla.",
+      "tag": "Adultos · Punto",
+      "image": "https://sizes.es/assets/blog/knitwear-fit-editorial.png",
+      "url": "https://sizes.es/es/blog/elegir-talla-jersey-punto-online.html"
+    },
+    {
+      "id": "guide-adidas-vs-asics-running-es",
+      "type": "guide",
+      "lang": "es",
+      "title": "Adidas vs ASICS: tallas para running",
+      "summary": "Compara las guías de ambas marcas y usa modelos concretos como ejemplos para comprobar el ajuste.",
+      "tag": "Adultos · Running",
+      "image": "https://sizes.es/assets/img/adidas-asics-running-editorial-portrait.png",
+      "url": "https://sizes.es/es/guias/adidas-vs-asics-tallas-running.html"
+    },
+    {
+      "id": "blog-choose-knitwear-size-online-en",
+      "type": "blog",
+      "lang": "en",
+      "title": "How to choose a knitwear size online",
+      "summary": "Compare a reference jumper, the cut and the layers you plan to wear before choosing a size.",
+      "tag": "Adults · Knitwear",
+      "image": "https://sizes.es/assets/blog/knitwear-fit-editorial.png",
+      "url": "https://sizes.es/en/blog/choose-knitwear-size-online.html"
+    },
+    {
+      "id": "guide-adidas-vs-asics-running-en",
+      "type": "guide",
+      "lang": "en",
+      "title": "Adidas vs ASICS: running-shoe sizes",
+      "summary": "Compare both brands' guidance and use specific shoes as examples when checking fit.",
+      "tag": "Adults · Running",
+      "image": "https://sizes.es/assets/img/adidas-asics-running-editorial-portrait.png",
+      "url": "https://sizes.es/en/guides/adidas-vs-asics-running-shoe-sizing.html"
+    },
     {
       "id": "blog-rain-jacket-layering-size-es",
       "type": "blog",
