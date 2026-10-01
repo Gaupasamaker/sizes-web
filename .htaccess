@@ -62,10 +62,12 @@
 
 # Low-risk browser protections. HSTS starts deliberately short for rollout.
 <IfModule mod_headers.c>
-    # The packaged Android app runs at https://localhost. Keep CORS scoped to
+    # Allow the Android origin and exact published PWA origins. Keep CORS scoped to
     # the public feed and framing scoped to the published content readers.
     <Files "content-feed.json">
-        Header always set Access-Control-Allow-Origin "https://localhost"
+        SetEnvIf Origin "^https://(localhost|sizes-gamma\.vercel\.app|sizes-pwa-preview\.vercel\.app)$" sizes_feed_origin=$0
+        Header always set Access-Control-Allow-Origin "%{sizes_feed_origin}e" env=sizes_feed_origin
+        Header always merge Vary "Origin"
     </Files>
 
     SetEnvIf Request_URI "^/(?:es/(?:blog|guias)|en/(?:blog|guides))/" sizes_app_embeddable=1
@@ -78,7 +80,7 @@
     Header always unset X-Frame-Options env=sizes_app_embeddable
     Header always set Cross-Origin-Opener-Policy "same-origin-allow-popups"
     Header always set Content-Security-Policy "upgrade-insecure-requests; object-src 'none'; base-uri 'self'; frame-ancestors 'none'" env=!sizes_app_embeddable
-    Header always set Content-Security-Policy "upgrade-insecure-requests; object-src 'none'; base-uri 'self'; frame-ancestors https://localhost" env=sizes_app_embeddable
+    Header always set Content-Security-Policy "upgrade-insecure-requests; object-src 'none'; base-uri 'self'; frame-ancestors https://localhost https://sizes-gamma.vercel.app https://sizes-pwa-preview.vercel.app" env=sizes_app_embeddable
 </IfModule>
 
 # Serve a favicon for clients that still request /favicon.ico
