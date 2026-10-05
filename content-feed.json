@@ -1,6 +1,46 @@
 {
-  "version": "2026-09-28",
+  "version": "2026-10-05",
   "items": [
+    {
+      "id": "blog-elegir-talla-camisa-franela-ligera-es",
+      "type": "blog",
+      "lang": "es",
+      "title": "Cómo elegir la talla de una camisa de franela ligera",
+      "summary": "Compara hombros, pecho, mangas y largo según cómo quieras llevarla.",
+      "tag": "Adultos · Entretiempo",
+      "image": "https://sizes.es/assets/blog/flannel-shirt-size-guide.png",
+      "url": "https://sizes.es/es/blog/elegir-talla-camisa-franela-ligera.html"
+    },
+    {
+      "id": "guide-sprinter-vs-decathlon-running-es",
+      "type": "guide",
+      "lang": "es",
+      "title": "Sprinter vs Decathlon: mallas de running",
+      "summary": "Usa IPSO Basic y KIPRUN Run 500 Confort como ejemplos y consulta la guía de cada producto.",
+      "tag": "Mujer · Running",
+      "image": "https://sizes.es/assets/img/sprinter-decathlon-running-tights.png",
+      "url": "https://sizes.es/es/guias/sprinter-vs-decathlon-mallas-running.html"
+    },
+    {
+      "id": "blog-choose-lightweight-flannel-shirt-size-en",
+      "type": "blog",
+      "lang": "en",
+      "title": "How to choose the right size for a lightweight flannel shirt",
+      "summary": "Compare shoulders, chest, sleeves and length for the way you plan to wear it.",
+      "tag": "Adults · Transitional",
+      "image": "https://sizes.es/assets/blog/flannel-shirt-size-guide.png",
+      "url": "https://sizes.es/en/blog/choose-lightweight-flannel-shirt-size.html"
+    },
+    {
+      "id": "guide-sprinter-vs-decathlon-running-tights-en",
+      "type": "guide",
+      "lang": "en",
+      "title": "Sprinter vs Decathlon: running tights",
+      "summary": "Use IPSO Basic and KIPRUN Run 500 Confort as examples and check each product's size guide.",
+      "tag": "Women · Running",
+      "image": "https://sizes.es/assets/img/sprinter-decathlon-running-tights.png",
+      "url": "https://sizes.es/en/guides/sprinter-vs-decathlon-running-tights-sizing.html"
+    },
     {
       "id": "blog-elegir-talla-jersey-punto-online-es",
       "type": "blog",

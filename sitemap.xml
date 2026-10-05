@@ -900,4 +900,40 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/guides/adidas-vs-asics-running-shoe-sizing.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/guias/adidas-vs-asics-tallas-running.html" />
   </url>
+  <url>
+    <loc>https://sizes.es/es/blog/elegir-talla-camisa-franela-ligera.html</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sizes.es/es/blog/elegir-talla-camisa-franela-ligera.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/blog/choose-lightweight-flannel-shirt-size.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/blog/elegir-talla-camisa-franela-ligera.html" />
+  </url>
+  <url>
+    <loc>https://sizes.es/en/blog/choose-lightweight-flannel-shirt-size.html</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sizes.es/es/blog/elegir-talla-camisa-franela-ligera.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/blog/choose-lightweight-flannel-shirt-size.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/blog/elegir-talla-camisa-franela-ligera.html" />
+  </url>
+  <url>
+    <loc>https://sizes.es/es/guias/sprinter-vs-decathlon-mallas-running.html</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sizes.es/es/guias/sprinter-vs-decathlon-mallas-running.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/guides/sprinter-vs-decathlon-running-tights-sizing.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/guias/sprinter-vs-decathlon-mallas-running.html" />
+  </url>
+  <url>
+    <loc>https://sizes.es/en/guides/sprinter-vs-decathlon-running-tights-sizing.html</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sizes.es/es/guias/sprinter-vs-decathlon-mallas-running.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sizes.es/en/guides/sprinter-vs-decathlon-running-tights-sizing.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sizes.es/es/guias/sprinter-vs-decathlon-mallas-running.html" />
+  </url>
 </urlset>
