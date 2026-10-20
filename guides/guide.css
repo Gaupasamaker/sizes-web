@@ -1026,3 +1026,21 @@ a {
         padding: 420px 0 48px;
     }
 }
+
+.bomber-guide-page .guide-hero {
+    background-position: left center;
+}
+
+@media (max-width: 640px) {
+    .bomber-guide-page .guide-hero {
+        background: var(--guide-hero-image) center top / 100% auto no-repeat var(--cream);
+    }
+
+    .bomber-guide-page .guide-hero::before {
+        background: linear-gradient(180deg, rgba(251, 247, 240, 0) 0%, rgba(251, 247, 240, 0) 28%, rgba(251, 247, 240, 0.78) 44%, #fbf7f0 56%);
+    }
+
+    .bomber-guide-page .guide-hero-inner {
+        padding-top: 50vw;
+    }
+}

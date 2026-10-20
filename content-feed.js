@@ -1,6 +1,46 @@
 window.SIZES_CONTENT_FEED = {
-  "version": "2026-10-12",
+  "version": "2026-10-20",
   "items": [
+    {
+      "id": "blog-elegir-talla-pantalon-cargo-online-es",
+      "type": "blog",
+      "lang": "es",
+      "title": "Cómo elegir talla de pantalón cargo online",
+      "summary": "Cintura, cadera, tiro y largo para comparar medidas con el corte que buscas.",
+      "tag": "Adultos · Entretiempo",
+      "image": "https://sizes.es/assets/blog/cargo-trousers-size-guide.png",
+      "url": "https://sizes.es/es/blog/elegir-talla-pantalon-cargo-online.html"
+    },
+    {
+      "id": "guide-zara-vs-mango-bomber-es",
+      "type": "guide",
+      "lang": "es",
+      "title": "Zara vs Mango: tallas de chaquetas bomber",
+      "summary": "Compara las guías oficiales y dos cortes concretos sin convertir una talla en otra.",
+      "tag": "Mujer · Chaquetas",
+      "image": "https://sizes.es/assets/img/zara-mango-bomber-hero-wide.png",
+      "url": "https://sizes.es/es/guias/zara-vs-mango-talla-chaqueta-bomber.html"
+    },
+    {
+      "id": "blog-choose-cargo-trouser-size-online-en",
+      "type": "blog",
+      "lang": "en",
+      "title": "How to choose your cargo trouser size online",
+      "summary": "Waist, hip, rise and length: compare measurements with the cut you want.",
+      "tag": "Adults · Transitional",
+      "image": "https://sizes.es/assets/blog/cargo-trousers-size-guide.png",
+      "url": "https://sizes.es/en/blog/choose-cargo-trouser-size-online.html"
+    },
+    {
+      "id": "guide-zara-vs-mango-bomber-en",
+      "type": "guide",
+      "lang": "en",
+      "title": "Zara vs Mango: bomber jacket sizing",
+      "summary": "Compare the official guides and two specific cuts without converting one brand's size to another.",
+      "tag": "Women · Jackets",
+      "image": "https://sizes.es/assets/img/zara-mango-bomber-hero-wide.png",
+      "url": "https://sizes.es/en/guides/zara-vs-mango-bomber-jacket-sizing.html"
+    },
     {
       "id": "blog-elegir-talla-blazer-online-es",
       "type": "blog",
