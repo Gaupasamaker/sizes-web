@@ -1,6 +1,46 @@
 {
-  "version": "2026-10-20",
+  "version": "2026-10-26",
   "items": [
+    {
+      "id": "blog-elegir-talla-falda-midi-online-es",
+      "type": "blog",
+      "lang": "es",
+      "title": "Cómo elegir la talla de una falda midi online",
+      "summary": "Cintura, cadera, corte y largo para comparar antes de elegir una falda midi.",
+      "tag": "Mujer · Entretiempo",
+      "image": "https://sizes.es/assets/blog/midi-skirt-size-guide.png",
+      "url": "https://sizes.es/es/blog/elegir-talla-falda-midi-online.html"
+    },
+    {
+      "id": "guide-nike-vs-puma-running-tops-es",
+      "type": "guide",
+      "lang": "es",
+      "title": "Nike vs PUMA: tallas de camisetas de running",
+      "summary": "Compara las guías oficiales y dos camisetas concretas sin convertir una talla en otra.",
+      "tag": "Mujer · Running",
+      "image": "https://sizes.es/assets/img/nike-puma-long-sleeve-running-guide.png",
+      "url": "https://sizes.es/es/guias/nike-vs-puma-camisetas-running-manga-larga.html"
+    },
+    {
+      "id": "blog-choose-midi-skirt-size-online-en",
+      "type": "blog",
+      "lang": "en",
+      "title": "How to choose a midi skirt size online",
+      "summary": "Waist, hips, cut and length: what to compare before choosing a midi skirt.",
+      "tag": "Women · Transitional",
+      "image": "https://sizes.es/assets/blog/midi-skirt-size-guide.png",
+      "url": "https://sizes.es/en/blog/choose-midi-skirt-size-online.html"
+    },
+    {
+      "id": "guide-nike-vs-puma-running-tops-en",
+      "type": "guide",
+      "lang": "en",
+      "title": "Nike vs PUMA: women's running top sizing",
+      "summary": "Compare both official guides and two specific tops without treating sizes as equivalents.",
+      "tag": "Women · Running",
+      "image": "https://sizes.es/assets/img/nike-puma-long-sleeve-running-guide.png",
+      "url": "https://sizes.es/en/guides/nike-vs-puma-womens-running-tops-sizing.html"
+    },
     {
       "id": "blog-elegir-talla-pantalon-cargo-online-es",
       "type": "blog",
