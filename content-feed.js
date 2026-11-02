@@ -1,6 +1,46 @@
 window.SIZES_CONTENT_FEED = {
-  "version": "2026-10-26",
+  "version": "2026-11-02",
   "items": [
+    {
+      "id": "blog-elegir-talla-pantalon-pana-es",
+      "type": "blog",
+      "lang": "es",
+      "title": "Cómo elegir la talla de un pantalón de pana online",
+      "summary": "Cintura, tiro, corte y tejido: qué comparar antes de elegir pantalones de pana.",
+      "tag": "Mujer · Entretiempo",
+      "image": "https://sizes.es/assets/blog/corduroy-trouser-size-guide.webp",
+      "url": "https://sizes.es/es/blog/elegir-talla-pantalon-pana-online.html"
+    },
+    {
+      "id": "guide-skechers-vs-new-balance-walking-es",
+      "type": "guide",
+      "lang": "es",
+      "title": "Skechers vs New Balance: tallas de zapatillas para caminar",
+      "summary": "Compara las guías oficiales con GO WALK Arch Fit 2.0 y Fresh Foam X Walking 880 v7 como ejemplos, no equivalencias.",
+      "tag": "Mujer · Caminar",
+      "image": "https://sizes.es/assets/img/skechers-new-balance-walking-shoes.webp",
+      "url": "https://sizes.es/es/guias/skechers-vs-new-balance-zapatillas-caminar.html"
+    },
+    {
+      "id": "blog-choose-corduroy-trouser-size-online-en",
+      "type": "blog",
+      "lang": "en",
+      "title": "How to choose the right size in corduroy trousers online",
+      "summary": "Waist, rise, cut and fabric: what to compare before choosing corduroy trousers.",
+      "tag": "Women · Transitional",
+      "image": "https://sizes.es/assets/blog/corduroy-trouser-size-guide.webp",
+      "url": "https://sizes.es/en/blog/choose-corduroy-trouser-size-online.html"
+    },
+    {
+      "id": "guide-skechers-vs-new-balance-walking-en",
+      "type": "guide",
+      "lang": "en",
+      "title": "Skechers vs New Balance: walking shoe sizing",
+      "summary": "Compare official brand guides with GO WALK Arch Fit 2.0 and Fresh Foam X Walking 880 v7 as examples, not equivalents.",
+      "tag": "Women · Walking",
+      "image": "https://sizes.es/assets/img/skechers-new-balance-walking-shoes.webp",
+      "url": "https://sizes.es/en/guides/skechers-vs-new-balance-walking-shoe-sizing.html"
+    },
     {
       "id": "blog-elegir-talla-falda-midi-online-es",
       "type": "blog",
