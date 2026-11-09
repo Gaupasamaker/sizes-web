@@ -1,6 +1,46 @@
 window.SIZES_CONTENT_FEED = {
-  "version": "2026-11-02",
+  "version": "2026-11-09",
   "items": [
+    {
+      "id": "blog-elegir-talla-camisa-oxford-online-es",
+      "type": "blog",
+      "lang": "es",
+      "title": "Cómo elegir la talla de una camisa Oxford online",
+      "summary": "Hombros, pecho, cuello y mangas: compara medidas, corte y capas antes de elegir talla.",
+      "tag": "Adultos · Entretiempo",
+      "image": "https://sizes.es/assets/blog/oxford-shirt-fit-editorial.webp",
+      "url": "https://sizes.es/es/blog/elegir-talla-camisa-oxford-online.html"
+    },
+    {
+      "id": "guide-adidas-vs-puma-casual-sneakers-es",
+      "type": "guide",
+      "lang": "es",
+      "title": "Adidas vs PUMA: tallas de zapatillas urbanas",
+      "summary": "Compara las guías oficiales con Samba OG y Palermo como ejemplos concretos, no equivalencias.",
+      "tag": "Adultos · Calzado casual",
+      "image": "https://sizes.es/assets/img/adidas-puma-casual-sneakers-hero.webp",
+      "url": "https://sizes.es/es/guias/adidas-vs-puma-tallas-zapatillas-urbanas.html"
+    },
+    {
+      "id": "blog-choose-oxford-shirt-size-online-en",
+      "type": "blog",
+      "lang": "en",
+      "title": "How to Choose the Right Oxford Shirt Size Online",
+      "summary": "Shoulders, chest, collar and sleeves: compare measurements, cut and layers before choosing a size.",
+      "tag": "Adults · Transitional",
+      "image": "https://sizes.es/assets/blog/oxford-shirt-fit-editorial.webp",
+      "url": "https://sizes.es/en/blog/choose-oxford-shirt-size-online.html"
+    },
+    {
+      "id": "guide-adidas-vs-puma-casual-sneakers-en",
+      "type": "guide",
+      "lang": "en",
+      "title": "Adidas vs PUMA: Casual Sneaker Sizing",
+      "summary": "Compare official size guides using Samba OG and Palermo as specific examples, not equivalents.",
+      "tag": "Adults · Casual footwear",
+      "image": "https://sizes.es/assets/img/adidas-puma-casual-sneakers-hero.webp",
+      "url": "https://sizes.es/en/guides/adidas-vs-puma-casual-sneaker-sizing.html"
+    },
     {
       "id": "blog-elegir-talla-pantalon-pana-es",
       "type": "blog",
